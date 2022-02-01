@@ -13,7 +13,7 @@ import ModsProcessor from '../src/ModsProcessor'
 const mp = new ModsProcessor
 
 // Read in a MODS file as string
-const testModspath: string = path.resolve(__dirname, '.example.mods.xml')
+const testModspath: string = path.resolve(__dirname, './example.mods.xml')
 const testMods: string = fs.readFileSync(testModspath).toString()
 
 // Add record as a row. Add more rows as needed
