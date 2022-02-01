@@ -161,33 +161,46 @@ export default class ModsProcessor {
     async toCsv(path: string) {
         // Convert data to Csv
 
-        const writer = fs.createWriteStream(path) 
+        type CsvRow = {
+            'Identifier': string
+            'Title': string
+            'CPF authorities': string[]
+            'Date created': string
+            'Abstract': string
+            'Notes': string[]
+            'Topical subjects': string[]
+            'CPF subjects': string[]
+            'Geographic subjects': string[]
+            'Series': string[]
+        }
 
-        const csvStream = csv.format({ headers: true })
+        const quoteStringArray = (vals: string[]) => vals.map(val => `"${val}"`)
 
-        csvStream.pipe(writer).on('end', () => process.exit())
+        const writer = fs.createWriteStream(path)
 
         // Rename keys and supply missing fields if necessary to make sure all rows have the same headers.
-        const keyMap = {
-            'id': 'Identifier',
-            'title': 'Title',
-            'cpfAuths': 'CPF authorities',
-            'dateCreated': 'Date created',
-            'abstract': 'Abstract',
-            'notes': 'Notes',
-            'topicalSubjects': 'Topical subjects',
-            'cpfSubjects': 'CPF subjects',
-            'geoSubjects': 'Geographic subjects',
-            'series': 'Series'
-        }
-        for (const row of this.data) {
-            const csvRow: any = {}
-            for (const _key in keyMap) {
-                const key = _key as keyof Row
-                const renamed = keyMap[key]
-                csvRow[renamed] = row[key]
+        // Put values of string arrays in quotes.
+        const transform = (row: Row): CsvRow => {
+            return {
+                'Identifier': row.id,
+                'Title': row.title,
+                'CPF authorities': quoteStringArray(row.cpfAuths),
+                'Date created': row.dateCreated,
+                'Abstract': row.abstract ? row.abstract : '',
+                'Notes': row.notes ? quoteStringArray(row.notes) : [''],
+                'Topical subjects': row.topicalSubjects ? quoteStringArray(row.topicalSubjects) : [''],
+                'CPF subjects': row.cpfSubjects ? quoteStringArray(row.cpfSubjects) : [''],
+                'Geographic subjects': row.geoSubjects ? quoteStringArray(row.geoSubjects) : [''],
+                'Series': row.series ? quoteStringArray(row.series) : ['']
             }
-            csvStream.write(csvRow)
+        }
+
+        const csvStream = csv.format({ headers: true, transform,  })
+
+        csvStream.pipe(writer).on('end', () => process.exit())
+        
+        for (const row of this.data) {
+            csvStream.write(row)
         }
     }
 
