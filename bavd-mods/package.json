@@ -1,0 +1,34 @@
+{
+  "name": "bavd-mods",
+  "version": "1.0.0",
+  "description": "MODS to CSV converter for Broadcasting A/V Data Project",
+  "main": "dist/ModsToCsv.js",
+  "author": "UMD MITH",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register tests/test.ts",
+    "convert": "ts-node scripts/convert.ts"
+  },
+  "keywords": [
+    "metadata",
+    "converter",
+    "a/v"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "chai": "^4.3.6",
+    "eslint": "^8.7.0",
+    "mocha": "^9.2.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/jsdom": "^16.2.14",
+    "fast-csv": "^4.3.6",
+    "jsdom": "^19.0.0"
+  }
+}

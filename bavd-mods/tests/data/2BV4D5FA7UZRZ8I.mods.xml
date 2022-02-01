@@ -1,0 +1,57 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 https://digital.library.wisc.edu/1711.dl/XMLSchema-UWDC-MODS-3.6">
+  <titleInfo>
+    <title script="Latn">News of the Week</title>
+  </titleInfo>
+  <name>
+    <namePart script="Latn">WHA (Radio station : Madison, Wis.)</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator">brd</roleTerm>
+      <roleTerm type="text" authority="marcrelator">Broadcaster</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>sound recording</typeOfResource>
+  <originInfo>
+    <dateCreated encoding="w3cdtf" keyDate="yes">1947-11-05</dateCreated>
+  </originInfo>
+  <originInfo>
+    <dateIssued encoding="w3cdtf">1947-11-07</dateIssued>
+  </originInfo>
+  <language usage="primary">
+    <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    <languageTerm type="text">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 transcription audio disc : analog, mono ; 16 in.</extent>
+  </physicalDescription>
+  <note type="public" displayLabel="Note">Wisconsin School of the Air 466.</note>
+  <subject authority="local">
+    <topic>Radio</topic>
+  </subject>
+  <subject authority="local">
+    <topic>News</topic>
+  </subject>
+  <relatedItem type="series">
+    <titleInfo>
+      <title script="Latn">News of the Week</title>
+    </titleInfo>
+  </relatedItem>
+  <identifier type="hdl">1711.dl/2BV4D5FA7UZRZ8I</identifier>
+  <location>
+    <physicalLocation>University of Wisconsin--Madison. Archives</physicalLocation>
+    <shelfLocator>WHA Radio Collection. TD Box #141</shelfLocator>
+  </location>
+  <accessCondition type="rightsOwnership">University of Wisconsin System. Board of Regents</accessCondition>
+  <accessCondition type="useAndReproduction">For more details, including information about reuse, please contact the University of Wisconsin-Madison Archives at uwarchiv@library.wisc.edu.</accessCondition>
+  <accessCondition type="useAndReproduction" xlink:href="http://rightsstatements.org/vocab/InC/1.0/">In copyright</accessCondition>
+  <recordInfo>
+    <recordContentSource>University of Wisconsin Digital Collections Center</recordContentSource>
+    <recordCreationDate encoding="w3cdtf">2021-10-13 3:29:28 PM</recordCreationDate>
+    <recordChangeDate encoding="w3cdtf">2021-10-13 3:29:29 PM</recordChangeDate>
+    <recordIdentifier>1711.dl:2BV4D5FA7UZRZ8I#BIB0</recordIdentifier>
+    <languageOfCataloging>
+      <languageTerm type="text">English</languageTerm>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    </languageOfCataloging>
+    <recordOrigin>Record has been transformed into MODS from WHAPrj.TD3168 in a locally-maintained metadata scheme. Deploy key f194d839a5cdcafbb7a1f6c0a8250c5f3fd6b3e1</recordOrigin>
+  </recordInfo>
+</mods>
