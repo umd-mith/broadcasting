@@ -1,0 +1,44 @@
+{
+  "name": "broadcasting-a-v-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "broadcasting-a-v-data",
+  "author": "Raff Viglianti",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "persist": "ts-node src/commands/persist.ts"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^4.5.5",
+    "@fontsource/pt-sans-narrow": "^4.5.2",
+    "gatsby": "^4.9.0",
+    "gatsby-plugin-image": "^2.9.0",
+    "gatsby-plugin-react-helmet": "^5.9.0",
+    "gatsby-plugin-sharp": "^4.9.0",
+    "gatsby-plugin-sitemap": "^5.9.0",
+    "gatsby-source-filesystem": "^4.9.0",
+    "gatsby-transformer-remark": "^5.9.0",
+    "gatsby-transformer-sharp": "^4.9.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-helmet": "^6.1.5",
+    "airtable": "^0.11.2",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.5.5"
+  }
+}

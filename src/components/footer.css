@@ -1,0 +1,87 @@
+@import "variables.css";
+
+footer {
+  background-color: var(--color-gray-300);
+  border-top: 1px solid var(--color-gray-500);
+  padding: var(--spacing-base-content);
+}
+
+.footer-content-wrapper {
+  margin: 0 auto;
+  padding: var(--spacing-base-content) 0;
+}
+
+.partners {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.sponsors {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.logo {
+  display: inline-block;
+  flex: 1 0;
+  padding: var(--spacing-base-content);
+}
+
+.disclaimer {
+  font-style: italic;
+  flex: 1;
+  margin: var(--spacing-base-content) 0 var(--spacing-large-content) 0;
+}
+
+.screen-reader-text {
+  position: absolute !important;
+  display: block;
+  visibility: visible;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0px, 0px, 0px, 0px); /* deprecated */
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 45em) {
+  .footer-content-wrapper {
+    max-width: 68.5rem;
+  }
+
+  .partners,
+  .sponsors {
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+
+  .sponsors {
+    margin: 0 var(--spacing-base-content);
+  }
+
+  .sponsors .logo {
+    flex: 1;
+    max-height: 7.5rem;
+  }
+
+  .sponsors .logo svg {
+    max-height: 7.5rem;
+  }
+
+  .disclaimer {
+    align-self: flex-end;
+    margin-bottom: 0;
+    padding-left: var(--spacing-base-content);
+  }
+}
+
+@media screen and (min-width: 131em) {
+  .footer-content-wrapper {
+    max-width: 84rem;
+  }
+}

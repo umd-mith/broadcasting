@@ -1,0 +1,25 @@
+:root {
+  --font-stack: "Open Sans", Gotham, Helvetica Neue, Helvetica, Arial,
+    "sans-serif";
+  --color-brand-primary: #e0ca59;
+  --color-brand-900: #c7aa14;
+  --color-brand-100: #faeeaf;
+  --color-accent-900: #4d5a0c;
+  --color-accent-500: #59680c;
+  --color-accent-100: #6a7b0e;
+  --color-gray-900: #333;
+  --color-gray-800: #444;
+  --color-gray-700: #595959;
+  --color-gray-600: #777;
+  --color-gray-500: #808080;
+  --color-gray-300: #dedede;
+  --color-gray-100: #fafafa;
+  --color-full-white: #fff;
+  --spacing-base-content: 1rem;
+  --spacing-small-content: 0.67rem;
+  --spacing-large-content: calc(var(--spacing-base-content) * 2);
+  --spacing-xlarge-content: calc(var(--spacing-base-content) * 4);
+  --width-breakpoint-1: 27rem;
+  --width-breakpoint-2: 36rem;
+  --width-breakpoint-3: 56rem;
+}
