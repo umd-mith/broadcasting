@@ -78,7 +78,7 @@ const Entity = ({ data }: any) => {
                 <Field label="Inception" value={inception} />
               </p>
               <p>
-                {/* <Field label="Alternate Names" value={entity.altNames} /> */}
+                <Field label="Alternate Names" value={entity.Wikidata_altLabels} />
                 <Field label="Occupation(s)" value={entity.occupation__P106_} />
                 <Field
                   label="Field(s) of Work"
@@ -262,6 +262,7 @@ export const query = graphql`
     entitiesJson(id: { eq: $id }) {
       id
       Wikidata_label
+      Wikidata_altLabels
       date_of_birth__P569_
       date_of_death__P570_
       place_of_birth__P19_
