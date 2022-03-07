@@ -4,7 +4,8 @@ import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
 
-export default function Registry({ name, items }) {
+// TYPES
+export default function Registry({ name, items }: any) {
   const [searchQuery, setSearchQuery] = useState("")
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -14,6 +15,7 @@ export default function Registry({ name, items }) {
   itemsByLetter.set("Other", [])
 
   for (const item of items) {
+    console.log(item)
     if (!item.name.match(new RegExp(searchQuery, "i"))) {
       continue
     }

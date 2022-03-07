@@ -4,73 +4,54 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Registry from "../components/registry"
 
-const Entities = () => {}
+// TODO ADD TYPES
+const Entities = ({ data }: any) => {
 
-// const Entities = ({ data }) => {
+  const maxLen = 250
+  const items = data.allEntitiesJson.nodes.map((s: any) => {
+    const desc = s.Description || ''
+    return {
+      name: s.Wikidata_label,
+      url: `/entity/${s.CPF_Pages_ID}/`,
+      description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc
+    }
+  })
 
-//   const maxLen = 250
-//   const items = data.allSeriesJson.nodes.map(s => {
-//     const desc = s.description.length > 0 && s.description[0] ? s.description[0] : ''
-//     return {
-//       name: s.title,
-//       url: `/programs/${s.id}/`,
-//       description: desc.length > maxLen ? desc.substr(0, maxLen) + '...' : desc
-//     }
-//   })
-
-//   return (
-//     <Layout title="Programs">
-//       <div id="entities" className="page-programs programs">
-//         <section>
-//           <h1>
-//             Browse Entities
-//           </h1>
-//           <article>
-//             <p>
-//               The radio programming service of the NAEB, known as the National
-//               Educational Radio Network (NERN), comprised broadcasts which
-//               balanced a focus on public service reporting of national events
-//               (e.g., the economy, the depression, World War II, the Civil Rights
-//               movement) with providing a forum for local issues (e.g.,
-//               agricultural prices, community events, elections) and with
-//               expanding public education. These broadcasts, mostly stemming from
-//               university and public school-run radio stations, provide an
-//               in-depth look at the engagements and events of American history,
-//               as they were broadcast to and received by the general public in
-//               the twentieth century.
-//             </p>
-//             <p>
-//               Below is a list of all NERN radio programs held by the University of Maryland Libraries and
-//               digitized as part of the American Archive of Public Broadcasting
-//               (AAPB) project. Use the search bar at the top to ﬁnd a speciﬁc
-//               series or keyword, or use the alphabetical index to jump to a particular
-//               letter. Clicking on a series link will send you to a page with a
-//               a list of all the individual episodes of that series. Clicking on an 
-//               individual episode will launch a page in a new browse tab, containing 
-//               the streaming audio and transcript for that program. If you want to continue
-//               exploring diﬀerent programs, close the new browser tab and return
-//               to this page.
-//             </p>
-//           </article>
-//         </section>
-//         <section>
-//          <Registry name="series name" items={items} />
-//         </section>
-//       </div>
-//     </Layout>
-//   )
-// }
+  return (
+    <Layout title="Programs">
+      <div id="entities" className="page-programs programs">
+        <section>
+          <h1>
+            Browse Entities
+          </h1>
+          <article>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </article>
+        </section>
+        <section>
+         <Registry name="entity name" items={items} />
+        </section>
+      </div>
+    </Layout>
+  )
+}
 
 export default Entities
 
-// export const query = graphql`
-//   query {
-//     allSeriesJson(sort: { fields: title, order: ASC }) {
-//       nodes {
-//         id
-//         title
-//         description
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    allEntitiesJson(sort: {fields: Wikidata_label, order: ASC}) {
+      nodes {
+        Wikidata_label
+        CPF_Pages_ID
+        Description
+      }
+    }
+  }
+`
