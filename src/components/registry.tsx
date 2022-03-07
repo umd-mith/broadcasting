@@ -15,7 +15,6 @@ export default function Registry({ name, items }: any) {
   itemsByLetter.set("Other", [])
 
   for (const item of items) {
-    console.log(item)
     if (!item.name.match(new RegExp(searchQuery, "i"))) {
       continue
     }

@@ -1,6 +1,9 @@
 /** @type {import('gatsby').GatsbyConfig} */
 const path = require("path")
+const basePath = '/broadcasting'
+
 module.exports = {
+  pathPrefix: basePath,
   siteMetadata: {
     title: "Broadcasting A/V Data",
     description:
