@@ -1,0 +1,18 @@
+.cpf {
+  display: flex;
+}
+
+.cpf .image {
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.cpf .related {
+  display: flex;
+  align-content: flex-start;
+}
+
+.cpf .related div {
+  margin-right: 20px;
+}
+

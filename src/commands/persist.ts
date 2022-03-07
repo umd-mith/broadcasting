@@ -35,6 +35,36 @@ class Persistor {
     return this.getTable(this.base as Airtable.Base, "CPF Pages")
   }
 
+  get snacs(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "SNAC Records")
+  }
+
+  private _clone(obj: {[key: string]: any}) {
+    let copy: {[key: string]: any}
+    let i
+
+    if (typeof obj !== "object" || !obj) {
+      return obj
+    }
+
+    if (Object.prototype.toString.apply(obj) === "[object Array]") {
+      copy = []
+      const len = obj.length
+      for (i = 0; i < len; i++) {
+        copy[i] = this._clone(obj[i])
+      }
+      return copy
+    }
+
+    copy = {}
+    for (i in obj) {
+      if (obj.hasOwnProperty(i)) {
+        copy[i] = this._clone(obj[i])
+      }
+    }
+    return copy
+  }
+
   getTable(base: Airtable.Base, table: string): Promise<{[key: string]: any}> {
     return new Promise((resolve, reject) => {
       // FIX TYPING: Record<FieldSet> isn't enough.
@@ -63,7 +93,7 @@ class Persistor {
 
   // FIX TYPING
   writeJson(o: any, filename: string) {
-    const outdir = path.join(__dirname, "../../public/data/")
+    const outdir = path.join(__dirname, "../../static/data/")
     if (!fs.existsSync(outdir)) {
       fs.mkdirSync(outdir)
     }
@@ -75,7 +105,25 @@ class Persistor {
   async persistEntities() {
     try {
       const cfps = await this.cfps
-      const data = Object.keys(cfps).map((key: string) => cfps[key].fields)
+      const snacs = await this.snacs
+      const data = Object.keys(cfps).map((key: string) => {
+        const record: Airtable.Record<FieldSet> = cfps[key]
+        const fields = this._clone(record.fields)
+        // Perform expansions and other operations
+        for (const field in fields) {
+          switch (field) {
+            case "SNAC Record Link":
+              const id = record.get(field)?.toString()
+              if (id) {
+                fields["snac"] = snacs[id].fields
+              }
+              break
+            default:
+              // noop 
+          }
+        }
+        return fields
+      })
       this.writeJson(data, "entities.json")
     } catch (e: any) {
       throw new Error(e)
