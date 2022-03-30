@@ -27,7 +27,6 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-react-helmet", 
     "gatsby-plugin-sitemap", 
-    "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
@@ -36,19 +35,42 @@ module.exports = {
         "path": "./src/images/"
       },
       __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
     },
-    __key: "pages"
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: path.resolve(__dirname, "static/data/"),
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              linkImagesToOriginal: false
+            },
+          },
+        ]
+      }
     },
-    __key: "data"
-  },]
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/content/"
+      },
+      __key: "content"
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.resolve(__dirname, "static/data/"),
+      },
+      __key: "data"
+    },]
 };

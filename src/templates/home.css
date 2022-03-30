@@ -1,5 +1,9 @@
 @import "../components/variables.css";
 
+.hidden {
+  display: none;
+}
+
 .site-intro {
   font-size: 1.57rem;
   margin: 0 auto;
