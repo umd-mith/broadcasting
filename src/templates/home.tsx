@@ -37,7 +37,7 @@ const Home = ({pageContext}) => {
         <section className="site-intro">
           <h1 id="site-head">Broadcasting A/V Data</h1>
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Using linked data and archival records to enhance discoverability for broadcasting collections
           </p>
         </section>
         <div className="below-the-fold">
