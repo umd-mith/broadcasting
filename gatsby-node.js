@@ -43,11 +43,11 @@ async function cpf(createPage, graphql) {
   results = await graphql(`
     {
       allEntitiesJson(
-        filter: {CPF_Pages_ID: {ne: null}}
+        filter: {cpfPageID: {ne: null}}
       ) {
         nodes {
           id
-          CPF_Pages_ID
+          cpfPageID
         }
       }
   } 
@@ -56,7 +56,7 @@ async function cpf(createPage, graphql) {
 
   results.data.allEntitiesJson.nodes.forEach(entity => {
     createPage({
-      path: `/entity/${entity.CPF_Pages_ID}`,
+      path: `/entity/${entity.cpfPageID}`,
       component: require.resolve('./src/templates/entity.tsx'),
       context: {
         id: entity.id

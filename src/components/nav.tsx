@@ -38,6 +38,7 @@ const Nav = () => {
             </button> */}
             <nav className="main-nav">
                 <ul id="main-nav-menu" className={hidden ? 'menu': 'menu menu-open'}>
+                    <li><a href="https://unlockingtheairwaves.org/">&lt; Back to Airwaves</a></li>
                     {navData.site.siteMetadata.siteNav.map((link: NavLink) => (
                         <li key={link.name}>
                             <Link activeClassName="active" to={link.link}>{link.name}</Link>

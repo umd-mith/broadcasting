@@ -4,16 +4,26 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Registry from "../components/registry"
 
-// TODO ADD TYPES
-const Entities = ({ data }: any) => {
+import { EntityData } from "../templates/entity"
+
+interface Props {
+  data: {
+    allEntitiesJson: {
+      nodes: Partial<EntityData>[]
+    }
+  }
+}
+
+const Entities = ({ data }: Props) => {
 
   const maxLen = 250
   const items = data.allEntitiesJson.nodes.map((s: any) => {
-    const desc = s.Description || ''
+    const desc = s.description || ''
     return {
-      name: s.Wikidata_label,
-      url: `/entity/${s.CPF_Pages_ID}/`,
-      description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc
+      name: s.wikidataLabel,
+      url: `/entity/${s.cpfPageID}/`,
+      description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc,
+      collections: s.collections
     }
   })
 
@@ -35,7 +45,7 @@ const Entities = ({ data }: any) => {
           </article>
         </section>
         <section>
-         <Registry name="entity name" items={items} />
+          <Registry name="entity name" items={items} />
         </section>
       </div>
     </Layout>
@@ -46,11 +56,12 @@ export default Entities
 
 export const query = graphql`
   query {
-    allEntitiesJson(sort: {fields: Wikidata_label, order: ASC}) {
+    allEntitiesJson(sort: {fields: wikidataLabel, order: ASC}) {
       nodes {
-        Wikidata_label
-        CPF_Pages_ID
-        Description
+        wikidataLabel
+        cpfPageID
+        description
+        collections
       }
     }
   }

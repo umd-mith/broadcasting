@@ -4,9 +4,23 @@ import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
 
-// TYPES
-export default function Registry({ name, items }: any) {
+interface RegistryEntity {
+  name: string
+  url: string
+  description: string
+  collections: string[]
+}
+
+interface Props {
+  name: string
+  items: RegistryEntity[]
+}
+
+export default function Registry({ name, items }: Props) {
+  const collections = ["KUOM", "WHA", "NAEB"]
+
   const [searchQuery, setSearchQuery] = useState("")
+  const [activeCollections, setActiveCollections] = useState(collections)
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
   const itemsByLetter = new Map(letters.map(l => [l, []]))
@@ -15,16 +29,24 @@ export default function Registry({ name, items }: any) {
   itemsByLetter.set("Other", [])
 
   for (const item of items) {
+    // Apply search filter
     if (!item.name.match(new RegExp(searchQuery, "i"))) {
+      continue
+    }
+
+    // Apply collection filter
+    if (item.collections.filter(value => activeCollections.includes(value)).length === 0) {
       continue
     }
 
     const firstLetter = item.name[0].toUpperCase()
 
     if (itemsByLetter.has(firstLetter)) {
-      itemsByLetter.get(firstLetter).push(item)
+      const group = itemsByLetter.get(firstLetter) as RegistryEntity[]
+      group.push(item)
     } else {
-      itemsByLetter.get("Other").push(item)
+      const group = itemsByLetter.get("Other") as RegistryEntity[]
+      group.push(item)
     }
   }
 
@@ -32,8 +54,25 @@ export default function Registry({ name, items }: any) {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
+  const handleCollectionFilter = (coll: string) => {
+    if (activeCollections.indexOf(coll) > -1) {
+      setActiveCollections(activeCollections.filter(c => c !== coll))
+    } else {
+      setActiveCollections([...activeCollections, coll])
+    }
+  }
+
   return (
     <div className="registry">
+      <div className="registry-filter">
+        <span>Show enties from: </span>
+        {collections.map((c, i) => (<span>
+          <input type="checkbox" 
+            checked={activeCollections.indexOf(c) > -1}
+            onChange={() => handleCollectionFilter(c)}
+            key={`c${i}`} /> {c}
+        </span>))}
+      </div>
       <input
         className="registry-search"
         type="text"
@@ -49,8 +88,16 @@ export default function Registry({ name, items }: any) {
         ))}
       </div>
 
+      <div>
+        Entities shown: {Array.from(itemsByLetter.keys()).map(l => {
+          const ibls = itemsByLetter.get(l) as RegistryEntity[]
+          return ibls.length
+        }).reduce((a, b) => a + b, 0)} / {items.length}
+      </div>
+
       {Array.from(itemsByLetter.keys()).map(letter => {
-        const hasItems = itemsByLetter.get(letter).length > 0
+        const ibls = itemsByLetter.get(letter) as RegistryEntity[]
+        const hasItems = ibls.length > 0
         return (
           <section style={{ display: hasItems ? "block" : "none" }}>
             <div className="letter-section">
@@ -65,7 +112,7 @@ export default function Registry({ name, items }: any) {
             </div>
 
             <ul>
-              {itemsByLetter.get(letter).map(item => (
+              {ibls.map(item => (
                 <li>
                   <Link to={item.url}>{item.name}</Link>: {item.description}
                 </li>

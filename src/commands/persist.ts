@@ -39,6 +39,10 @@ class Persistor {
     return this.getTable(this.base as Airtable.Base, "SNAC Records")
   }
 
+  get bavd(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "BAVD CPF Authorities")
+  }
+
   private _clone(obj: {[key: string]: any}) {
     let copy: {[key: string]: any}
     let i
@@ -106,16 +110,32 @@ class Persistor {
     try {
       const cfps = await this.cfps
       const snacs = await this.snacs
+      const bavd = await this.bavd
+
+      const collections = ["KUOM", "WHA", "NAEB"]
+
       const data = Object.keys(cfps).map((key: string) => {
         const record: Airtable.Record<FieldSet> = cfps[key]
         const fields = this._clone(record.fields)
         // Perform expansions and other operations
         for (const field in fields) {
+          const id = record.get(field)?.toString()
           switch (field) {
-            case "SNAC Record Link":
-              const id = record.get(field)?.toString()
+            case "snacLink":
               if (id) {
                 fields["snac"] = snacs[id].fields
+              }
+              break
+            case "bavdCPF":
+              if (id) {
+                const inCollections: string[] = []
+                for (const c of collections) {
+                  const coll = bavd[id].get(`${c} CPF Authorities`)
+                  if (coll) {
+                    inCollections.push(c)
+                  }
+                }
+                fields["collections"] = inCollections
               }
               break
             default:

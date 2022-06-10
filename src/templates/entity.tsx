@@ -1,12 +1,44 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image"
 import "./entity.css"
 
 import Layout from "../components/layout"
 
-// ADD TYPING
-const Entity = ({ data }: any) => {
+export interface EntityData {
+  id: string
+  wikidataLabel: string
+  altLabels: string[]
+  birthDate: string
+  deathDate: string
+  birthPlace: string
+  deathPlace: string
+  description: string
+  employer: string[]
+  fieldOfWork: string[]
+  inceptionDate: string
+  cpfPageID: string
+  naraURL: string[]
+  occupation: string[]
+  ownedBy: string
+  viafURL: string[]
+  website: string
+  wikipediaURL: string[]
+  worldCatURL: string[]
+  snacURL: string[]
+  associatedPlaces: string[]
+  locURL: string[]
+  collections: string[]
+  image: IGatsbyImageData
+}
+
+interface Props {
+  data: {
+    entitiesJson: EntityData
+  }
+}
+
+const Entity = ({ data }: Props) => {
   const entity = data.entitiesJson
 
   let image = (
@@ -22,55 +54,55 @@ const Entity = ({ data }: any) => {
   if (entity.image) {
     const img = getImage(entity.image)
     if (img) {
-      image = <GatsbyImage image={img} alt={entity.name} />
+      image = <GatsbyImage image={img} alt={entity.wikidataLabel} />
     }
   }
 
-  if (entity.Description) {
-    const readMore = entity.Wikipedia_URL ?  <em>Read more at <a href={entity.Wikipedia_URL}>Wikipedia</a>...</em> : ''
+  if (entity.description) {
+    const readMore = entity.wikipediaURL ?  <em>Read more at <a href={entity.wikipediaURL[0]}>Wikipedia</a>...</em> : ''
     abstract = (
       <p>
-        {entity.Description}
+        {entity.description}
         {readMore}
       </p>
     )
   }
 
   let birth = null
-  if (entity.date_of_birth__P569_) {
-    const t = new Date(entity.date_of_birth__P569_)
+  if (entity.birthDate) {
+    const t = new Date(entity.birthDate)
     birth = `${t.getUTCFullYear()}`
-    if (entity.place_of_birth__P19_) {
-      birth += `, ${entity.place_of_birth__P19_}`
+    if (entity.birthPlace) {
+      birth += `, ${entity.birthPlace}`
     }
   }
 
   let death = null
-  if (entity.date_of_death__P570_) {
-    const t = new Date(entity.date_of_death__P570_)
+  if (entity.deathDate) {
+    const t = new Date(entity.deathDate)
     death = `${t.getUTCFullYear()}`
-    if (entity.place_of_death__P20_) {
-      death += `, ${entity.place_of_death__P20_}`
+    if (entity.deathPlace) {
+      death += `, ${entity.deathPlace}`
     }
   }
 
   let inception = null
-  if (entity.inception__P571_) {
-    const t = new Date(entity.inception__P571_)
+  if (entity.inceptionDate) {
+    const t = new Date(entity.inceptionDate)
     inception = `${t.getUTCFullYear()}`
   }
 
   return (
-    <Layout title={entity.Wikidata_label}>
+    <Layout title={entity.wikidataLabel}>
       <div className="page-cpf">
         <section>
           <h1>
-            {entity.Wikidata_label}
+            {entity.wikidataLabel}
           </h1>
           <div className="cpf">
             <div className="image">{image}</div>
             <div className="bio">
-              <h2>{entity.Wikidata_label}</h2>
+              <h2>{entity.wikidataLabel}</h2>
               {abstract}
               <p>
                 <Field label="Born" value={birth} />
@@ -78,25 +110,25 @@ const Entity = ({ data }: any) => {
                 <Field label="Inception" value={inception} />
               </p>
               <p>
-                <Field label="Alternate Names" value={entity.Wikidata_altLabels} />
-                <Field label="Occupation(s)" value={entity.occupation__P106_} />
+                <Field label="Alternate Names" value={entity.altLabels} />
+                <Field label="Occupation(s)" value={entity.occupation} />
                 <Field
                   label="Field(s) of Work"
-                  value={entity.field_of_work__P101_}
+                  value={entity.fieldOfWork}
                 />
-                <Field label="Employer(s)" value={entity.employer__P108_} />
+                <Field label="Employer(s)" value={entity.employer} />
                 {/* <Field label="Broadcast to" value={cpf.cpfPage.broadastTo} /> */}
-                <Field label="Owned by" value={entity.owned_by__P127_} />
-                <Field label="Website" value={entity.official_website__P856_} />
-                <Field label="Associated Place(s)" value={entity.Associated_Places} />
+                <Field label="Owned by" value={entity.ownedBy} />
+                <Field label="Website" value={entity.website} />
+                <Field label="Associated Place(s)" value={entity.associatedPlaces} />
                 {/* <SubjectField subjects={cpf.cpfPage.subjects} /> */}
               </p>
               <p>
-                <OptionalLink text="Social Networks and Archival Context (SNAC) Record" url={entity.SNAC_Ark_URLs} />
-                <OptionalLink text="Library of Congress Name Authority File (LCNAF)" url={entity.LOC_URLs} />
-                <OptionalLink text="Virtual International Authority File (VIAF)" url={entity.VIAF_URLs} />
-                <OptionalLink text="WorldCat Record" url={entity.WorldCat_URLs} />
-                <OptionalLink text="National Archives and Records Administration (NARA)" url={entity.NARA_URLs} />
+                <OptionalLink text="Social Networks and Archival Context (SNAC) Record" url={entity.snacURL} />
+                <OptionalLink text="Library of Congress Name Authority File (LCNAF)" url={entity.locURL} />
+                <OptionalLink text="Virtual International Authority File (VIAF)" url={entity.viafURL} />
+                <OptionalLink text="WorldCat Record" url={entity.worldCatURL} />
+                <OptionalLink text="National Archives and Records Administration (NARA)" url={entity.naraURL} />
               </p>
               {/* <div>
                 {relatedEpisodes}
@@ -261,27 +293,28 @@ export const query = graphql`
   query($id: String!) {
     entitiesJson(id: { eq: $id }) {
       id
-      Wikidata_label
-      Wikidata_altLabels
-      date_of_birth__P569_
-      date_of_death__P570_
-      place_of_birth__P19_
-      place_of_death__P20_
-      Description
-      employer__P108_
-      field_of_work__P101_
-      inception__P571_
-      CPF_Pages_ID
-      NARA_URLs
-      occupation__P106_
-      owned_by__P127_
-      VIAF_URLs
-      official_website__P856_
-      Wikipedia_URL
-      WorldCat_URLs
-      SNAC_Ark_URLs
-      Associated_Places
-      LOC_URLs
+      wikidataLabel
+      altLabels
+      birthDate
+      deathDate
+      birthPlace
+      deathPlace
+      description
+      employer
+      fieldOfWork
+      inceptionDate
+      cpfPageID
+      naraURL
+      occupation
+      ownedBy
+      viafURL
+      website
+      wikipediaURL
+      worldCatURL
+      snacURL
+      associatedPlaces
+      locURL
+      collections
     }
   }    
 `
