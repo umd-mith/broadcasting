@@ -13,7 +13,7 @@ module.exports = {
     twitter: `https://twitter.com/umd_mith`,
     siteNav: [
       {
-        name: "Home",
+        name: "About",
         link: "/",
       },
       {

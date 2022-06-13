@@ -17,7 +17,7 @@
 }
 
 .registry-search {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid #59680c;
   width: 100%;
   padding: 8px;
@@ -46,4 +46,17 @@
 
 .registry-filter {
   padding-bottom: 1em;
+}
+
+.registry-coll-chip {
+  background-color: #59680c;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 5px 0 5px;
+  padding: 2px;
+}
+
+.registry ul li {
+  margin-bottom: 1em;
 }

@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
+import { time } from "console"
 
 interface RegistryEntity {
   name: string
@@ -17,10 +18,11 @@ interface Props {
 }
 
 export default function Registry({ name, items }: Props) {
-  const collections = ["KUOM", "WHA", "NAEB"]
+  const collections = ["NAEB", "NFCB", "WHA", "KUOM"]
 
   const [searchQuery, setSearchQuery] = useState("")
   const [activeCollections, setActiveCollections] = useState(collections)
+  const [singleCollection, setSingleCollection] = useState(true)
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
   const itemsByLetter = new Map(letters.map(l => [l, []]))
@@ -33,6 +35,11 @@ export default function Registry({ name, items }: Props) {
     if (!item.name.match(new RegExp(searchQuery, "i"))) {
       continue
     }
+
+    // Apply single collection filter
+    if (!singleCollection && item.collections.length < 2) {
+      continue
+    } 
 
     // Apply collection filter
     if (item.collections.filter(value => activeCollections.includes(value)).length === 0) {
@@ -62,6 +69,10 @@ export default function Registry({ name, items }: Props) {
     }
   }
 
+  const handleSingleCollectionFilter = () => {
+    setSingleCollection(!singleCollection)
+  }
+
   return (
     <div className="registry">
       <div className="registry-filter">
@@ -72,6 +83,11 @@ export default function Registry({ name, items }: Props) {
             onChange={() => handleCollectionFilter(c)}
             key={`c${i}`} /> {c}
         </span>))}
+        <span>
+        <input type="checkbox" 
+            checked={singleCollection}
+            onChange={() => handleSingleCollectionFilter()} /> Single Collection Only
+        </span>
       </div>
       <input
         className="registry-search"
@@ -114,7 +130,9 @@ export default function Registry({ name, items }: Props) {
             <ul>
               {ibls.map(item => (
                 <li>
-                  <Link to={item.url}>{item.name}</Link>: {item.description}
+                  <Link to={item.url}>{item.name}</Link>:
+                  {item.collections.map(c => <span className="registry-coll-chip">{c}</span>)}
+                  {item.description}
                 </li>
               ))}
             </ul>

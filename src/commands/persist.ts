@@ -112,7 +112,7 @@ class Persistor {
       const snacs = await this.snacs
       const bavd = await this.bavd
 
-      const collections = ["KUOM", "WHA", "NAEB"]
+      const collections = ["NAEB", "NFCB", "WHA", "KUOM"]
 
       const data = Object.keys(cfps).map((key: string) => {
         const record: Airtable.Record<FieldSet> = cfps[key]
