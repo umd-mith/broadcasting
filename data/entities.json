@@ -54,8 +54,9 @@
       "Washington, D. C."
     ],
     "collections": [
-      "KUOM",
-      "NAEB"
+      "NAEB",
+      "NFCB",
+      "KUOM"
     ],
     "snac": {
       "snacID": "83425490",
@@ -186,8 +187,8 @@
       "United States"
     ],
     "collections": [
-      "WHA",
-      "NAEB"
+      "NAEB",
+      "WHA"
     ],
     "snac": {
       "snacID": "53212838",
@@ -278,8 +279,8 @@
       "https://id.loc.gov/authorities/names/n79066408"
     ],
     "collections": [
-      "WHA",
-      "NAEB"
+      "NAEB",
+      "WHA"
     ]
   },
   {
@@ -422,8 +423,8 @@
       "https://id.loc.gov/authorities/names/n80098537"
     ],
     "collections": [
-      "KUOM",
-      "NAEB"
+      "NAEB",
+      "KUOM"
     ],
     "snac": {
       "snacID": "52550629",
@@ -535,8 +536,8 @@
       "Minneapolis (Minn.)"
     ],
     "collections": [
-      "KUOM",
-      "NAEB"
+      "NAEB",
+      "KUOM"
     ],
     "snac": {
       "snacID": "52986448",
@@ -739,8 +740,8 @@
       "Madison"
     ],
     "collections": [
-      "WHA",
-      "NAEB"
+      "NAEB",
+      "WHA"
     ],
     "snac": {
       "snacID": "13198872",
@@ -825,8 +826,8 @@
       "Philadelphia"
     ],
     "collections": [
-      "KUOM",
-      "NAEB"
+      "NAEB",
+      "KUOM"
     ],
     "snac": {
       "snacID": "22739560",
@@ -955,8 +956,8 @@
       "United States"
     ],
     "collections": [
-      "WHA",
-      "NAEB"
+      "NAEB",
+      "WHA"
     ],
     "snac": {
       "snacID": "64359696",
