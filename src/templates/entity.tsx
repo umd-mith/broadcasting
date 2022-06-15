@@ -14,6 +14,7 @@ export interface EntityData {
   birthPlace: string
   deathPlace: string
   wikidataDescription: string
+  description: string
   employer: string[]
   fieldOfWork: string[]
   inceptionDate: string
@@ -21,7 +22,7 @@ export interface EntityData {
   naraURL: string[]
   occupation: string[]
   viafURL: string[]
-  wikipediaURL: string[]
+  wikipediaURL: string
   worldCatURL: string[]
   snacURL: string[]
   associatedPlaces: string[]
@@ -56,11 +57,11 @@ const Entity = ({ data }: Props) => {
     }
   }
 
-  if (entity.wikidataDescription) {
-    const readMore = entity.wikipediaURL ?  <em>Read more at <a href={entity.wikipediaURL[0]}>Wikipedia</a>...</em> : ''
+  if (entity.description) {
+    const readMore = entity.wikipediaURL ?  <em>Read more at <a href={entity.wikipediaURL}>Wikipedia</a>...</em> : ''
     abstract = (
       <p>
-        {entity.wikidataDescription}
+        {entity.description}
         {readMore}
       </p>
     )
@@ -297,6 +298,7 @@ export const query = graphql`
       deathDate
       birthPlace
       deathPlace
+      description
       wikidataDescription
       employer
       fieldOfWork
