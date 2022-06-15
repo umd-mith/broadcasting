@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q27491453",
+    "result": {"data":{"entitiesJson":{"id":"bdb1c0f4-2b23-5bc0-a40c-32676c7fa8cd","wikidataLabel":"Philip Edward Mosely","altLabels":["Philip E. Mosely"],"birthDate":"1905","deathDate":"1972","birthPlace":null,"deathPlace":null,"wikidataDescription":"American historian and sociologist","employer":["Columbia University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q27491453","naraURL":["https://catalog.archives.gov/id/10573172"],"occupation":["sociologist","political scientist","historian"],"viafURL":["https://viaf.org/viaf/19818474"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n92058068"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n92058068"],"collections":["NAEB"]}},"pageContext":{"id":"bdb1c0f4-2b23-5bc0-a40c-32676c7fa8cd"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

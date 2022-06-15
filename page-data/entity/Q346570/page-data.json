@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q346570",
+    "result": {"data":{"entitiesJson":{"id":"e43df3c2-e14b-50cd-971b-7c032b5bb480","wikidataLabel":"Rudy Perpich","altLabels":null,"birthDate":"1928","deathDate":"1995","birthPlace":"Hibbing","deathPlace":"Minnetonka","wikidataDescription":"American politician (1928-1995)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q346570","naraURL":null,"occupation":["politician","dentist"],"viafURL":["https://viaf.org/viaf/23468902"],"wikipediaURL":"https://en.wikipedia.org/wiki/Rudy_Perpich","worldCatURL":["https://worldcat.org/identities/lccn-n81112119"],"snacURL":["http://n2t.net/ark:/99166/w6vh5qf5"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81112119"],"collections":["KUOM"]}},"pageContext":{"id":"e43df3c2-e14b-50cd-971b-7c032b5bb480"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

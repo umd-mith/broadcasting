@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6390191",
+    "result": {"data":{"entitiesJson":{"id":"b404c6ec-600c-56d1-8552-a490b46ac809","wikidataLabel":"Kenneth Harwood","altLabels":null,"birthDate":"1924","deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American information theorist","employer":["University of Houston","University of Southern California"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6390191","naraURL":null,"occupation":["computer scientist"],"viafURL":["https://viaf.org/viaf/91686115"],"wikipediaURL":"https://en.wikipedia.org/wiki/Kenneth_Harwood","worldCatURL":["https://worldcat.org/identities/viaf-91686115"],"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"b404c6ec-600c-56d1-8552-a490b46ac809"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

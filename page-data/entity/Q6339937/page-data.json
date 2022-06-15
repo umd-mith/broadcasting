@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6339937",
+    "result": {"data":{"entitiesJson":{"id":"922ea4f9-2dae-51d4-84a7-bc139e3443c6","wikidataLabel":"KVCR","altLabels":["Empire KVCR"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public radio station in San Bernardino, California, United States","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6339937","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/146682249"],"wikipediaURL":"https://en.wikipedia.org/wiki/KVCR_(FM)","worldCatURL":["https://worldcat.org/identities/lccn-n88028158"],"snacURL":null,"associatedPlaces":["San Bernardino","California","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n88028158"],"collections":["NAEB"]}},"pageContext":{"id":"922ea4f9-2dae-51d4-84a7-bc139e3443c6"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

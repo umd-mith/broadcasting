@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q380550",
+    "result": {"data":{"entitiesJson":{"id":"f6ef7b97-f72f-5e88-afc4-21e1509af31d","wikidataLabel":"Eugene McCarthy","altLabels":["Eugene Joseph McCarthy","\"Eugene Joseph \"Gene\" McCarthy\"","Gene McCarthy"],"birthDate":"1916","deathDate":"2005","birthPlace":"Watkins","deathPlace":"Woodville","wikidataDescription":"American politician (1916–2005)","employer":["St. John's University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q380550","naraURL":["https://catalog.archives.gov/id/10582500","https://catalog.archives.gov/id/10575369"],"occupation":["Military Intelligence Division","politician","teacher"],"viafURL":["https://viaf.org/viaf/108975484"],"wikipediaURL":"https://en.wikipedia.org/wiki/Eugene_McCarthy","worldCatURL":["https://worldcat.org/identities/lccn-n80002307"],"snacURL":["http://n2t.net/ark:/99166/w6154gks"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80002307"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"f6ef7b97-f72f-5e88-afc4-21e1509af31d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

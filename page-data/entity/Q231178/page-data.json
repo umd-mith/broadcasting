@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q231178",
+    "result": {"data":{"entitiesJson":{"id":"439ba637-184f-53a7-a66c-0040feac92db","wikidataLabel":"Gloria Steinem","altLabels":["Gloria Marie Steinem"],"birthDate":"1934","deathDate":null,"birthPlace":"Toledo","deathPlace":null,"wikidataDescription":"American feminist and journalist","employer":["Chayanne"],"fieldOfWork":["essay"],"inceptionDate":null,"cpfPageID":"Q231178","naraURL":null,"occupation":["feminist","activist","essayist","lecturer","journalist","editor","human rights activist","reporter","writer","actor"],"viafURL":["https://viaf.org/viaf/79036189"],"wikipediaURL":"https://en.wikipedia.org/wiki/Gloria_Steinem","worldCatURL":["https://worldcat.org/identities/lccn-n83074143"],"snacURL":["http://n2t.net/ark:/99166/w6kb62d1"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83074143"],"collections":["NFCB","KUOM"]}},"pageContext":{"id":"439ba637-184f-53a7-a66c-0040feac92db"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

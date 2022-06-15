@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q93349",
+    "result": {"data":{"entitiesJson":{"id":"698c7ceb-c239-59eb-b56d-7da20fae1492","wikidataLabel":"Bessie Smith","altLabels":["The Empress of the Blues","Empress of the Blues"],"birthDate":"1894","deathDate":"1937","birthPlace":"Chattanooga","deathPlace":"Clarksdale","wikidataDescription":"American blues singer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q93349","naraURL":null,"occupation":["dancer","street artist","mime artist","musician","singer"],"viafURL":["https://viaf.org/viaf/24788472"],"wikipediaURL":"https://en.wikipedia.org/wiki/Bessie_Smith","worldCatURL":["https://worldcat.org/identities/lccn-n83071529"],"snacURL":["http://n2t.net/ark:/99166/w6z03rhg"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83071529"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"698c7ceb-c239-59eb-b56d-7da20fae1492"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

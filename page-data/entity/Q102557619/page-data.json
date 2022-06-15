@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q102557619",
+    "result": {"data":{"entitiesJson":{"id":"819459f9-3d04-5209-898c-6146d78abdaf","wikidataLabel":"Theodore Joseph Morgan","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Ph.D. Harvard University 1941","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q102557619","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["WHA"]}},"pageContext":{"id":"819459f9-3d04-5209-898c-6146d78abdaf"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

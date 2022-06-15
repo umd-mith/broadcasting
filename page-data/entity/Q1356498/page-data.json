@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1356498",
+    "result": {"data":{"entitiesJson":{"id":"914a054f-08b0-5d8d-8b88-eb95d58669f1","wikidataLabel":"Harry Harlow","altLabels":["H. F. Harlow","Harry Frederick Harlow","Harry F. Harlow"],"birthDate":"1905","deathDate":"1981","birthPlace":"Fairfield","deathPlace":"Tucson","wikidataDescription":"American psychologist","employer":["University of Wisconsin–Madison"],"fieldOfWork":["developmental psychology"],"inceptionDate":null,"cpfPageID":"Q1356498","naraURL":null,"occupation":["university teacher","psychologist"],"viafURL":["https://viaf.org/viaf/77578961"],"wikipediaURL":"https://en.wikipedia.org/wiki/Harry_Harlow","worldCatURL":["https://worldcat.org/identities/lccn-n78093733"],"snacURL":["http://n2t.net/ark:/99166/w6s75qj4"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n78093733"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"914a054f-08b0-5d8d-8b88-eb95d58669f1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q2666555",
+    "result": {"data":{"entitiesJson":{"id":"84142022-f2c3-5da3-97bd-f0b7c7225f47","wikidataLabel":"Percy Sutton","altLabels":["Percy Ellis Sutton"],"birthDate":"1920","deathDate":"2009","birthPlace":"San Antonio","deathPlace":"New York City","wikidataDescription":"American politician in New York (1920-2009)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q2666555","naraURL":null,"occupation":["aircraft pilot","politician","lawyer"],"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/Percy_Sutton","worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"84142022-f2c3-5da3-97bd-f0b7c7225f47"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

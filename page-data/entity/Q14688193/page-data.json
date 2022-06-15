@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q14688193",
+    "result": {"data":{"entitiesJson":{"id":"2e84f318-7532-522b-99f7-404a6b1eb223","wikidataLabel":"WMAQ","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"former clear-channel radio station in Chicago","employer":null,"fieldOfWork":null,"inceptionDate":"1922","cpfPageID":"Q14688193","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/152714014"],"wikipediaURL":"https://en.wikipedia.org/wiki/WMAQ_(AM)","worldCatURL":["https://worldcat.org/identities/lccn-no00010880"],"snacURL":null,"associatedPlaces":["Illinois","United States of America"],"locURL":["https://id.loc.gov/authorities/names/no00010880"],"collections":["NAEB"]}},"pageContext":{"id":"2e84f318-7532-522b-99f7-404a6b1eb223"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

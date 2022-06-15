@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q729525",
+    "result": {"data":{"entitiesJson":{"id":"ce2c7887-98e8-53ec-9e76-e8095393783e","wikidataLabel":"Howard P. Becker","altLabels":["Howard Paul Becker"],"birthDate":"1899","deathDate":"1960","birthPlace":"New York City","deathPlace":"New York City","wikidataDescription":"American sociologist","employer":["University of Wisconsin–Madison"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q729525","naraURL":null,"occupation":["sociologist","university teacher"],"viafURL":["https://viaf.org/viaf/107031050"],"wikipediaURL":"https://en.wikipedia.org/wiki/Howard_P._Becker","worldCatURL":["https://worldcat.org/identities/lccn-n50006924"],"snacURL":["http://n2t.net/ark:/99166/w6028rrh"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50006924"],"collections":["WHA"]}},"pageContext":{"id":"ce2c7887-98e8-53ec-9e76-e8095393783e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

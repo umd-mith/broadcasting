@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621641",
+    "result": {"data":{"entitiesJson":{"id":"99c33ae9-4f5f-51cd-9289-33b49ae57d20","wikidataLabel":"James A. Fellows","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621641","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"99c33ae9-4f5f-51cd-9289-33b49ae57d20"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q88791225",
+    "result": {"data":{"entitiesJson":{"id":"1485cc20-9f96-583b-9de2-4b1d3c948254","wikidataLabel":"Louis Schneider","altLabels":null,"birthDate":"1915","deathDate":"1979","birthPlace":"Vienna","deathPlace":"Austin","wikidataDescription":"1915-","employer":null,"fieldOfWork":["sociology"],"inceptionDate":null,"cpfPageID":"Q88791225","naraURL":null,"occupation":["sociologist"],"viafURL":["https://viaf.org/viaf/108377623"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n50006714"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50006714"],"collections":["NAEB"]}},"pageContext":{"id":"1485cc20-9f96-583b-9de2-4b1d3c948254"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7344673",
+    "result": {"data":{"entitiesJson":{"id":"fbaa9613-d59f-5736-826b-71e95c0247f1","wikidataLabel":"Robert Garfias","altLabels":null,"birthDate":"1932","deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American ethnomusicoloigst","employer":["University of California, Irvine"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7344673","naraURL":null,"occupation":["ethnomusicologist","musicologist"],"viafURL":["https://viaf.org/viaf/111230459"],"wikipediaURL":"https://en.wikipedia.org/wiki/Robert_Garfias","worldCatURL":["https://worldcat.org/identities/viaf-227090401"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n2005022750"],"collections":["NFCB"]}},"pageContext":{"id":"fbaa9613-d59f-5736-826b-71e95c0247f1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

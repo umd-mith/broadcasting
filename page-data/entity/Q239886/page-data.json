@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q239886",
+    "result": {"data":{"entitiesJson":{"id":"cfd5fb78-82a7-54ca-91f5-12f4f0b3f038","wikidataLabel":"Licia Albanese","altLabels":null,"birthDate":"1909","deathDate":"2014","birthPlace":"Bari","deathPlace":"New York City","wikidataDescription":"Italian-born American operatic soprano","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q239886","naraURL":null,"occupation":["opera singer","singer"],"viafURL":["https://viaf.org/viaf/50380866"],"wikipediaURL":"https://en.wikipedia.org/wiki/Licia_Albanese","worldCatURL":["https://worldcat.org/identities/lccn-n83155687"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83155687"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"cfd5fb78-82a7-54ca-91f5-12f4f0b3f038"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

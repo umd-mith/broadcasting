@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q486269",
+    "result": {"data":{"entitiesJson":{"id":"0c98783e-0a53-5099-99ab-96020d70e5a2","wikidataLabel":"Kodak","altLabels":["Eastman Kodak Company","Kodak Pixpro","Eastman Kodak Company of New Jersey","Eastman Kodak"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American company","employer":null,"fieldOfWork":null,"inceptionDate":"1892","cpfPageID":"Q486269","naraURL":null,"occupation":["photographer"],"viafURL":["https://viaf.org/viaf/156056348"],"wikipediaURL":"https://en.wikipedia.org/wiki/Kodak","worldCatURL":["https://worldcat.org/identities/lccn-n80126274"],"snacURL":["http://n2t.net/ark:/99166/w6c648zp"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n80126274"],"collections":["NAEB"]}},"pageContext":{"id":"0c98783e-0a53-5099-99ab-96020d70e5a2"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

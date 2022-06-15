@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1251336",
+    "result": {"data":{"entitiesJson":{"id":"16ef83f9-6e66-5a7f-8c7f-2fc2b8b83520","wikidataLabel":"Norman Corwin","altLabels":["Norman Lewis Corwin"],"birthDate":"1910","deathDate":"2011","birthPlace":"Boston","deathPlace":"Los Angeles","wikidataDescription":"American radio producer and screenwriter (1910-2011)","employer":null,"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q1251336","naraURL":null,"occupation":["film producer","radio personality","journalist","playwright","actor","screenwriter"],"viafURL":["https://viaf.org/viaf/113354768"],"wikipediaURL":"https://en.wikipedia.org/wiki/Norman_Corwin","worldCatURL":["https://worldcat.org/identities/lccn-n50018135"],"snacURL":["http://n2t.net/ark:/99166/w6sn0m4r"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50018135"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"16ef83f9-6e66-5a7f-8c7f-2fc2b8b83520"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

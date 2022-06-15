@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q81438",
+    "result": {"data":{"entitiesJson":{"id":"fa64919b-7432-5ee3-a72e-bbc3dd4fbe55","wikidataLabel":"Walt Whitman","altLabels":["Walter Whitman"],"birthDate":"1819","deathDate":"1892","birthPlace":"West Hills","deathPlace":"Camden","wikidataDescription":"American poet, essayist and journalist","employer":["Brooklyn Times-Union","Brooklyn Eagle"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q81438","naraURL":["https://catalog.archives.gov/id/10581715"],"occupation":["essayist","novelist","journalist","editor","nurse","poet","writer"],"viafURL":["https://viaf.org/viaf/2478331"],"wikipediaURL":"https://en.wikipedia.org/wiki/Walt_Whitman","worldCatURL":["https://worldcat.org/identities/lccn-n79081476"],"snacURL":["http://n2t.net/ark:/99166/w6dz08rc"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79081476"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"fa64919b-7432-5ee3-a72e-bbc3dd4fbe55"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

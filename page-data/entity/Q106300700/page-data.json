@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q106300700",
+    "result": {"data":{"entitiesJson":{"id":"a968b6f0-1aca-5992-8e0f-75a371c01d9d","wikidataLabel":"Raymond D. Hurlbert","altLabels":null,"birthDate":"1902","deathDate":"1996","birthPlace":"Pittsburgh","deathPlace":null,"wikidataDescription":"Alabama public broadcaster","employer":["Birmingham City Schools"],"fieldOfWork":["public broadcasting"],"inceptionDate":null,"cpfPageID":"Q106300700","naraURL":null,"occupation":["broadcaster"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w64c3rkq"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a968b6f0-1aca-5992-8e0f-75a371c01d9d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

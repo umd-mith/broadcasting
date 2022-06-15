@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6972589",
+    "result": {"data":{"entitiesJson":{"id":"6101c252-3d98-5ec8-9d44-50d9c86154ac","wikidataLabel":"National Federation of Community Broadcasters","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American community radio organization","employer":null,"fieldOfWork":["community radio"],"inceptionDate":"1975","cpfPageID":"Q6972589","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/National_Federation_of_Community_Broadcasters","worldCatURL":null,"snacURL":null,"associatedPlaces":["United States of America"],"locURL":null,"collections":["NFCB"]}},"pageContext":{"id":"6101c252-3d98-5ec8-9d44-50d9c86154ac"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

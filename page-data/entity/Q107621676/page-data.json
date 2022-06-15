@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621676",
+    "result": {"data":{"entitiesJson":{"id":"e4f2ae23-3f43-5f1f-b006-d36df08cfa11","wikidataLabel":"Karl Schmidt","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at WHA in Madison, Wisconsin","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621676","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"e4f2ae23-3f43-5f1f-b006-d36df08cfa11"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

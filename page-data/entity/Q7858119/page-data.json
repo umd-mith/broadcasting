@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7858119",
+    "result": {"data":{"entitiesJson":{"id":"ecfcfa07-640f-5191-bb40-788bd47e7572","wikidataLabel":"Twin Cities PBS","altLabels":["Twin City Area Educational Television","Twin Cities Public Television","KTCI-TV","KTCA-TV","TPT"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"PBS television affiliate in the Twin Cities region of Minnesota","employer":null,"fieldOfWork":null,"inceptionDate":"1957","cpfPageID":"Q7858119","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/140692440"],"wikipediaURL":"https://en.wikipedia.org/wiki/Twin_Cities_PBS","worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6w145kf"],"associatedPlaces":["Saint Paul","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n84000812"],"collections":["KUOM"]}},"pageContext":{"id":"ecfcfa07-640f-5191-bb40-788bd47e7572"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

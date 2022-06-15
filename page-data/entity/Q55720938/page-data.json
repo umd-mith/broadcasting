@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q55720938",
+    "result": {"data":{"entitiesJson":{"id":"1f80ce7d-7fd6-5691-a67c-55d3b0b4d048","wikidataLabel":"Erwin Dain Canham","altLabels":["Erwin D. Canham","Erwin Canham"],"birthDate":"1904","deathDate":"1982","birthPlace":"Auburn","deathPlace":"Hagåtña","wikidataDescription":"American journalist and author","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q55720938","naraURL":["https://catalog.archives.gov/id/10600164"],"occupation":["journalist","editor","writer"],"viafURL":["https://viaf.org/viaf/74304660"],"wikipediaURL":"https://en.wikipedia.org/wiki/Erwin_Canham","worldCatURL":["https://worldcat.org/identities/lccn-no00038805"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no00038805"],"collections":["NAEB"]}},"pageContext":{"id":"1f80ce7d-7fd6-5691-a67c-55d3b0b4d048"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

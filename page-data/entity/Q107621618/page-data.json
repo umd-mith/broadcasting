@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621618",
+    "result": {"data":{"entitiesJson":{"id":"40c5303b-bf1b-51dd-9023-37b39857a33b","wikidataLabel":"Fund for Adult Education","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"subsidiary foundation of the Ford Foundation","employer":null,"fieldOfWork":null,"inceptionDate":"1951","cpfPageID":"Q107621618","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/149920363"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n83029562"],"snacURL":["http://n2t.net/ark:/99166/w6382349"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n83029562"],"collections":["NAEB"]}},"pageContext":{"id":"40c5303b-bf1b-51dd-9023-37b39857a33b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

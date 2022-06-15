@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7946989",
+    "result": {"data":{"entitiesJson":{"id":"ace25a84-090a-52e4-a99e-60245ae09ac2","wikidataLabel":"WBBF","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio station in Buffalo, New York","employer":null,"fieldOfWork":null,"inceptionDate":"1947","cpfPageID":"Q7946989","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/WBBF","worldCatURL":null,"snacURL":null,"associatedPlaces":["Buffalo","New York","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ace25a84-090a-52e4-a99e-60245ae09ac2"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

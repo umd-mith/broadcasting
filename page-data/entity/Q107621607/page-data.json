@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621607",
+    "result": {"data":{"entitiesJson":{"id":"a2857065-a70f-5844-97fd-883ce6a0f46d","wikidataLabel":"Richard S. Burdick","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621607","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a2857065-a70f-5844-97fd-883ce6a0f46d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

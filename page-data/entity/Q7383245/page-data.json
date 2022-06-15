@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7383245",
+    "result": {"data":{"entitiesJson":{"id":"09200bc2-3c65-5253-804f-e7605895cf85","wikidataLabel":"Ruth Underhill","altLabels":["Ruth Murray Underhill"],"birthDate":"1883","deathDate":"1984","birthPlace":"Ossining","deathPlace":"Denver","wikidataDescription":"American anthropologist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7383245","naraURL":null,"occupation":["novelist","anthropologist"],"viafURL":["https://viaf.org/viaf/32151427"],"wikipediaURL":"https://en.wikipedia.org/wiki/Ruth_Underhill","worldCatURL":["https://worldcat.org/identities/lccn-n79018172"],"snacURL":["http://n2t.net/ark:/99166/w6zk5zxz"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79018172"],"collections":["NAEB"]}},"pageContext":{"id":"09200bc2-3c65-5253-804f-e7605895cf85"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

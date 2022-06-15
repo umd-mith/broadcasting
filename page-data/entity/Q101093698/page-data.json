@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q101093698",
+    "result": {"data":{"entitiesJson":{"id":"a717c130-fd50-57a9-bc48-23e171c289ad","wikidataLabel":"George E. Probst","altLabels":null,"birthDate":"1917","deathDate":"1986","birthPlace":null,"deathPlace":null,"wikidataDescription":"American broadcasting executive and producer","employer":["Office of Education","GBH 89.7","National Educational Television","University of Chicago"],"fieldOfWork":["broadcasting","education"],"inceptionDate":null,"cpfPageID":"Q101093698","naraURL":null,"occupation":["broadcasting executive","consultant","television producer"],"viafURL":["https://viaf.org/viaf/160305134"],"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2007108167"],"collections":["NAEB"]}},"pageContext":{"id":"a717c130-fd50-57a9-bc48-23e171c289ad"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621682",
+    "result": {"data":{"entitiesJson":{"id":"c6b515d0-fe39-5d95-b1d2-81f6ecf3ead1","wikidataLabel":"Walter Whitaker","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621682","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"c6b515d0-fe39-5d95-b1d2-81f6ecf3ead1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

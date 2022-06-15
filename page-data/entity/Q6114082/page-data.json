@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6114082",
+    "result": {"data":{"entitiesJson":{"id":"06b58db0-082c-5f90-96f0-b57ab9dd08b9","wikidataLabel":"Jack Meltzer","altLabels":null,"birthDate":"1921","deathDate":"2010","birthPlace":null,"deathPlace":null,"wikidataDescription":"American urban renewal advocate (1921-2010)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6114082","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/Jack_Meltzer","worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","KUOM"]}},"pageContext":{"id":"06b58db0-082c-5f90-96f0-b57ab9dd08b9"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

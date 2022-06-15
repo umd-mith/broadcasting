@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q239533",
+    "result": {"data":{"entitiesJson":{"id":"f87001a1-45c3-564a-9fc9-8b0d83281a8b","wikidataLabel":"Ma Rainey","altLabels":["Gertrude Rainey","Gertrude Pridgett Rainey","Gertrude Pridgett","\"Gertrude \"Ma\" Rainey\""],"birthDate":"1886","deathDate":"1939","birthPlace":"Alabama","deathPlace":"Columbus","wikidataDescription":"African-American blues singer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q239533","naraURL":null,"occupation":["street artist","songwriter","musician","singer"],"viafURL":["https://viaf.org/viaf/54333570"],"wikipediaURL":"https://en.wikipedia.org/wiki/Ma_Rainey","worldCatURL":["https://worldcat.org/identities/lccn-n50076486"],"snacURL":["http://n2t.net/ark:/99166/w6mp5tzp"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50076486"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"f87001a1-45c3-564a-9fc9-8b0d83281a8b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

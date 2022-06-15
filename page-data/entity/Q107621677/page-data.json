@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621677",
+    "result": {"data":{"entitiesJson":{"id":"a173d07f-c954-521b-8523-ff04a1936195","wikidataLabel":"Roy Flynn","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster at Florida State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621677","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a173d07f-c954-521b-8523-ff04a1936195"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

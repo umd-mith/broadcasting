@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621691",
+    "result": {"data":{"entitiesJson":{"id":"5017ce5e-109c-51a7-a2bd-1c28a2cf9565","wikidataLabel":"Anton Luckenbach","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621691","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"5017ce5e-109c-51a7-a2bd-1c28a2cf9565"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

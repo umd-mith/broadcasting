@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1356552",
+    "result": {"data":{"entitiesJson":{"id":"6f01b23d-ae20-596f-9f4a-a4822ad40648","wikidataLabel":"Sixten Ehrling","altLabels":null,"birthDate":"1918","deathDate":"2005","birthPlace":"Malmö","deathPlace":"New York City","wikidataDescription":"Swedish conductor","employer":["Detroit Symphony Orchestra","Juilliard School","Royal Swedish Opera"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q1356552","naraURL":null,"occupation":["music pedagogue","university teacher","pianist","conductor"],"viafURL":["https://viaf.org/viaf/44484929"],"wikipediaURL":"https://en.wikipedia.org/wiki/Sixten_Ehrling","worldCatURL":["https://worldcat.org/identities/lccn-n81146903"],"snacURL":["http://n2t.net/ark:/99166/w6668gb2"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81146903"],"collections":["NAEB"]}},"pageContext":{"id":"6f01b23d-ae20-596f-9f4a-a4822ad40648"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

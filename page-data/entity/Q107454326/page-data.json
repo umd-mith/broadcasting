@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107454326",
+    "result": {"data":{"entitiesJson":{"id":"7565e9a4-18e2-5243-be00-c8e96eac3c3b","wikidataLabel":"KWSC","altLabels":["KWSC Radio"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"former radio station call sign of Washington State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107454326","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6b40wv8"],"associatedPlaces":["United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"7565e9a4-18e2-5243-be00-c8e96eac3c3b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

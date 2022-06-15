@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q8000236",
+    "result": {"data":{"entitiesJson":{"id":"9be9a25c-4edf-5a65-a7b0-9e231ec17bbc","wikidataLabel":"Wilbur Schramm","altLabels":["Wilbur Lang Schramm"],"birthDate":"1907","deathDate":"1987","birthPlace":"Marietta","deathPlace":"Honolulu","wikidataDescription":"writer, journalist, scholar","employer":["University of Illinois at Urbana–Champaign","University of Iowa","Stanford University"],"fieldOfWork":["communication studies","education"],"inceptionDate":null,"cpfPageID":"Q8000236","naraURL":["https://catalog.archives.gov/id/10582673"],"occupation":["journalist","writer"],"viafURL":["https://viaf.org/viaf/110258866"],"wikipediaURL":"https://en.wikipedia.org/wiki/Wilbur_Schramm","worldCatURL":["https://worldcat.org/identities/lccn-n79132416"],"snacURL":["http://n2t.net/ark:/99166/w61c38f6"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79132416"],"collections":["NAEB"]}},"pageContext":{"id":"9be9a25c-4edf-5a65-a7b0-9e231ec17bbc"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

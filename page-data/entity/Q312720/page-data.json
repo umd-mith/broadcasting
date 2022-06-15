@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q312720",
+    "result": {"data":{"entitiesJson":{"id":"4691da03-cc42-5ee2-a488-53345f4b650e","wikidataLabel":"Robert Penn Warren","altLabels":null,"birthDate":"1905","deathDate":"1989","birthPlace":"Guthrie","deathPlace":"Stratton","wikidataDescription":"American poet, novelist, and literary critic (1905-1989)","employer":["University of Iowa","Yale University","Vanderbilt University","Southwestern College","Louisiana State University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q312720","naraURL":null,"occupation":["journalist","poet","writer","novelist","children's writer","literary critic"],"viafURL":["https://viaf.org/viaf/61553765"],"wikipediaURL":"https://en.wikipedia.org/wiki/Robert_Penn_Warren","worldCatURL":["https://worldcat.org/identities/lccn-n78091524"],"snacURL":["http://n2t.net/ark:/99166/w61n80n7"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n78091524"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"4691da03-cc42-5ee2-a488-53345f4b650e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

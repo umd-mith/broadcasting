@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q455773",
+    "result": {"data":{"entitiesJson":{"id":"a47a09c7-1610-5926-aced-fe13340c2e56","wikidataLabel":"Roy Acuff","altLabels":["Roy Claxton Acuff"],"birthDate":"1903","deathDate":"1992","birthPlace":"Maynardville","deathPlace":"Nashville","wikidataDescription":"American country music singer and fiddler (1903-1992)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q455773","naraURL":null,"occupation":["violinist","singer-songwriter","music publisher","singer","politician","composer"],"viafURL":["https://viaf.org/viaf/32182376"],"wikipediaURL":"https://en.wikipedia.org/wiki/Roy_Acuff","worldCatURL":["https://worldcat.org/identities/lccn-n83042805"],"snacURL":["http://n2t.net/ark:/99166/w6f769jf"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83042805"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"a47a09c7-1610-5926-aced-fe13340c2e56"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

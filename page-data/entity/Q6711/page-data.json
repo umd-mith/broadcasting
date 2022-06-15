@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6711",
+    "result": {"data":{"entitiesJson":{"id":"ae0ad487-c8b2-59c1-8e52-cb4a6e12c039","wikidataLabel":"Allen Ginsberg","altLabels":["Alen Ginzberg","Irwin Allen Ginsberg","Ayālena Gīnasabārga"],"birthDate":"1926","deathDate":"1997","birthPlace":"Newark","deathPlace":"East Village","wikidataDescription":"American poet (1926-1997)","employer":["Brooklyn College"],"fieldOfWork":["literature"],"inceptionDate":null,"cpfPageID":"Q6711","naraURL":null,"occupation":["teacher","writer","photographer","screenwriter","diarist","autobiographer","musician","playwright","poet"],"viafURL":["https://viaf.org/viaf/108417923","https://viaf.org/viaf/273311756"],"wikipediaURL":"https://en.wikipedia.org/wiki/Allen_Ginsberg","worldCatURL":["https://worldcat.org/identities/lccn-n79109040"],"snacURL":["http://n2t.net/ark:/99166/w64q7thm"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79109040"],"collections":["NFCB","KUOM"]}},"pageContext":{"id":"ae0ad487-c8b2-59c1-8e52-cb4a6e12c039"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

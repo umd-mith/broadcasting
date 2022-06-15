@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6861322",
+    "result": {"data":{"entitiesJson":{"id":"1307a30f-400c-5efa-823d-df52841aff1a","wikidataLabel":"Milton Mayer","altLabels":["Milton Sanford Mayer"],"birthDate":"1908","deathDate":"1986","birthPlace":"Illinois","deathPlace":null,"wikidataDescription":"American journalist (1908-1986)","employer":["University of Chicago"],"fieldOfWork":["journalism"],"inceptionDate":null,"cpfPageID":"Q6861322","naraURL":null,"occupation":["journalist"],"viafURL":["https://viaf.org/viaf/15784374"],"wikipediaURL":"https://en.wikipedia.org/wiki/Milton_Mayer","worldCatURL":["https://worldcat.org/identities/lccn-n50007303"],"snacURL":["http://n2t.net/ark:/99166/w6xw4ndx"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50007303"],"collections":["NAEB"]}},"pageContext":{"id":"1307a30f-400c-5efa-823d-df52841aff1a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

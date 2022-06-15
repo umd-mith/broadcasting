@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q2272788",
+    "result": {"data":{"entitiesJson":{"id":"13647959-7553-5d6d-a928-5a62c8f6d559","wikidataLabel":"Joseph L. Rauh, Jr.","altLabels":null,"birthDate":"1911","deathDate":"1992","birthPlace":"Cincinnati","deathPlace":"\"Washington, D.C.\"","wikidataDescription":"American lawyer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q2272788","naraURL":["https://catalog.archives.gov/id/10570267"],"occupation":["lawyer"],"viafURL":["https://viaf.org/viaf/3924604"],"wikipediaURL":"https://en.wikipedia.org/wiki/Joseph_L._Rauh_Jr.","worldCatURL":["https://worldcat.org/identities/lccn-n85282432"],"snacURL":["http://n2t.net/ark:/99166/w6t43rd8"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n85282432"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"13647959-7553-5d6d-a928-5a62c8f6d559"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1079140",
+    "result": {"data":{"entitiesJson":{"id":"24d76c69-9f12-5d9c-98a8-f9dcc644a8ef","wikidataLabel":"Indiana University Bloomington","altLabels":["IU Bloomington","Indiana University, Bloomington","Indiana University","IU","IUB"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university located in Bloomington, Indiana, U.S. (flagship campus of the Indiana University system)","employer":null,"fieldOfWork":null,"inceptionDate":"1820","cpfPageID":"Q1079140","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/140720861"],"wikipediaURL":"https://en.wikipedia.org/wiki/Indiana_University_Bloomington","worldCatURL":["https://worldcat.org/identities/lccn-no00079788"],"snacURL":["http://n2t.net/ark:/99166/w6b31kzx"],"associatedPlaces":["Bloomington","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n80126367"],"collections":["NAEB"]}},"pageContext":{"id":"24d76c69-9f12-5d9c-98a8-f9dcc644a8ef"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

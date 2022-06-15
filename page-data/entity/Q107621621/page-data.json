@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621621",
+    "result": {"data":{"entitiesJson":{"id":"30f5fbe7-286c-586d-beea-57045f23c3f9","wikidataLabel":"Harold B. McCarty","altLabels":null,"birthDate":"1901","deathDate":"1987","birthPlace":null,"deathPlace":null,"wikidataDescription":"station director of WHA Radio in Madison, Wisconsin","employer":["WHA"],"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q107621621","naraURL":null,"occupation":["broadcasting executive"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6k37bm0"],"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"30f5fbe7-286c-586d-beea-57045f23c3f9"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

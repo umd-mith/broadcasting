@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107453877",
+    "result": {"data":{"entitiesJson":{"id":"7f332f9e-d512-5ddf-a905-27597198e175","wikidataLabel":"WBKY","altLabels":["WBKY-FM"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"former radio station call sign of the University of Kentucky","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107453877","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6s54v10"],"associatedPlaces":["United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"7f332f9e-d512-5ddf-a905-27597198e175"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

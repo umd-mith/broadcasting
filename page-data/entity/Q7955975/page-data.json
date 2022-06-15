@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7955975",
+    "result": {"data":{"entitiesJson":{"id":"f2afab79-bf4f-58cd-8f1d-73b1ad0b705e","wikidataLabel":"WSUI","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"AM radio station in Iowa City, Iowa","employer":null,"fieldOfWork":null,"inceptionDate":"1922","cpfPageID":"Q7955975","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/133892799"],"wikipediaURL":"https://en.wikipedia.org/wiki/WSUI","worldCatURL":["https://worldcat.org/identities/lccn-n2003085021"],"snacURL":["http://n2t.net/ark:/99166/w60s64gz"],"associatedPlaces":["Iowa City","Iowa","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n2003085021"],"collections":["NAEB"]}},"pageContext":{"id":"f2afab79-bf4f-58cd-8f1d-73b1ad0b705e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

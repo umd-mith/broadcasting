@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q4260204",
+    "result": {"data":{"entitiesJson":{"id":"9843b1b2-b2fb-54d2-bfde-9f5c610a0013","wikidataLabel":"Howard K. Smith","altLabels":["Howard Kingsbury Smith"],"birthDate":"1914","deathDate":"2002","birthPlace":"Ferriday","deathPlace":"Bethesda","wikidataDescription":"American news anchor (1914-2002)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q4260204","naraURL":["https://catalog.archives.gov/id/10569614"],"occupation":["journalist","television presenter","news presenter","war correspondent","actor"],"viafURL":["https://viaf.org/viaf/117132033"],"wikipediaURL":"https://en.wikipedia.org/wiki/Howard_K._Smith","worldCatURL":["https://worldcat.org/identities/lccn-n81086387"],"snacURL":["http://n2t.net/ark:/99166/w6gf1q0q"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81086387"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"9843b1b2-b2fb-54d2-bfde-9f5c610a0013"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q110089762",
+    "result": {"data":{"entitiesJson":{"id":"ae76e946-81ad-5534-9540-1d196f6962b6","wikidataLabel":"Norman Cameron","altLabels":null,"birthDate":"1896","deathDate":"1975","birthPlace":null,"deathPlace":null,"wikidataDescription":"born:1896|died:1975|; Cameron, Norman; Cameron, Norman Alexander, 1896-; Cameron, Norman, 1896-1975","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q110089762","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/72801029"],"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n84162287"],"collections":["WHA"]}},"pageContext":{"id":"ae76e946-81ad-5534-9540-1d196f6962b6"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

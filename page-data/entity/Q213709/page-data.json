@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q213709",
+    "result": {"data":{"entitiesJson":{"id":"dabff331-43df-5af3-9d3c-01dcc653ea31","wikidataLabel":"Lukas Foss","altLabels":["Lukas Fuchs"],"birthDate":"1922","deathDate":"2009","birthPlace":"Berlin","deathPlace":"Manhattan","wikidataDescription":"American composer","employer":["Buffalo Philharmonic Orchestra","Brooklyn Philharmonic","University of California, Los Angeles","Boston University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q213709","naraURL":null,"occupation":["classical composer","university teacher","pianist","conductor"],"viafURL":["https://viaf.org/viaf/97820402"],"wikipediaURL":"https://en.wikipedia.org/wiki/Lukas_Foss","worldCatURL":["https://worldcat.org/identities/lccn-n80158653"],"snacURL":["http://n2t.net/ark:/99166/w65141k8"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80158653"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"dabff331-43df-5af3-9d3c-01dcc653ea31"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

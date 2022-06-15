@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q2497108",
+    "result": {"data":{"entitiesJson":{"id":"7eef7a1a-e2c6-5e78-9ff2-7f7c41b2f840","wikidataLabel":"Detroit Public Schools","altLabels":["DPSCD","Detroit Public Schools Community District","DPS"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public school system of Detroit, Michigan","employer":null,"fieldOfWork":null,"inceptionDate":"1842","cpfPageID":"Q2497108","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/148890581"],"wikipediaURL":"https://en.wikipedia.org/wiki/Detroit_Public_Schools_Community_District","worldCatURL":["https://worldcat.org/identities/lccn-n50001774"],"snacURL":["http://n2t.net/ark:/99166/w6g19vf3"],"associatedPlaces":["Michigan","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n50001774"],"collections":["NAEB"]}},"pageContext":{"id":"7eef7a1a-e2c6-5e78-9ff2-7f7c41b2f840"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

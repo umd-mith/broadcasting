@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q18631340",
+    "result": {"data":{"entitiesJson":{"id":"8cd95a0c-3c9b-5318-b8f1-13f1a1c01bfc","wikidataLabel":"Joseph D. Lohman","altLabels":null,"birthDate":"1910","deathDate":"1968","birthPlace":"Denver","deathPlace":"Walnut Creek","wikidataDescription":"American politician (1910-1968)","employer":["University of Wisconsin–Madison","University of California, Berkeley","American University","University of Chicago"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q18631340","naraURL":["https://catalog.archives.gov/id/10573508"],"occupation":["politician"],"viafURL":["https://viaf.org/viaf/117104560"],"wikipediaURL":"https://en.wikipedia.org/wiki/Joseph_D._Lohman","worldCatURL":["https://worldcat.org/identities/lccn-no97052335"],"snacURL":["http://n2t.net/ark:/99166/w6xw8c7w"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no97052335"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"8cd95a0c-3c9b-5318-b8f1-13f1a1c01bfc"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

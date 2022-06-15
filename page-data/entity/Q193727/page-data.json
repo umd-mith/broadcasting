@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q193727",
+    "result": {"data":{"entitiesJson":{"id":"fc7c7973-dd6b-5c9e-9315-de22d0aceece","wikidataLabel":"Johns Hopkins University","altLabels":["The Johns Hopkins University","jhu.edu","JHU","Hopkins","Johns Hopkins"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"university in Baltimore, Maryland, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1876","cpfPageID":"Q193727","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/141846012"],"wikipediaURL":"https://en.wikipedia.org/wiki/Johns_Hopkins_University","worldCatURL":["https://worldcat.org/identities/lccn-n79061226"],"snacURL":["http://n2t.net/ark:/99166/w6vr823c","http://n2t.net/ark:/99166/w6rz3388","http://n2t.net/ark:/99166/w6g88dkj"],"associatedPlaces":["Baltimore","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79061226"],"collections":["NAEB"]}},"pageContext":{"id":"fc7c7973-dd6b-5c9e-9315-de22d0aceece"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

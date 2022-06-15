@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621630",
+    "result": {"data":{"entitiesJson":{"id":"2e1df928-03c3-5586-b512-383be5a65c06","wikidataLabel":"Samuel L. Becker","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio-television-film professor at the University of Iowa","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621630","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"2e1df928-03c3-5586-b512-383be5a65c06"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

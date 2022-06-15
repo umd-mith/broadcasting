@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q94111758",
+    "result": {"data":{"entitiesJson":{"id":"370ed634-8314-54c5-b203-593f8f296686","wikidataLabel":"Kemble Stout","altLabels":null,"birthDate":"1916","deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q94111758","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/72767940"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n83125780"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83125780"],"collections":["NAEB"]}},"pageContext":{"id":"370ed634-8314-54c5-b203-593f8f296686"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

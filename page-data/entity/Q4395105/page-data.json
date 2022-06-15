@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q4395105",
+    "result": {"data":{"entitiesJson":{"id":"15fcd8f3-f0c9-5e4c-80fe-80a4340c8ce5","wikidataLabel":"Cokie Roberts","altLabels":["Mary Martha Corinne Morrison Claiborne Roberts","Mary Martha Corinne Morrison Claiborne Boggs"],"birthDate":"1943","deathDate":"2019","birthPlace":"New Orleans","deathPlace":"\"Washington, D.C.\"","wikidataDescription":"American journalist (1943-2019)","employer":["NPR","ABC Signature"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q4395105","naraURL":null,"occupation":["journalist"],"viafURL":["https://viaf.org/viaf/162686218"],"wikipediaURL":"https://en.wikipedia.org/wiki/Cokie_Roberts","worldCatURL":["https://worldcat.org/identities/lccn-n88127927"],"snacURL":["http://n2t.net/ark:/99166/w67x72cq","http://n2t.net/ark:/99166/w65r9dsn"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n88127927"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"15fcd8f3-f0c9-5e4c-80fe-80a4340c8ce5"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

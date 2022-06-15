@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q44196142",
+    "result": {"data":{"entitiesJson":{"id":"d72f9a18-3277-56fe-a2b8-8bab0f26ecca","wikidataLabel":"Leon Epstein","altLabels":["Leon David Epstein"],"birthDate":"1919","deathDate":"2006","birthPlace":"Milwaukee","deathPlace":"Madison","wikidataDescription":"American political scientist (1919-2006)","employer":["University of Wisconsin–Madison"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q44196142","naraURL":null,"occupation":["political scientist"],"viafURL":["https://viaf.org/viaf/39405740"],"wikipediaURL":"https://en.wikipedia.org/wiki/Leon_Epstein","worldCatURL":["https://worldcat.org/identities/lccn-n85374702"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n85374702"],"collections":["WHA"]}},"pageContext":{"id":"d72f9a18-3277-56fe-a2b8-8bab0f26ecca"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

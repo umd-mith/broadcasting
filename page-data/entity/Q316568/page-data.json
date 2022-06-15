@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q316568",
+    "result": {"data":{"entitiesJson":{"id":"3dcf9f4b-6a30-5382-b931-c2dee8c042a9","wikidataLabel":"Walter Lippmann","altLabels":null,"birthDate":"1889","deathDate":"1974","birthPlace":"New York City","deathPlace":"New York City","wikidataDescription":"American journalist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q316568","naraURL":["https://catalog.archives.gov/id/10580425"],"occupation":["journalist","politician","writer"],"viafURL":["https://viaf.org/viaf/14844144"],"wikipediaURL":"https://en.wikipedia.org/wiki/Walter_Lippmann","worldCatURL":["https://worldcat.org/identities/lccn-n80019504"],"snacURL":["http://n2t.net/ark:/99166/w6xp73wn"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80019504"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"3dcf9f4b-6a30-5382-b931-c2dee8c042a9"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7948371",
+    "result": {"data":{"entitiesJson":{"id":"cf9170c9-9f5b-56ed-9c51-f460ae4d1864","wikidataLabel":"WDET-FM","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public radio station in Detroit","employer":null,"fieldOfWork":null,"inceptionDate":"1948","cpfPageID":"Q7948371","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/143201803"],"wikipediaURL":"https://en.wikipedia.org/wiki/WDET-FM","worldCatURL":["https://worldcat.org/identities/lccn-n91024058"],"snacURL":null,"associatedPlaces":["Detroit","Michigan","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n91024058"],"collections":["NAEB"]}},"pageContext":{"id":"cf9170c9-9f5b-56ed-9c51-f460ae4d1864"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

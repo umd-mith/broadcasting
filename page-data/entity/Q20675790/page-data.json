@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q20675790",
+    "result": {"data":{"entitiesJson":{"id":"0b149e54-18ba-5b88-95e3-49c74f071745","wikidataLabel":"E. W. Ziebarth","altLabels":null,"birthDate":"1910","deathDate":"2001","birthPlace":"Columbus","deathPlace":"Minneapolis","wikidataDescription":null,"employer":["University of Minnesota"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q20675790","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/58037540"],"wikipediaURL":"https://en.wikipedia.org/wiki/E._W._Ziebarth","worldCatURL":["https://worldcat.org/identities/lccn-n85034293"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n85034293"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"0b149e54-18ba-5b88-95e3-49c74f071745"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

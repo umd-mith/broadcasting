@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6933947",
+    "result": {"data":{"entitiesJson":{"id":"0b55498c-5c0e-5652-97c5-4a5bb7ce09a7","wikidataLabel":"Mulford Q. Sibley","altLabels":null,"birthDate":"1912","deathDate":"1989","birthPlace":null,"deathPlace":null,"wikidataDescription":"American political scientist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6933947","naraURL":null,"occupation":["political scientist"],"viafURL":["https://viaf.org/viaf/243514858"],"wikipediaURL":"https://en.wikipedia.org/wiki/Mulford_Q._Sibley","worldCatURL":["https://worldcat.org/identities/lccn-n50024596"],"snacURL":["http://n2t.net/ark:/99166/w6qz4m56"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50024596"],"collections":["KUOM"]}},"pageContext":{"id":"0b55498c-5c0e-5652-97c5-4a5bb7ce09a7"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

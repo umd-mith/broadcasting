@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q30289627",
+    "result": {"data":{"entitiesJson":{"id":"cd77f02e-cd55-5450-b4ca-672edb9d503a","wikidataLabel":"Illinois State Library","altLabels":["State Library of Illinois"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"archive organization in Springfield, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1839","cpfPageID":"Q30289627","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/Illinois_State_Library","worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6gn3hsc"],"associatedPlaces":["Springfield","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"cd77f02e-cd55-5450-b4ca-672edb9d503a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

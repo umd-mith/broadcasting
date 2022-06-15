@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7947483",
+    "result": {"data":{"entitiesJson":{"id":"467587e3-c1fa-5cd1-bd22-4d3b158ad766","wikidataLabel":"WBUR-FM","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public radio station in Boston","employer":null,"fieldOfWork":null,"inceptionDate":"1950","cpfPageID":"Q7947483","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/291183218"],"wikipediaURL":"https://en.wikipedia.org/wiki/WBUR-FM","worldCatURL":["https://worldcat.org/identities/lccn-no2012146404"],"snacURL":["http://n2t.net/ark:/99166/w6z73wps"],"associatedPlaces":["Boston","Massachusetts","United States of America"],"locURL":["https://id.loc.gov/authorities/names/no2012146404"],"collections":["NAEB"]}},"pageContext":{"id":"467587e3-c1fa-5cd1-bd22-4d3b158ad766"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

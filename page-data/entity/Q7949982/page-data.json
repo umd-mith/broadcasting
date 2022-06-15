@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7949982",
+    "result": {"data":{"entitiesJson":{"id":"437217b9-6bfb-5d4e-a8d0-1f7ecec99b38","wikidataLabel":"WGUC","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Public radio station in Cincinnati","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7949982","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/158636520"],"wikipediaURL":"https://en.wikipedia.org/wiki/WGUC","worldCatURL":["https://worldcat.org/identities/lccn-no2005116538"],"snacURL":null,"associatedPlaces":["Ohio","United States of America"],"locURL":["https://id.loc.gov/authorities/names/no2005116538"],"collections":["NAEB"]}},"pageContext":{"id":"437217b9-6bfb-5d4e-a8d0-1f7ecec99b38"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1156586",
+    "result": {"data":{"entitiesJson":{"id":"4448a8b8-d18d-5451-ae4b-564376d0cbec","wikidataLabel":"Riverside Church","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"church in New York City","employer":null,"fieldOfWork":null,"inceptionDate":"1927","cpfPageID":"Q1156586","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/155407911"],"wikipediaURL":"https://en.wikipedia.org/wiki/Riverside_Church","worldCatURL":["https://worldcat.org/identities/lccn-n79086439"],"snacURL":null,"associatedPlaces":["Manhattan","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79086439"],"collections":["NAEB"]}},"pageContext":{"id":"4448a8b8-d18d-5451-ae4b-564376d0cbec"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

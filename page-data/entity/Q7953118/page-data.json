@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7953118",
+    "result": {"data":{"entitiesJson":{"id":"1f0909e7-15d8-5934-9d49-e551f88ec2fe","wikidataLabel":"WMUB","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Public radio station in Oxford, Ohio","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7953118","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/WMUB_(FM)","worldCatURL":null,"snacURL":null,"associatedPlaces":["Oxford","Ohio","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1f0909e7-15d8-5934-9d49-e551f88ec2fe"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

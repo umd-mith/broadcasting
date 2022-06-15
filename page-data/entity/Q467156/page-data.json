@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q467156",
+    "result": {"data":{"entitiesJson":{"id":"014c53aa-bbdb-5a02-85de-9cbe1aef5c2b","wikidataLabel":"David Halberstam","altLabels":["David J. Halberstam"],"birthDate":"1934","deathDate":"2007","birthPlace":"New York City","deathPlace":"Menlo Park","wikidataDescription":"American writer, journalist, historian","employer":["The New York Times Company"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q467156","naraURL":["https://catalog.archives.gov/id/10582087"],"occupation":["journalist","historian","writer"],"viafURL":["https://viaf.org/viaf/68930206"],"wikipediaURL":"https://en.wikipedia.org/wiki/David_Halberstam","worldCatURL":["https://worldcat.org/identities/lccn-n79021654"],"snacURL":["http://n2t.net/ark:/99166/w65z297n"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79021654"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"014c53aa-bbdb-5a02-85de-9cbe1aef5c2b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q100718389",
+    "result": {"data":{"entitiesJson":{"id":"5803fac9-a492-58fd-a704-53ea8f49ea7e","wikidataLabel":"Paul T. Ellsworth","altLabels":["Paul Theodore Ellsworth"],"birthDate":"1897","deathDate":null,"birthPlace":"Rutland","deathPlace":null,"wikidataDescription":"American economist","employer":["Reed College","United States Department of the Treasury","University of Cincinnati","Dartmouth College","Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q100718389","naraURL":null,"occupation":["economist"],"viafURL":["https://viaf.org/viaf/78826247"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n83138823"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83138823"],"collections":["WHA"]}},"pageContext":{"id":"5803fac9-a492-58fd-a704-53ea8f49ea7e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

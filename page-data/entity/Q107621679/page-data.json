@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621679",
+    "result": {"data":{"entitiesJson":{"id":"eb7d38c3-b690-545b-8f87-eeb69894a8cf","wikidataLabel":"E. W. Richter","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio producer at Purdue University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621679","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"eb7d38c3-b690-545b-8f87-eeb69894a8cf"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

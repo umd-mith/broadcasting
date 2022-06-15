@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621678",
+    "result": {"data":{"entitiesJson":{"id":"32159c69-6553-57b7-99fd-23792396e7c7","wikidataLabel":"Ralph Johnson","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio producer at the University of Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621678","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"32159c69-6553-57b7-99fd-23792396e7c7"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

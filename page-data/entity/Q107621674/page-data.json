@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621674",
+    "result": {"data":{"entitiesJson":{"id":"ae8ade57-450f-5b1a-9545-be1503a382c4","wikidataLabel":"Cecil S. Bidlack","altLabels":null,"birthDate":"1903","deathDate":"1995","birthPlace":null,"deathPlace":null,"wikidataDescription":"Television Engineer for the National Association of Educational Broadcasters","employer":["National Association of Educational Broadcasters","Ohio State University"],"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q107621674","naraURL":null,"occupation":["broadcaster","engineer"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ae8ade57-450f-5b1a-9545-be1503a382c4"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

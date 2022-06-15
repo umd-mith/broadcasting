@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q102392666",
+    "result": {"data":{"entitiesJson":{"id":"1b184616-9c01-50f2-a7e6-2126cc346044","wikidataLabel":"Peter Lissaman","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Ph.D. California Institute of Technology 1966","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q102392666","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1b184616-9c01-50f2-a7e6-2126cc346044"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

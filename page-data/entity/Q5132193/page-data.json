@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q5132193",
+    "result": {"data":{"entitiesJson":{"id":"3c7c186f-7e31-5f91-b30f-e12433abf19c","wikidataLabel":"Cleveland Metropolitan School District","altLabels":["Cleveland Municipal School District"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"School district in Ohio, United States","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q5132193","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/Cleveland_Metropolitan_School_District","worldCatURL":null,"snacURL":null,"associatedPlaces":["Cleveland","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"3c7c186f-7e31-5f91-b30f-e12433abf19c"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

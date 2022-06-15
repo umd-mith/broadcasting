@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q4756193",
+    "result": {"data":{"entitiesJson":{"id":"f6e383f6-6588-5aed-9518-db5bfb6cc966","wikidataLabel":"Andrew Allan","altLabels":["Andrew Edward Fairbairn Allan"],"birthDate":"1907","deathDate":"1974","birthPlace":"Arbroath","deathPlace":"Toronto","wikidataDescription":"Canadian radio executive (1907-1974)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q4756193","naraURL":null,"occupation":["actor"],"viafURL":["https://viaf.org/viaf/23680328"],"wikipediaURL":"https://en.wikipedia.org/wiki/Andrew_Allan_(radio_executive)","worldCatURL":["https://worldcat.org/identities/lccn-n88028927"],"snacURL":["http://n2t.net/ark:/99166/w66x3345"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n88028927"],"collections":["NAEB"]}},"pageContext":{"id":"f6e383f6-6588-5aed-9518-db5bfb6cc966"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

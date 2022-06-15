@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q452765",
+    "result": {"data":{"entitiesJson":{"id":"976f4edd-4226-5985-a031-2557c589fa03","wikidataLabel":"Jim Garrison","altLabels":["James Carothers Garrison","\"James Carothers \"Jim\" Garrison\"","Earling Carothers Garrison"],"birthDate":"1921","deathDate":"1992","birthPlace":"Denison","deathPlace":"New Orleans","wikidataDescription":"American judge","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q452765","naraURL":["https://catalog.archives.gov/id/10582565"],"occupation":["film actor","district attorney","lawyer","writer","judge"],"viafURL":["https://viaf.org/viaf/112344432"],"wikipediaURL":"https://en.wikipedia.org/wiki/Jim_Garrison","worldCatURL":["https://worldcat.org/identities/lccn-n50016973"],"snacURL":["http://n2t.net/ark:/99166/w6nz9ntd"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50016973"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"976f4edd-4226-5985-a031-2557c589fa03"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

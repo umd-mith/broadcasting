@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q561814",
+    "result": {"data":{"entitiesJson":{"id":"d59bacab-de0e-51c3-bf72-9077b75b187d","wikidataLabel":"Robert Maynard Hutchins","altLabels":null,"birthDate":"1899","deathDate":"1977","birthPlace":"Brooklyn","deathPlace":"Santa Barbara","wikidataDescription":"philosopher and university president","employer":["Yale Law School","University of Chicago"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q561814","naraURL":null,"occupation":["university teacher","pedagogue"],"viafURL":["https://viaf.org/viaf/74154730"],"wikipediaURL":"https://en.wikipedia.org/wiki/Robert_Maynard_Hutchins","worldCatURL":["https://worldcat.org/identities/lccn-n50030338"],"snacURL":["http://n2t.net/ark:/99166/w6wq057b"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50030338"],"collections":["NAEB"]}},"pageContext":{"id":"d59bacab-de0e-51c3-bf72-9077b75b187d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

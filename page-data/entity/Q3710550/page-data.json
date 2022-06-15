@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3710550",
+    "result": {"data":{"entitiesJson":{"id":"4902d01f-b818-5c4b-aa7a-98994b2b9e89","wikidataLabel":"Al Hibbs","altLabels":["Albert Roach Hibbs","Albert Hibbs"],"birthDate":"1924","deathDate":"2003","birthPlace":null,"deathPlace":null,"wikidataDescription":"American mathematician (1924-2003)","employer":["Jet Propulsion Laboratory"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3710550","naraURL":null,"occupation":["science communicator","mathematician"],"viafURL":["https://viaf.org/viaf/29605942"],"wikipediaURL":"https://en.wikipedia.org/wiki/Albert_Hibbs","worldCatURL":["https://worldcat.org/identities/lccn-n83826655"],"snacURL":["http://n2t.net/ark:/99166/w6q9233s"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83826655"],"collections":["NAEB"]}},"pageContext":{"id":"4902d01f-b818-5c4b-aa7a-98994b2b9e89"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

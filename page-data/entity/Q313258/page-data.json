@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q313258",
+    "result": {"data":{"entitiesJson":{"id":"0c8fcf99-ec76-5509-bdc6-3ea2ae0483de","wikidataLabel":"Dean Rusk","altLabels":["David Dean Rusk"],"birthDate":"1909","deathDate":"1994","birthPlace":"Cherokee County","deathPlace":"Athens","wikidataDescription":"United States Secretary of State (1909-1994)","employer":["University of Georgia"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q313258","naraURL":["https://catalog.archives.gov/id/10611853"],"occupation":["university teacher","diplomat","politician","lawyer"],"viafURL":["https://viaf.org/viaf/29586035"],"wikipediaURL":"https://en.wikipedia.org/wiki/Dean_Rusk","worldCatURL":["https://worldcat.org/identities/lccn-n80013000"],"snacURL":["http://n2t.net/ark:/99166/w6z31x1j"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80013000"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"0c8fcf99-ec76-5509-bdc6-3ea2ae0483de"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

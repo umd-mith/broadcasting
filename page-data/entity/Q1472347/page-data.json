@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1472347",
+    "result": {"data":{"entitiesJson":{"id":"6ecdd942-1907-59f2-ac64-61338b84bfa8","wikidataLabel":"Southern Illinois University Carbondale","altLabels":["Southern Illinois University at Carbondale","SIUC","SIU Carbondale"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public university in Carbondale, Illinois, USA; flagship of the SIU system","employer":null,"fieldOfWork":null,"inceptionDate":"1869","cpfPageID":"Q1472347","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/136530568"],"wikipediaURL":"https://en.wikipedia.org/wiki/Southern_Illinois_University_Carbondale","worldCatURL":["https://worldcat.org/identities/lccn-n80126077"],"snacURL":["http://n2t.net/ark:/99166/w6cp0sgx"],"associatedPlaces":["Jackson County","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n80126077"],"collections":["NAEB"]}},"pageContext":{"id":"6ecdd942-1907-59f2-ac64-61338b84bfa8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

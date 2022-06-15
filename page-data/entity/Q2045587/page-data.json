@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q2045587",
+    "result": {"data":{"entitiesJson":{"id":"8e8d4ad2-524e-5ccc-ad50-66a398237bdd","wikidataLabel":"Pacifica Radio","altLabels":["Pacifica Radio Network","Pacifica Network","Pacifica Foundation"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"nonprofit organization and radio network in Berkeley, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1946","cpfPageID":"Q2045587","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/143752079"],"wikipediaURL":"https://en.wikipedia.org/wiki/Pacifica_Foundation","worldCatURL":["https://worldcat.org/identities/lccn-n2002042727"],"snacURL":["http://n2t.net/ark:/99166/w6k39k5t"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n2002042727"],"collections":["NAEB"]}},"pageContext":{"id":"8e8d4ad2-524e-5ccc-ad50-66a398237bdd"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

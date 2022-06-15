@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q809107",
+    "result": {"data":{"entitiesJson":{"id":"d18a10ee-fe6e-5224-94a6-310bba834400","wikidataLabel":"Barry Ulanov","altLabels":null,"birthDate":"1918","deathDate":"2000","birthPlace":"New York City","deathPlace":"New York City","wikidataDescription":"American music critic","employer":["Columbia University"],"fieldOfWork":["jazz"],"inceptionDate":null,"cpfPageID":"Q809107","naraURL":null,"occupation":["journalist","art historian","university teacher","music critic","writer"],"viafURL":["https://viaf.org/viaf/69142187"],"wikipediaURL":"https://en.wikipedia.org/wiki/Barry_Ulanov","worldCatURL":["https://worldcat.org/identities/lccn-n50046816"],"snacURL":["http://n2t.net/ark:/99166/w6tc3jv1"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50046816"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"d18a10ee-fe6e-5224-94a6-310bba834400"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

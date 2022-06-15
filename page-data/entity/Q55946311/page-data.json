@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q55946311",
+    "result": {"data":{"entitiesJson":{"id":"47a7bc3b-5762-5c22-979a-f36c83f98e9e","wikidataLabel":"Mitchell V. Charnley","altLabels":null,"birthDate":"1898","deathDate":"1991","birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q55946311","naraURL":null,"occupation":["journalist","author"],"viafURL":["https://viaf.org/viaf/162554581"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-no89003032"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no89003032"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"47a7bc3b-5762-5c22-979a-f36c83f98e9e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

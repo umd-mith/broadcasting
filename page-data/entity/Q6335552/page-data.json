@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6335552",
+    "result": {"data":{"entitiesJson":{"id":"360bd37b-e1f2-5902-9690-1e353f084664","wikidataLabel":"KPFK","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Pacifica radio station in Los Angeles","employer":null,"fieldOfWork":null,"inceptionDate":"1959","cpfPageID":"Q6335552","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/264780045"],"wikipediaURL":"https://en.wikipedia.org/wiki/KPFK","worldCatURL":["https://worldcat.org/identities/lccn-n88043715"],"snacURL":["http://n2t.net/ark:/99166/w65f3ns5"],"associatedPlaces":["Los Angeles","California","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n88043715"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"360bd37b-e1f2-5902-9690-1e353f084664"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

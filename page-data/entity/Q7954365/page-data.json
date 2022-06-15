@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7954365",
+    "result": {"data":{"entitiesJson":{"id":"794510f1-5f29-5c2c-b130-2430757f0176","wikidataLabel":"WPLN-FM","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public radio station in Nashville","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7954365","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/WPLN-FM","worldCatURL":null,"snacURL":null,"associatedPlaces":["Nashville","Tennessee","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"794510f1-5f29-5c2c-b130-2430757f0176"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

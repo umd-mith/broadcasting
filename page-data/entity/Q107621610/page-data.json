@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621610",
+    "result": {"data":{"entitiesJson":{"id":"a737aef0-521a-5683-96a3-6d710ab11966","wikidataLabel":"C. Harvey Gardiner","altLabels":null,"birthDate":"1913","deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q107621610","naraURL":null,"occupation":["broadcaster"],"viafURL":["https://viaf.org/viaf/36996736"],"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6225vc9"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50015237"],"collections":["NAEB"]}},"pageContext":{"id":"a737aef0-521a-5683-96a3-6d710ab11966"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

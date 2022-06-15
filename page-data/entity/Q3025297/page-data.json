@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3025297",
+    "result": {"data":{"entitiesJson":{"id":"1716ef9a-6e10-5b8e-8926-54ea98988eee","wikidataLabel":"Whitney Young","altLabels":["Whitney Young Jr.","Whitney Moore Young Jr.","Whitney Moore Young","Whitney M. Young Jr","Whitney M. Young"],"birthDate":"1921","deathDate":"1971","birthPlace":"Shelby County","deathPlace":"Lagos","wikidataDescription":"American civil rights leader","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3025297","naraURL":["https://catalog.archives.gov/id/10582203"],"occupation":["politician"],"viafURL":["https://viaf.org/viaf/133031791"],"wikipediaURL":"https://en.wikipedia.org/wiki/Whitney_Young","worldCatURL":["https://worldcat.org/identities/lccn-n50014602"],"snacURL":["http://n2t.net/ark:/99166/w66m3wtj"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50014602"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"1716ef9a-6e10-5b8e-8926-54ea98988eee"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

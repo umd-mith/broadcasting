@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7949185",
+    "result": {"data":{"entitiesJson":{"id":"4bb77b1d-ad32-5bbe-bf6f-c3e701dff445","wikidataLabel":"WFBE","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Radio station in Flint, Michigan","employer":null,"fieldOfWork":null,"inceptionDate":"1953","cpfPageID":"Q7949185","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/WFBE","worldCatURL":null,"snacURL":null,"associatedPlaces":["Flint","Michigan","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"4bb77b1d-ad32-5bbe-bf6f-c3e701dff445"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

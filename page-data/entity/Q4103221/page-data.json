@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q4103221",
+    "result": {"data":{"entitiesJson":{"id":"ff3a88eb-839a-56a4-98eb-1bb6776d74f1","wikidataLabel":"Henry Pitney Van Dusen","altLabels":null,"birthDate":"1897","deathDate":"1975","birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q4103221","naraURL":null,"occupation":["theologian"],"viafURL":["https://viaf.org/viaf/109420660"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n90696205"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n90696205"],"collections":["NAEB"]}},"pageContext":{"id":"ff3a88eb-839a-56a4-98eb-1bb6776d74f1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

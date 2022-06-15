@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6969049",
+    "result": {"data":{"entitiesJson":{"id":"ba1ab4d3-e1bf-5473-ad02-90d131fd20e8","wikidataLabel":"Nathan Feinsinger","altLabels":["Nathan Paul Feinsinger"],"birthDate":"1902","deathDate":"1983","birthPlace":"Brooklyn","deathPlace":"Glenwood Springs","wikidataDescription":"American legal scholar","employer":["University of Wisconsin–Madison"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6969049","naraURL":null,"occupation":["legal scholar"],"viafURL":["https://viaf.org/viaf/280466562"],"wikipediaURL":"https://en.wikipedia.org/wiki/Nathan_Feinsinger","worldCatURL":["https://worldcat.org/identities/lccn-no98074133"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no98074133"],"collections":["WHA"]}},"pageContext":{"id":"ba1ab4d3-e1bf-5473-ad02-90d131fd20e8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q16009416",
+    "result": {"data":{"entitiesJson":{"id":"3d82ac8d-11e2-5d27-9281-5ab1dfd2c380","wikidataLabel":"Robert Lee Wolff","altLabels":null,"birthDate":"1915","deathDate":"1980","birthPlace":"New York City","deathPlace":"Cambridge","wikidataDescription":"American historian","employer":["Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q16009416","naraURL":null,"occupation":["historian"],"viafURL":["https://viaf.org/viaf/29573620"],"wikipediaURL":"https://en.wikipedia.org/wiki/Robert_Lee_Wolff","worldCatURL":["https://worldcat.org/identities/lccn-n79026836"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79026836"],"collections":["WHA"]}},"pageContext":{"id":"3d82ac8d-11e2-5d27-9281-5ab1dfd2c380"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

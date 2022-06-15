@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q957941",
+    "result": {"data":{"entitiesJson":{"id":"521c336c-11ff-5158-8347-bf811cfd6da4","wikidataLabel":"William Kunstler","altLabels":["William Moses Kunstler","William M. Kunstler"],"birthDate":"1919","deathDate":"1995","birthPlace":"New York City","deathPlace":"Manhattan","wikidataDescription":"American lawyer and civil rights activist (1919-1995)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q957941","naraURL":null,"occupation":["lawyer","actor"],"viafURL":["https://viaf.org/viaf/15662602"],"wikipediaURL":"https://en.wikipedia.org/wiki/William_Kunstler","worldCatURL":["https://worldcat.org/identities/lccn-n81002785"],"snacURL":["http://n2t.net/ark:/99166/w6p273hb"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81002785"],"collections":["NFCB","KUOM"]}},"pageContext":{"id":"521c336c-11ff-5158-8347-bf811cfd6da4"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

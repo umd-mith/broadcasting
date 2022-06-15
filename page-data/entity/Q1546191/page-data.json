@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1546191",
+    "result": {"data":{"entitiesJson":{"id":"aa6dbbe6-58af-5435-831f-524c517ace80","wikidataLabel":"Western Michigan University","altLabels":["WMU","Western State Teachers College","Western State Normal School","Western Michigan College of Education","Western Michigan College"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public university located in Kalamazoo, Michigan, United States","employer":null,"fieldOfWork":["higher education"],"inceptionDate":"1903","cpfPageID":"Q1546191","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/150587044"],"wikipediaURL":"https://en.wikipedia.org/wiki/Western_Michigan_University","worldCatURL":["https://worldcat.org/identities/lccn-n78095535"],"snacURL":null,"associatedPlaces":["Kalamazoo","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n78095535"],"collections":["NAEB"]}},"pageContext":{"id":"aa6dbbe6-58af-5435-831f-524c517ace80"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

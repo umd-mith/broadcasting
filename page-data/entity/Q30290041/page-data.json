@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q30290041",
+    "result": {"data":{"entitiesJson":{"id":"2f7f9e89-3904-5299-a214-e8d868607479","wikidataLabel":"Rensselaerville Institute","altLabels":["Institute on Man and Science"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"nonprofit organization in Delmar, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1963","cpfPageID":"Q30290041","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":["Delmar","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"2f7f9e89-3904-5299-a214-e8d868607479"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

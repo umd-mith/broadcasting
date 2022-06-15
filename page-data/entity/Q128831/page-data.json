@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q128831",
+    "result": {"data":{"entitiesJson":{"id":"603d3919-7d56-53a1-a313-bb7dc2fdb721","wikidataLabel":"Federal Communications Commission","altLabels":["Federal Communications Commission— FCC —","FCC"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"independent agency of the U.S. Government","employer":null,"fieldOfWork":null,"inceptionDate":"1934","cpfPageID":"Q128831","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/28147965635684080226"],"wikipediaURL":"https://en.wikipedia.org/wiki/Federal_Communications_Commission","worldCatURL":["https://worldcat.org/identities/lccn-n80051251"],"snacURL":["http://n2t.net/ark:/99166/w62k046n"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n80051251"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"603d3919-7d56-53a1-a313-bb7dc2fdb721"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112582009",
+    "result": {"data":{"entitiesJson":{"id":"a03f687a-6dd2-5e01-a8a2-1eaadefd8c8c","wikidataLabel":"Hartford Smith, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112582009","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a03f687a-6dd2-5e01-a8a2-1eaadefd8c8c"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

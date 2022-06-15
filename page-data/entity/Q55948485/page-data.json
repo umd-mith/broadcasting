@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q55948485",
+    "result": {"data":{"entitiesJson":{"id":"990a4920-66cd-5396-882d-52f4e570950b","wikidataLabel":"C. H. Sorum","altLabels":null,"birthDate":"1899","deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q55948485","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/22213821"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n80104537"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80104537"],"collections":["WHA"]}},"pageContext":{"id":"990a4920-66cd-5396-882d-52f4e570950b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

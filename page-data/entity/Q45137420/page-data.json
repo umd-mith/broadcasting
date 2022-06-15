@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q45137420",
+    "result": {"data":{"entitiesJson":{"id":"379dcc16-37c0-50ce-b3c9-6756c7d8dd7f","wikidataLabel":"Davis Center for Russian and Eurasian Studies, Harvard University","altLabels":["Harvard University Russian Research Center"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"academic institution in United States of America","employer":null,"fieldOfWork":null,"inceptionDate":"1948","cpfPageID":"Q45137420","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/122844089"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n80087594"],"snacURL":["http://n2t.net/ark:/99166/w6fr50kz"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n80087594"],"collections":["NAEB"]}},"pageContext":{"id":"379dcc16-37c0-50ce-b3c9-6756c7d8dd7f"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

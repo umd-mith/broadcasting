@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q5075005",
+    "result": {"data":{"entitiesJson":{"id":"7a7018df-6d6d-5292-a475-c03a7c489a6a","wikidataLabel":"Charles Alan Wright","altLabels":null,"birthDate":"1927","deathDate":"2000","birthPlace":"Philadelphia","deathPlace":"Austin","wikidataDescription":"Constitutional lawyer, law professor","employer":["University of Minnesota","University of Texas at Austin"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q5075005","naraURL":["https://catalog.archives.gov/id/10582633"],"occupation":["lawyer"],"viafURL":["https://viaf.org/viaf/109486285"],"wikipediaURL":"https://en.wikipedia.org/wiki/Charles_Alan_Wright","worldCatURL":["https://worldcat.org/identities/lccn-n79022216"],"snacURL":["http://n2t.net/ark:/99166/w6pk1188"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79022216"],"collections":["NAEB"]}},"pageContext":{"id":"7a7018df-6d6d-5292-a475-c03a7c489a6a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

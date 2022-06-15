@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621696",
+    "result": {"data":{"entitiesJson":{"id":"f04c904d-a5ff-53ad-8b89-b6b1ccc45d2c","wikidataLabel":"Francis Duffy","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"sociology professor at Duquesne University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621696","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f04c904d-a5ff-53ad-8b89-b6b1ccc45d2c"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

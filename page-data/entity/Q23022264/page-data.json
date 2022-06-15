@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q23022264",
+    "result": {"data":{"entitiesJson":{"id":"4b4e56d4-91b6-5e59-bfec-dc2c204fd8fa","wikidataLabel":"Charles Siepmann","altLabels":null,"birthDate":"1899","deathDate":"1985","birthPlace":"Bristol","deathPlace":null,"wikidataDescription":null,"employer":["New York University","Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q23022264","naraURL":null,"occupation":["university teacher"],"viafURL":["https://viaf.org/viaf/94505392"],"wikipediaURL":"https://en.wikipedia.org/wiki/Charles_Siepmann","worldCatURL":["https://worldcat.org/identities/lccn-no2009156110"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2009156110"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"4b4e56d4-91b6-5e59-bfec-dc2c204fd8fa"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

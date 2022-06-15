@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621688",
+    "result": {"data":{"entitiesJson":{"id":"6da5c61e-253b-54d8-b67a-93f9db76b720","wikidataLabel":"Donald Price","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio writer at the University of Southern California","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621688","naraURL":null,"occupation":["writer"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6da5c61e-253b-54d8-b67a-93f9db76b720"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

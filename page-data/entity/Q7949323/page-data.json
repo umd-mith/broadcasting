@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7949323",
+    "result": {"data":{"entitiesJson":{"id":"e86c7303-beb1-506a-8b71-89205ad0a98d","wikidataLabel":"WFIU","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Radio station at Indiana University Bloomington","employer":null,"fieldOfWork":null,"inceptionDate":"1950","cpfPageID":"Q7949323","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/148952041"],"wikipediaURL":"https://en.wikipedia.org/wiki/WFIU","worldCatURL":["https://worldcat.org/identities/lccn-n82201298"],"snacURL":["http://n2t.net/ark:/99166/w6nm8xsf"],"associatedPlaces":["Bloomington","Indiana","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n82201298"],"collections":["NAEB"]}},"pageContext":{"id":"e86c7303-beb1-506a-8b71-89205ad0a98d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

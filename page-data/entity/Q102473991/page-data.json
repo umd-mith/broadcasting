@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q102473991",
+    "result": {"data":{"entitiesJson":{"id":"04c2eb1f-02c4-519d-9100-347399abf5ef","wikidataLabel":"Francis Murray Boddy","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q102473991","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","KUOM"]}},"pageContext":{"id":"04c2eb1f-02c4-519d-9100-347399abf5ef"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

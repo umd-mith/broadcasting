@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1061122",
+    "result": {"data":{"entitiesJson":{"id":"8d9a2b76-884d-5b5e-91a5-40ec1ad5c927","wikidataLabel":"University of Massachusetts","altLabels":["University of Massachusetts system","University of Massachusetts (system)","UMass"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"five-campus public university system in Massachusetts, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1863","cpfPageID":"Q1061122","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/123141812"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Massachusetts","worldCatURL":["https://worldcat.org/identities/lccn-n79043091"],"snacURL":["http://n2t.net/ark:/99166/w6w74tmt"],"associatedPlaces":["Massachusetts","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79043091"],"collections":["NAEB"]}},"pageContext":{"id":"8d9a2b76-884d-5b5e-91a5-40ec1ad5c927"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

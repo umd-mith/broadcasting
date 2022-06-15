@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1196251",
+    "result": {"data":{"entitiesJson":{"id":"d0a78625-c8ea-567b-9dd8-d051b88377a0","wikidataLabel":"Union Theological Seminary","altLabels":["UTS"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"independent, ecumenical, Christian seminary in New York City","employer":null,"fieldOfWork":null,"inceptionDate":"1836","cpfPageID":"Q1196251","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/268590410"],"wikipediaURL":"https://en.wikipedia.org/wiki/Union_Theological_Seminary_(New_York_City)","worldCatURL":["https://worldcat.org/identities/lccn-n50062320"],"snacURL":null,"associatedPlaces":["New York City","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n50062320"],"collections":["NAEB"]}},"pageContext":{"id":"d0a78625-c8ea-567b-9dd8-d051b88377a0"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

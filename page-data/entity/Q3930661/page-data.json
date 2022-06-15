@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3930661",
+    "result": {"data":{"entitiesJson":{"id":"ee4e73ec-8cd1-56ad-9885-c3e7dacab674","wikidataLabel":"Rayford Logan","altLabels":["Rayford Whittingham Logan"],"birthDate":"1897","deathDate":"1982, 1981","birthPlace":"\"Washington, D.C.\"","deathPlace":"\"Washington, D.C.\"","wikidataDescription":"American historian","employer":["Howard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3930661","naraURL":null,"occupation":["historian","professor"],"viafURL":["https://viaf.org/viaf/92077614"],"wikipediaURL":"https://en.wikipedia.org/wiki/Rayford_Logan","worldCatURL":["https://worldcat.org/identities/lccn-n50039513"],"snacURL":["http://n2t.net/ark:/99166/w60c50cf"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50039513"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"ee4e73ec-8cd1-56ad-9885-c3e7dacab674"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

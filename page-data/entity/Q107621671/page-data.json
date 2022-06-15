@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621671",
+    "result": {"data":{"entitiesJson":{"id":"5a2437da-975a-5960-8f8c-9f40a092dbb2","wikidataLabel":"Kathleen N. Lardie","altLabels":["Kay Lardie"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at Detroit Public Schools","employer":["Detroit Public Schools"],"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q107621671","naraURL":null,"occupation":["broadcasting executive"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"5a2437da-975a-5960-8f8c-9f40a092dbb2"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q162820",
+    "result": {"data":{"entitiesJson":{"id":"8aa3d127-a8e3-56fb-8048-245700a3b0e1","wikidataLabel":"Norman Thomas","altLabels":["Norman Mattoon Thomas"],"birthDate":"1884","deathDate":"1968","birthPlace":"Marion","deathPlace":"Cold Spring Harbor","wikidataDescription":"American Presbyterian minister and socialist (1884-1968)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q162820","naraURL":null,"occupation":["peace activist","socialist","civil rights advocate","politician"],"viafURL":["https://viaf.org/viaf/13082823"],"wikipediaURL":"https://en.wikipedia.org/wiki/Norman_Thomas","worldCatURL":["https://worldcat.org/identities/lccn-n50010195"],"snacURL":["http://n2t.net/ark:/99166/w6d50kt2"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50010195"],"collections":["WHA","KUOM"]}},"pageContext":{"id":"8aa3d127-a8e3-56fb-8048-245700a3b0e1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

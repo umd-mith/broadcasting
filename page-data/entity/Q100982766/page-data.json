@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q100982766",
+    "result": {"data":{"entitiesJson":{"id":"8668a2fd-7661-5461-ba49-041c5dfa693a","wikidataLabel":"Ralph W. Steetle","altLabels":null,"birthDate":"1912","deathDate":"2004","birthPlace":"Pittsburgh","deathPlace":null,"wikidataDescription":"American broadcaster","employer":["WLSU","Louisiana State University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q100982766","naraURL":null,"occupation":["broadcaster"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"8668a2fd-7661-5461-ba49-041c5dfa693a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

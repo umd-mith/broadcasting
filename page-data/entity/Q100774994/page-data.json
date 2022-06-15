@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q100774994",
+    "result": {"data":{"entitiesJson":{"id":"756cd8d2-c87b-582f-8a2d-d38aaad12dee","wikidataLabel":"Eduardo Neale-Silva","altLabels":null,"birthDate":"1905","deathDate":"1989","birthPlace":null,"deathPlace":null,"wikidataDescription":"Chilean literature professor","employer":["University of Wisconsin–Madison","University of Iowa"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q100774994","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/65306801"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n80086490"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80086490"],"collections":["WHA"]}},"pageContext":{"id":"756cd8d2-c87b-582f-8a2d-d38aaad12dee"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

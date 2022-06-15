@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621625",
+    "result": {"data":{"entitiesJson":{"id":"c9b30642-2f63-5b5b-a3e0-2d1dcbbae1e0","wikidataLabel":"Robert B. Hudson","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621625","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"c9b30642-2f63-5b5b-a3e0-2d1dcbbae1e0"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

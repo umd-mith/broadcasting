@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7060617",
+    "result": {"data":{"entitiesJson":{"id":"169a5c89-9065-51b4-9ca4-ebdefa0fdc07","wikidataLabel":"Norton E. Long","altLabels":["Norton Enneking Long"],"birthDate":"1910","deathDate":"1993","birthPlace":null,"deathPlace":null,"wikidataDescription":"American political scientist","employer":["Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q7060617","naraURL":null,"occupation":["political scientist"],"viafURL":["https://viaf.org/viaf/114648307"],"wikipediaURL":"https://en.wikipedia.org/wiki/Norton_E._Long","worldCatURL":["https://worldcat.org/identities/lccn-n88605428"],"snacURL":["http://n2t.net/ark:/99166/w67q2rm5"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n88605428"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"169a5c89-9065-51b4-9ca4-ebdefa0fdc07"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

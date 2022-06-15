@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3806642",
+    "result": {"data":{"entitiesJson":{"id":"87e666ca-a981-5386-900b-41c5a96f8abf","wikidataLabel":"James L. Farmer, Jr.","altLabels":null,"birthDate":"1920","deathDate":"1999","birthPlace":"Marshall","deathPlace":"Fredericksburg","wikidataDescription":"African Americans' rights activist (1920-1999)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3806642","naraURL":null,"occupation":["human rights activist","politician"],"viafURL":["https://viaf.org/viaf/22162973"],"wikipediaURL":"https://en.wikipedia.org/wiki/James_Farmer","worldCatURL":["https://worldcat.org/identities/lccn-n84129162"],"snacURL":["http://n2t.net/ark:/99166/w6gx4q14"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n84129162"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"87e666ca-a981-5386-900b-41c5a96f8abf"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

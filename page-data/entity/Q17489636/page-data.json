@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q17489636",
+    "result": {"data":{"entitiesJson":{"id":"9d73c0d4-1e33-5b17-9c1f-6806898a7624","wikidataLabel":"Bill Greenwood","altLabels":["William Warren Greenwood"],"birthDate":"1942","deathDate":"2020","birthPlace":null,"deathPlace":null,"wikidataDescription":"American journalist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q17489636","naraURL":null,"occupation":["journalist"],"viafURL":null,"wikipediaURL":"https://en.wikipedia.org/wiki/Bill_Greenwood_(reporter)","worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"9d73c0d4-1e33-5b17-9c1f-6806898a7624"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

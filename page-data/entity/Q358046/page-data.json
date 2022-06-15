@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q358046",
+    "result": {"data":{"entitiesJson":{"id":"67f06a5a-2ae4-53c3-83f6-b6882c50bedd","wikidataLabel":"C. Walton Lillehei","altLabels":["Clarence Walton Lillehei","\"Clarence Walton \"Walt\" Lillehei\""],"birthDate":"1918","deathDate":"1999","birthPlace":"Minneapolis","deathPlace":"Saint Paul","wikidataDescription":"American cardiologist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q358046","naraURL":null,"occupation":["cardiologist","surgeon"],"viafURL":["https://viaf.org/viaf/45101333"],"wikipediaURL":"https://en.wikipedia.org/wiki/C._Walton_Lillehei","worldCatURL":["https://worldcat.org/identities/lccn-n88044789"],"snacURL":["http://n2t.net/ark:/99166/w69s1w14"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n88044789"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"67f06a5a-2ae4-53c3-83f6-b6882c50bedd"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

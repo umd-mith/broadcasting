@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621684",
+    "result": {"data":{"entitiesJson":{"id":"6508eca2-e463-5a52-8c95-a6930314374a","wikidataLabel":"Alfred E. Partridge","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio producer and broadcaster at the University of Illinois","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621684","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6508eca2-e463-5a52-8c95-a6930314374a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

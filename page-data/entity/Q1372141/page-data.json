@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1372141",
+    "result": {"data":{"entitiesJson":{"id":"b9912354-529a-5706-9598-887993c3007f","wikidataLabel":"Paul Douglas","altLabels":["Paul Howard Douglas"],"birthDate":"1892","deathDate":"1976","birthPlace":"Salem","deathPlace":"\"Washington, D.C.\"","wikidataDescription":"American politician (1892-1976)","employer":["University of Chicago"],"fieldOfWork":["economics"],"inceptionDate":null,"cpfPageID":"Q1372141","naraURL":["https://catalog.archives.gov/id/10582573"],"occupation":["university teacher","United States Shipping Board Merchant Fleet Corporation","author","military officer","economist","politician"],"viafURL":["https://viaf.org/viaf/32075879"],"wikipediaURL":"https://en.wikipedia.org/wiki/Paul_Douglas","worldCatURL":["https://worldcat.org/identities/lccn-n50027506"],"snacURL":["http://n2t.net/ark:/99166/w6xd1fsd"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50027506"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"b9912354-529a-5706-9598-887993c3007f"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

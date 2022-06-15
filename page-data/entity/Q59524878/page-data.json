@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q59524878",
+    "result": {"data":{"entitiesJson":{"id":"04e88da8-f874-5483-ab5d-04ef785e93d1","wikidataLabel":"Alburey Castell","altLabels":null,"birthDate":"1904","deathDate":"1987","birthPlace":null,"deathPlace":null,"wikidataDescription":"(1904-1987)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q59524878","naraURL":null,"occupation":["philosopher"],"viafURL":["https://viaf.org/viaf/108266297"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n82079323"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n82079323"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"04e88da8-f874-5483-ab5d-04ef785e93d1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

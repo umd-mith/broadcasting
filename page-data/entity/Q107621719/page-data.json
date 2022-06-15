@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621719",
+    "result": {"data":{"entitiesJson":{"id":"6966ae4a-ea3e-5fba-b9c0-dea2a769eb87","wikidataLabel":"Harry D. Lamb","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621719","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6966ae4a-ea3e-5fba-b9c0-dea2a769eb87"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

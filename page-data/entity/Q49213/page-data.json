@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q49213",
+    "result": {"data":{"entitiesJson":{"id":"6cb9565b-88ed-51db-aa3b-b0a428671fbf","wikidataLabel":"University of Texas at Austin","altLabels":["utexas.edu","UT-Austin","UT Austin","UT","University of Texas, Austin","University of Texas"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university in Austin, Texas, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1883","cpfPageID":"Q49213","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/141925602","https://viaf.org/viaf/136080652"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Texas_at_Austin","worldCatURL":["https://worldcat.org/identities/lccn-n79023323","https://worldcat.org/identities/lccn-n79023322"],"snacURL":["http://n2t.net/ark:/99166/w6c0039h"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79023323"],"collections":["NAEB"]}},"pageContext":{"id":"6cb9565b-88ed-51db-aa3b-b0a428671fbf"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

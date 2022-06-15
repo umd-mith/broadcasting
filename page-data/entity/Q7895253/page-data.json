@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7895253",
+    "result": {"data":{"entitiesJson":{"id":"c696b9c8-d19e-5e75-a05d-60114226c086","wikidataLabel":"University of Chicago Contemporary Chamber Players","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":"1964","cpfPageID":"Q7895253","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/123192578"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Chicago_Contemporary_Chamber_Players","worldCatURL":["https://worldcat.org/identities/lccn-n83066013"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83066013"],"collections":["NAEB"]}},"pageContext":{"id":"c696b9c8-d19e-5e75-a05d-60114226c086"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

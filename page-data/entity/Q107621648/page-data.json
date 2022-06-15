@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621648",
+    "result": {"data":{"entitiesJson":{"id":"6b84ea06-071b-5953-a30d-c1281b09e8c0","wikidataLabel":"John S. Clayton","altLabels":null,"birthDate":"1925","deathDate":"2019","birthPlace":"Arkansas","deathPlace":null,"wikidataDescription":"radio executive at the University of North Carolina","employer":["University of North Carolina"],"fieldOfWork":["broadcasting","education"],"inceptionDate":null,"cpfPageID":"Q107621648","naraURL":null,"occupation":["broadcasting executive"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6b84ea06-071b-5953-a30d-c1281b09e8c0"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

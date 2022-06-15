@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621639",
+    "result": {"data":{"entitiesJson":{"id":"6da883ce-3f27-5094-a8cf-f07e71025010","wikidataLabel":"Richard B. Hull","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"manager of WOI-TV","employer":null,"fieldOfWork":["broadcasting"],"inceptionDate":null,"cpfPageID":"Q107621639","naraURL":null,"occupation":["broadcasting executive"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w63b7gb4"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6da883ce-3f27-5094-a8cf-f07e71025010"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

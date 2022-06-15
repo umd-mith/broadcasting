@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q597236",
+    "result": {"data":{"entitiesJson":{"id":"6f06b914-b713-5ff0-8b1c-b577c8d5b801","wikidataLabel":"Washington State University","altLabels":["Wazzu","WSU"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public university in Pullman, Washington, USA","employer":null,"fieldOfWork":null,"inceptionDate":"1959","cpfPageID":"Q597236","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/130740537"],"wikipediaURL":"https://en.wikipedia.org/wiki/Washington_State_University","worldCatURL":["https://worldcat.org/identities/lccn-n79060423"],"snacURL":null,"associatedPlaces":["Pullman","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79060423"],"collections":["NAEB"]}},"pageContext":{"id":"6f06b914-b713-5ff0-8b1c-b577c8d5b801"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

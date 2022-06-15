@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7953991",
+    "result": {"data":{"entitiesJson":{"id":"2ded14bd-e716-55ed-ad7c-c58d431cb5b8","wikidataLabel":"WOSU","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"former public radio station in Columbus, Ohio, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1920","cpfPageID":"Q7953991","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/138520076"],"wikipediaURL":"https://en.wikipedia.org/wiki/WOSU_(AM)","worldCatURL":["https://worldcat.org/identities/lccn-n92087928"],"snacURL":["http://n2t.net/ark:/99166/w610404f"],"associatedPlaces":["Columbus","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n92087928"],"collections":["NAEB"]}},"pageContext":{"id":"2ded14bd-e716-55ed-ad7c-c58d431cb5b8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

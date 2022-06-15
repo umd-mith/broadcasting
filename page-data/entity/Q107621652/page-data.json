@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621652",
+    "result": {"data":{"entitiesJson":{"id":"a00ec05a-ea85-5ce6-90cf-4ccdff9d2b8e","wikidataLabel":"Lee Eitzen","altLabels":["Leroy Victor Eitzen"],"birthDate":"1920","deathDate":"1981","birthPlace":"Minnesota","deathPlace":"Michigan","wikidataDescription":"radio executive and composer","employer":["University of Iowa"],"fieldOfWork":["broadcasting","music"],"inceptionDate":null,"cpfPageID":"Q107621652","naraURL":null,"occupation":["broadcasting executive","composer"],"viafURL":["https://viaf.org/viaf/29157581643833781464"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-no2019179156"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2019179156"],"collections":["NAEB"]}},"pageContext":{"id":"a00ec05a-ea85-5ce6-90cf-4ccdff9d2b8e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

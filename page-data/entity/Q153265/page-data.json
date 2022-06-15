@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q153265",
+    "result": {"data":{"entitiesJson":{"id":"09df039e-756e-5355-af8e-15706aa8f184","wikidataLabel":"University of Cincinnati","altLabels":["McMicken University","Cincinnati College","UC"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university in Cincinnati, Ohio","employer":null,"fieldOfWork":null,"inceptionDate":"1819","cpfPageID":"Q153265","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/147166099"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Cincinnati","worldCatURL":["https://worldcat.org/identities/lccn-n79034519"],"snacURL":null,"associatedPlaces":["Cincinnati","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79034519"],"collections":["NAEB"]}},"pageContext":{"id":"09df039e-756e-5355-af8e-15706aa8f184"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

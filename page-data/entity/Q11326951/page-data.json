@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q11326951",
+    "result": {"data":{"entitiesJson":{"id":"1ba3ed2b-79c5-5515-8857-978a8f39349e","wikidataLabel":"H. Gordon Skilling","altLabels":["Harold Gordon Skilling"],"birthDate":"1912","deathDate":"2001","birthPlace":"Toronto","deathPlace":"Toronto","wikidataDescription":"Canadian political scientist (1912-2001)","employer":["University of Toronto"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q11326951","naraURL":null,"occupation":["bohemicist","political scientist","historian","writer"],"viafURL":["https://viaf.org/viaf/108889560"],"wikipediaURL":"https://en.wikipedia.org/wiki/H._Gordon_Skilling","worldCatURL":["https://worldcat.org/identities/lccn-n50012010"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50012010"],"collections":["WHA"]}},"pageContext":{"id":"1ba3ed2b-79c5-5515-8857-978a8f39349e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

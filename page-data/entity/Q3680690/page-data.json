@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3680690",
+    "result": {"data":{"entitiesJson":{"id":"2b6633b0-2557-5eb6-9047-a1bd678eb80b","wikidataLabel":"Clifford Durr","altLabels":["Clifford Judkins Durr"],"birthDate":"1899","deathDate":"1975","birthPlace":"Montgomery","deathPlace":"Elmore County","wikidataDescription":"lawyer (1899-1975)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3680690","naraURL":["https://catalog.archives.gov/id/10572349"],"occupation":["lawyer"],"viafURL":["https://viaf.org/viaf/50025064"],"wikipediaURL":"https://en.wikipedia.org/wiki/Clifford_Durr","worldCatURL":["https://worldcat.org/identities/lccn-n86042474"],"snacURL":["http://n2t.net/ark:/99166/w6542rvt"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n86042474"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"2b6633b0-2557-5eb6-9047-a1bd678eb80b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

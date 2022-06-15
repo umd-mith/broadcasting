@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1041671",
+    "result": {"data":{"entitiesJson":{"id":"3d292d67-8f74-5395-bed4-a596723a9752","wikidataLabel":"Carleton College","altLabels":["Northfield College"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"liberal arts college in Northfield, Minnesota","employer":null,"fieldOfWork":null,"inceptionDate":"1866","cpfPageID":"Q1041671","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/158870123"],"wikipediaURL":"https://en.wikipedia.org/wiki/Carleton_College","worldCatURL":["https://worldcat.org/identities/lccn-n50051125"],"snacURL":["http://n2t.net/ark:/99166/w6bs2m1h"],"associatedPlaces":["Northfield","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n50051125"],"collections":["NAEB"]}},"pageContext":{"id":"3d292d67-8f74-5395-bed4-a596723a9752"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

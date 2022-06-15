@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q311317",
+    "result": {"data":{"entitiesJson":{"id":"0968c8ae-4694-5678-a85f-1039bcfdb9f5","wikidataLabel":"Isaac Stern","altLabels":["Issac Stern"],"birthDate":"1920","deathDate":"2001","birthPlace":"Kremenets","deathPlace":"New York City","wikidataDescription":"American musician","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q311317","naraURL":null,"occupation":["violinist","conductor","writer"],"viafURL":["https://viaf.org/viaf/110839419"],"wikipediaURL":"https://en.wikipedia.org/wiki/Isaac_Stern","worldCatURL":["https://worldcat.org/identities/lccn-n83070050"],"snacURL":["http://n2t.net/ark:/99166/w6sn0780"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83070050"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"0968c8ae-4694-5678-a85f-1039bcfdb9f5"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q74343",
+    "result": {"data":{"entitiesJson":{"id":"10f7b8a2-e854-5170-a78c-5f5166580012","wikidataLabel":"Duquesne University","altLabels":["Duquesne University of the Holy Spirit"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"Catholic university in Pittsburgh, Pennsylvania, USA","employer":null,"fieldOfWork":null,"inceptionDate":"1878","cpfPageID":"Q74343","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/146569439"],"wikipediaURL":"https://en.wikipedia.org/wiki/Duquesne_University","worldCatURL":["https://worldcat.org/identities/lccn-n79084606"],"snacURL":null,"associatedPlaces":["Pittsburgh","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79084606"],"collections":["NAEB"]}},"pageContext":{"id":"10f7b8a2-e854-5170-a78c-5f5166580012"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

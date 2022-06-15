@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q15500036",
+    "result": {"data":{"entitiesJson":{"id":"f8d71e54-3c17-54a7-b692-54472bcfd139","wikidataLabel":"David Fellman","altLabels":null,"birthDate":"1907","deathDate":"2003","birthPlace":null,"deathPlace":null,"wikidataDescription":"American legal scholar","employer":["University of Wisconsin–Madison"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q15500036","naraURL":null,"occupation":["writer"],"viafURL":["https://viaf.org/viaf/55386800"],"wikipediaURL":"https://en.wikipedia.org/wiki/David_Fellman","worldCatURL":["https://worldcat.org/identities/lccn-n50001113"],"snacURL":["http://n2t.net/ark:/99166/w60s16ff"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50001113"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"f8d71e54-3c17-54a7-b692-54472bcfd139"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

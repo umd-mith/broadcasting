@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q7952248",
+    "result": {"data":{"entitiesJson":{"id":"df4778da-7e61-5f30-833a-f3bc585452f5","wikidataLabel":"WLIB","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"gospel radio station in New York City","employer":null,"fieldOfWork":null,"inceptionDate":"1941","cpfPageID":"Q7952248","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/132650486"],"wikipediaURL":"https://en.wikipedia.org/wiki/WLIB","worldCatURL":["https://worldcat.org/identities/lccn-n89608112"],"snacURL":null,"associatedPlaces":["New York City","New Jersey","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n89608112"],"collections":["NAEB"]}},"pageContext":{"id":"df4778da-7e61-5f30-833a-f3bc585452f5"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q461761",
+    "result": {"data":{"entitiesJson":{"id":"37c3a49a-e8ca-5c6d-937f-6cc57c7264ab","wikidataLabel":"Canadian Broadcasting Corporation","altLabels":["CBC/Radio-Canada","CBC"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":"1936","cpfPageID":"Q461761","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/144201535","https://viaf.org/viaf/124250538"],"wikipediaURL":"https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporation","worldCatURL":["https://worldcat.org/identities/viaf-124250538","https://worldcat.org/identities/lccn-n80085267"],"snacURL":["http://n2t.net/ark:/99166/w6qn9xrb"],"associatedPlaces":["Canada"],"locURL":["https://id.loc.gov/authorities/names/n80085267"],"collections":["NAEB","NFCB"]}},"pageContext":{"id":"37c3a49a-e8ca-5c6d-937f-6cc57c7264ab"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

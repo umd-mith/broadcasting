@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q49110",
+    "result": {"data":{"entitiesJson":{"id":"a8f88212-0692-5a9f-9eef-daeda37e1016","wikidataLabel":"Boston University","altLabels":["Boston U","BU","bu.edu"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"private research university in Boston, Massachusetts, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1869","cpfPageID":"Q49110","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/140052600"],"wikipediaURL":"https://en.wikipedia.org/wiki/Boston_University","worldCatURL":["https://worldcat.org/identities/lccn-n79059649"],"snacURL":null,"associatedPlaces":["Boston","Massachusetts","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79059649"],"collections":["NAEB"]}},"pageContext":{"id":"a8f88212-0692-5a9f-9eef-daeda37e1016"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

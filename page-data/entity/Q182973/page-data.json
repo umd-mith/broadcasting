@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q182973",
+    "result": {"data":{"entitiesJson":{"id":"a55fee86-0b30-545b-b107-dba51c256741","wikidataLabel":"University of Iowa","altLabels":["uiowa.edu","The University of Iowa","State University of Iowa","UI"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university in Iowa City, Iowa, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1847","cpfPageID":"Q182973","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/142738025"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Iowa","worldCatURL":["https://worldcat.org/identities/lccn-n79046198"],"snacURL":null,"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79046198"],"collections":["NAEB"]}},"pageContext":{"id":"a55fee86-0b30-545b-b107-dba51c256741"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

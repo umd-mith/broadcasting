@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q18521440",
+    "result": {"data":{"entitiesJson":{"id":"fd87497a-1a17-53d1-b7e5-9acc672ab273","wikidataLabel":"Fred Harvey Harrington","altLabels":null,"birthDate":"1912","deathDate":"1995","birthPlace":"Watertown","deathPlace":"Madison","wikidataDescription":"American academic administrator (1912-1995)","employer":["University of Arkansas","University of Wisconsin–Madison","West Virginia University","New York University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q18521440","naraURL":null,"occupation":["academic administrator","educator"],"viafURL":["https://viaf.org/viaf/109826061"],"wikipediaURL":"https://en.wikipedia.org/wiki/Fred_Harvey_Harrington","worldCatURL":["https://worldcat.org/identities/lccn-n79056622"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79056622"],"collections":["WHA"]}},"pageContext":{"id":"fd87497a-1a17-53d1-b7e5-9acc672ab273"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

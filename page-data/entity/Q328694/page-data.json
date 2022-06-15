@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q328694",
+    "result": {"data":{"entitiesJson":{"id":"6580c94d-a23c-5b90-99d0-44331d9ccf74","wikidataLabel":"André Philip","altLabels":["Andre Philip"],"birthDate":"1902","deathDate":"1970","birthPlace":"Pont-Saint-Esprit","deathPlace":"Paris","wikidataDescription":"French politician (1902-1970)","employer":["University of Lyon","Saarland University","University of Paris"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q328694","naraURL":null,"occupation":["French Resistance fighter","university teacher","economist","jurist","politician"],"viafURL":["https://viaf.org/viaf/41844988"],"wikipediaURL":"https://en.wikipedia.org/wiki/Andr%C3%A9_Philip","worldCatURL":["https://worldcat.org/identities/lccn-n84109935"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n84109935"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"6580c94d-a23c-5b90-99d0-44331d9ccf74"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

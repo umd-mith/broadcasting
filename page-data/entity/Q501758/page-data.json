@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q501758",
+    "result": {"data":{"entitiesJson":{"id":"aaf6dc08-24f7-5c14-9e60-6b4e4dc6e0e3","wikidataLabel":"University of Florida","altLabels":["University of the State of Florida","Florida University","UF"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university in Gainesville, Florida, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1853","cpfPageID":"Q501758","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/157231387"],"wikipediaURL":"https://en.wikipedia.org/wiki/University_of_Florida","worldCatURL":["https://worldcat.org/identities/lccn-n79056498"],"snacURL":null,"associatedPlaces":["Gainesville","United States of America"],"locURL":["https://id.loc.gov/authorities/names/n79056498"],"collections":["NAEB"]}},"pageContext":{"id":"aaf6dc08-24f7-5c14-9e60-6b4e4dc6e0e3"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

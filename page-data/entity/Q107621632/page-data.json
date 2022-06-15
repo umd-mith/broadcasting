@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q107621632",
+    "result": {"data":{"entitiesJson":{"id":"9ee315fd-1011-5add-97c2-8cb172d68da2","wikidataLabel":"Seymour N. Siegel","altLabels":["Seymour Nathaniel Siegel"],"birthDate":null,"deathDate":"1978","birthPlace":null,"deathPlace":null,"wikidataDescription":"program director of WNYC in New York City","employer":["WNYC","City College of New York"],"fieldOfWork":["broadcasting","education"],"inceptionDate":null,"cpfPageID":"Q107621632","naraURL":null,"occupation":["broadcasting executive","university teacher"],"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6h72h53"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"9ee315fd-1011-5add-97c2-8cb172d68da2"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

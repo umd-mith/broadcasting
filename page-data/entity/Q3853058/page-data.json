@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3853058",
+    "result": {"data":{"entitiesJson":{"id":"9413973f-0876-51d7-8d21-bb0e54b344e3","wikidataLabel":"Max Lerner","altLabels":null,"birthDate":"1902","deathDate":"1992","birthPlace":"Minsk","deathPlace":"New York City","wikidataDescription":"American journalist and educator","employer":["Williams College","Brandeis University","Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q3853058","naraURL":null,"occupation":["journalist","writer"],"viafURL":["https://viaf.org/viaf/109277765"],"wikipediaURL":"https://en.wikipedia.org/wiki/Max_Lerner","worldCatURL":["https://worldcat.org/identities/lccn-n79147884"],"snacURL":["http://n2t.net/ark:/99166/w6ks6sv1"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79147884"],"collections":["NAEB"]}},"pageContext":{"id":"9413973f-0876-51d7-8d21-bb0e54b344e3"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q2094347",
+    "result": {"data":{"entitiesJson":{"id":"164ab04e-29c7-5e78-bc64-b852723d41b8","wikidataLabel":"Alistair Cooke","altLabels":["Alfred Alistair Cooke","Alfred Cooke"],"birthDate":"1908","deathDate":"2004","birthPlace":"Salford","deathPlace":"New York City","wikidataDescription":"British journalist and broadcaster","employer":["BBC"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q2094347","naraURL":null,"occupation":["radio personality","journalist","television presenter","writer"],"viafURL":["https://viaf.org/viaf/73890767"],"wikipediaURL":"https://en.wikipedia.org/wiki/Alistair_Cooke","worldCatURL":["https://worldcat.org/identities/lccn-n79089555"],"snacURL":["http://n2t.net/ark:/99166/w6st84rs"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79089555"],"collections":["NFCB","KUOM"]}},"pageContext":{"id":"164ab04e-29c7-5e78-bc64-b852723d41b8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

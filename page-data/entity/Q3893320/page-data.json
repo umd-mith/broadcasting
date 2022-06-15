@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q3893320",
+    "result": {"data":{"entitiesJson":{"id":"9700ee08-9acd-549d-8932-a6e5481c638d","wikidataLabel":"Millikin University","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American private university","employer":null,"fieldOfWork":null,"inceptionDate":"1901","cpfPageID":"Q3893320","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/123456807"],"wikipediaURL":"https://en.wikipedia.org/wiki/Millikin_University","worldCatURL":["https://worldcat.org/identities/lccn-no96015409"],"snacURL":null,"associatedPlaces":["Decatur","United States of America"],"locURL":["https://id.loc.gov/authorities/names/no96015409"],"collections":["NAEB"]}},"pageContext":{"id":"9700ee08-9acd-549d-8932-a6e5481c638d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q888927",
+    "result": {"data":{"entitiesJson":{"id":"66d50ada-3475-559e-a0bf-e14d9a285540","wikidataLabel":"Al Quie","altLabels":["Albert Harold Quie"],"birthDate":"1923","deathDate":null,"birthPlace":"Dennison","deathPlace":null,"wikidataDescription":"American politician","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q888927","naraURL":null,"occupation":["farmer","politician"],"viafURL":["https://viaf.org/viaf/70210514"],"wikipediaURL":"https://en.wikipedia.org/wiki/Al_Quie","worldCatURL":["https://worldcat.org/identities/lccn-n79102235"],"snacURL":["http://n2t.net/ark:/99166/w6tm83g1"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79102235"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"66d50ada-3475-559e-a0bf-e14d9a285540"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

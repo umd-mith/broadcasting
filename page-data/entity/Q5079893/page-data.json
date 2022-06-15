@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q5079893",
+    "result": {"data":{"entitiesJson":{"id":"507294bb-cf27-51bb-af0a-ff03000640d1","wikidataLabel":"Charles Kuralt","altLabels":["Charles Bishop Kuralt"],"birthDate":"1934","deathDate":"1997","birthPlace":"Wilmington","deathPlace":"NewYork–Presbyterian Hospital","wikidataDescription":"American journalist, correspondent, news anchor (1934-1997)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q5079893","naraURL":["https://catalog.archives.gov/id/10580546"],"occupation":["journalist","correspondent","news presenter"],"viafURL":["https://viaf.org/viaf/20931504"],"wikipediaURL":"https://en.wikipedia.org/wiki/Charles_Kuralt","worldCatURL":["https://worldcat.org/identities/lccn-n50058269"],"snacURL":["http://n2t.net/ark:/99166/w6fr045b"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n50058269"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"507294bb-cf27-51bb-af0a-ff03000640d1"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q979718",
+    "result": {"data":{"entitiesJson":{"id":"b57df28b-4347-561c-b555-1882c6ed982c","wikidataLabel":"LaSalle Quartet","altLabels":["LaSalle String Quartet"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American string quartet","employer":null,"fieldOfWork":null,"inceptionDate":"1946","cpfPageID":"Q979718","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/131854011"],"wikipediaURL":"https://en.wikipedia.org/wiki/LaSalle_Quartet","worldCatURL":["https://worldcat.org/identities/lccn-n81140238"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81140238"],"collections":["NAEB"]}},"pageContext":{"id":"b57df28b-4347-561c-b555-1882c6ed982c"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

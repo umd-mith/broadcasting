@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6140025",
+    "result": {"data":{"entitiesJson":{"id":"1ec03d40-34a9-586b-bd38-45fb1c80147a","wikidataLabel":"James Morrill","altLabels":["James Lewis Morrill","James L. Morrill"],"birthDate":"1891","deathDate":"1979","birthPlace":"Marion","deathPlace":null,"wikidataDescription":"American academic administrator","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6140025","naraURL":null,"occupation":["reporter"],"viafURL":["https://viaf.org/viaf/17007180"],"wikipediaURL":"https://en.wikipedia.org/wiki/James_Morrill","worldCatURL":["https://worldcat.org/identities/lccn-no2007083496"],"snacURL":["http://n2t.net/ark:/99166/w6668g9m"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2007083496"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"1ec03d40-34a9-586b-bd38-45fb1c80147a"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

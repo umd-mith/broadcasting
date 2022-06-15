@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q633354",
+    "result": {"data":{"entitiesJson":{"id":"dd591936-4dec-5927-b658-916ad02ecdcd","wikidataLabel":"Archibald MacLeish","altLabels":null,"birthDate":"1892","deathDate":"1982","birthPlace":"Glencoe","deathPlace":"Boston","wikidataDescription":"American poet and Librarian of Congress","employer":["Library of Congress","Amherst College","Harvard University"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q633354","naraURL":["https://catalog.archives.gov/id/10581374"],"occupation":["poet lawyer","playwright","librarian","poet","lawyer","writer","university teacher"],"viafURL":["https://viaf.org/viaf/85172667"],"wikipediaURL":"https://en.wikipedia.org/wiki/Archibald_MacLeish","worldCatURL":["https://worldcat.org/identities/lccn-n80015459"],"snacURL":["http://n2t.net/ark:/99166/w6z899r8"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80015459"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"dd591936-4dec-5927-b658-916ad02ecdcd"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

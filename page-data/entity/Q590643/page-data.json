@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q590643",
+    "result": {"data":{"entitiesJson":{"id":"a53d8ef6-7b48-5a3e-9628-2bad74477973","wikidataLabel":"Miami University","altLabels":["Miami-Ohio","Miami of Ohio","Miami (OH)","Miami"],"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"public research university located in Oxford, Ohio, United States","employer":null,"fieldOfWork":null,"inceptionDate":"1809","cpfPageID":"Q590643","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/123789731"],"wikipediaURL":"https://en.wikipedia.org/wiki/Miami_University","worldCatURL":["https://worldcat.org/identities/lccn-n50060936"],"snacURL":["http://n2t.net/ark:/99166/w6cv87s3"],"associatedPlaces":["United States of America"],"locURL":["https://id.loc.gov/authorities/names/n50060936"],"collections":["NAEB"]}},"pageContext":{"id":"a53d8ef6-7b48-5a3e-9628-2bad74477973"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

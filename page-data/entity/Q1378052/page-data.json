@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q1378052",
+    "result": {"data":{"entitiesJson":{"id":"622451a7-c56a-5951-88fb-b6ddab2fc59f","wikidataLabel":"Samuel Taliaferro Rayburn","altLabels":["Sam T. Rayburn","S. Taliaferro Rayburn","Sam Rayburn"],"birthDate":"1882","deathDate":"1961","birthPlace":"Roane County","deathPlace":"Bonham","wikidataDescription":"lawmaker from Bonham, Texas (1882-1961)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q1378052","naraURL":["https://catalog.archives.gov/id/10568444"],"occupation":["politician","lawyer"],"viafURL":["https://viaf.org/viaf/49975091"],"wikipediaURL":"https://en.wikipedia.org/wiki/Sam_Rayburn","worldCatURL":["https://worldcat.org/identities/lccn-n83063388"],"snacURL":["http://n2t.net/ark:/99166/w6cn71v2","http://n2t.net/ark:/99166/w60w931w"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n83063388"],"collections":["NAEB","WHA"]}},"pageContext":{"id":"622451a7-c56a-5951-88fb-b6ddab2fc59f"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

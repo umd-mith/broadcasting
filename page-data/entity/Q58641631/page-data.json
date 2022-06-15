@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q58641631",
+    "result": {"data":{"entitiesJson":{"id":"d5169560-9137-5658-bb94-770673d76fc8","wikidataLabel":"Toni McNaron","altLabels":null,"birthDate":"1937","deathDate":null,"birthPlace":"Alabama","deathPlace":null,"wikidataDescription":null,"employer":["University of Minnesota"],"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q58641631","naraURL":null,"occupation":["academic"],"viafURL":["https://viaf.org/viaf/94742636"],"wikipediaURL":"https://en.wikipedia.org/wiki/Toni_McNaron","worldCatURL":["https://worldcat.org/identities/lccn-n82111652"],"snacURL":["http://n2t.net/ark:/99166/w6s20b4k"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n82111652"],"collections":["KUOM"]}},"pageContext":{"id":"d5169560-9137-5658-bb94-770673d76fc8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

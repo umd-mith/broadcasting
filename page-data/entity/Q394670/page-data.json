@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q394670",
+    "result": {"data":{"entitiesJson":{"id":"9446d305-086c-5406-b742-ae3385616be7","wikidataLabel":"Agnes de Mille","altLabels":null,"birthDate":"1905","deathDate":"1993","birthPlace":"Harlem, New York City","deathPlace":"New York City","wikidataDescription":"American dancer and choreographer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q394670","naraURL":["https://catalog.archives.gov/id/18542731"],"occupation":["dancer","theatrical director","choreographer","ballet master","ballet dancer","writer"],"viafURL":["https://viaf.org/viaf/100229701"],"wikipediaURL":"https://en.wikipedia.org/wiki/Agnes_de_Mille","worldCatURL":["https://worldcat.org/identities/lccn-n80001412"],"snacURL":["http://n2t.net/ark:/99166/w6f47qfd"],"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n80001412"],"collections":["NAEB","KUOM"]}},"pageContext":{"id":"9446d305-086c-5406-b742-ae3385616be7"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}
