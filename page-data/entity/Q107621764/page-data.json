@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621764",
-    "result": {"data":{"entitiesJson":{"id":"863eb461-90b2-5382-a1cb-b75fefeb10e5","wikidataLabel":"Edward Wegener","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"television executive at Iowa State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621764","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"863eb461-90b2-5382-a1cb-b75fefeb10e5"}},
+    "result": {"data":{"entitiesJson":{"id":"863eb461-90b2-5382-a1cb-b75fefeb10e5","wikidataLabel":"Edward Wegener","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"television executive at Iowa State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621764","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"863eb461-90b2-5382-a1cb-b75fefeb10e5"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

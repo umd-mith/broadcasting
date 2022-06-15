@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621697",
-    "result": {"data":{"entitiesJson":{"id":"67f9ad67-cbcc-53e4-9092-40a47bd25fe3","wikidataLabel":"Richard F. Vogl","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621697","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"67f9ad67-cbcc-53e4-9092-40a47bd25fe3"}},
+    "result": {"data":{"entitiesJson":{"id":"67f9ad67-cbcc-53e4-9092-40a47bd25fe3","wikidataLabel":"Richard F. Vogl","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621697","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"67f9ad67-cbcc-53e4-9092-40a47bd25fe3"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

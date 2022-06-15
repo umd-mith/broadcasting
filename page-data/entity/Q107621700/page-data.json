@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621700",
-    "result": {"data":{"entitiesJson":{"id":"a5e248b6-85ad-5b3e-b10d-9b46d2a598a4","wikidataLabel":"B. B. Brackett","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at the University of South Dakota","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621700","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a5e248b6-85ad-5b3e-b10d-9b46d2a598a4"}},
+    "result": {"data":{"entitiesJson":{"id":"a5e248b6-85ad-5b3e-b10d-9b46d2a598a4","wikidataLabel":"B. B. Brackett","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of South Dakota","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621700","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a5e248b6-85ad-5b3e-b10d-9b46d2a598a4"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

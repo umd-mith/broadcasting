@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621765",
-    "result": {"data":{"entitiesJson":{"id":"a0f6b5ca-58d1-5b5f-af7e-f243b556f378","wikidataLabel":"Alvin M. Gaines","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621765","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a0f6b5ca-58d1-5b5f-af7e-f243b556f378"}},
+    "result": {"data":{"entitiesJson":{"id":"a0f6b5ca-58d1-5b5f-af7e-f243b556f378","wikidataLabel":"Alvin M. Gaines","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621765","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"a0f6b5ca-58d1-5b5f-af7e-f243b556f378"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

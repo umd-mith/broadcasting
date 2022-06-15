@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621771",
-    "result": {"data":{"entitiesJson":{"id":"b2f6137d-ce28-599e-82d1-d4a43ff0c6eb","wikidataLabel":"Robert G. VanDuyn","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"employee of the W. K. Kellogg Foundation","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621771","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"b2f6137d-ce28-599e-82d1-d4a43ff0c6eb"}},
+    "result": {"data":{"entitiesJson":{"id":"b2f6137d-ce28-599e-82d1-d4a43ff0c6eb","wikidataLabel":"Robert G. VanDuyn","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"employee of the W. K. Kellogg Foundation","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621771","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"b2f6137d-ce28-599e-82d1-d4a43ff0c6eb"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621709",
-    "result": {"data":{"entitiesJson":{"id":"2cd0c819-2478-5c0d-acdd-ea431042677c","wikidataLabel":"Arthur Weld, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"professor at Syracuse University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621709","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"2cd0c819-2478-5c0d-acdd-ea431042677c"}},
+    "result": {"data":{"entitiesJson":{"id":"2cd0c819-2478-5c0d-acdd-ea431042677c","wikidataLabel":"Arthur Weld, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor at Syracuse University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621709","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"2cd0c819-2478-5c0d-acdd-ea431042677c"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

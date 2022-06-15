@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621752",
-    "result": {"data":{"entitiesJson":{"id":"f6291c3f-1b56-512f-9465-f61935442cf3","wikidataLabel":"Northrop Dawson, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621752","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","KUOM"]}},"pageContext":{"id":"f6291c3f-1b56-512f-9465-f61935442cf3"}},
+    "result": {"data":{"entitiesJson":{"id":"f6291c3f-1b56-512f-9465-f61935442cf3","wikidataLabel":"Northrop Dawson, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621752","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","KUOM"]}},"pageContext":{"id":"f6291c3f-1b56-512f-9465-f61935442cf3"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621702",
-    "result": {"data":{"entitiesJson":{"id":"ff25eb97-e99c-5cee-b4bb-cf0b3f204838","wikidataLabel":"Robert C. Higgy","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at Ohio State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621702","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"ff25eb97-e99c-5cee-b4bb-cf0b3f204838"}},
+    "result": {"data":{"entitiesJson":{"id":"ff25eb97-e99c-5cee-b4bb-cf0b3f204838","wikidataLabel":"Robert C. Higgy","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Ohio State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621702","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"ff25eb97-e99c-5cee-b4bb-cf0b3f204838"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

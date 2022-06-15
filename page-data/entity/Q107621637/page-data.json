@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621637",
-    "result": {"data":{"entitiesJson":{"id":"00d76d66-a772-58a8-bfad-8fc08ae615fb","wikidataLabel":"Jack McBride","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"television consultant","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621637","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"00d76d66-a772-58a8-bfad-8fc08ae615fb"}},
+    "result": {"data":{"entitiesJson":{"id":"00d76d66-a772-58a8-bfad-8fc08ae615fb","wikidataLabel":"Jack McBride","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"television consultant","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621637","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"00d76d66-a772-58a8-bfad-8fc08ae615fb"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

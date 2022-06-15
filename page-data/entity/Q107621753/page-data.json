@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621753",
-    "result": {"data":{"entitiesJson":{"id":"1d0c7620-dbb0-565c-a033-d985330be6d7","wikidataLabel":"Allen Miller","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621753","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1d0c7620-dbb0-565c-a033-d985330be6d7"}},
+    "result": {"data":{"entitiesJson":{"id":"1d0c7620-dbb0-565c-a033-d985330be6d7","wikidataLabel":"Allen Miller","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621753","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1d0c7620-dbb0-565c-a033-d985330be6d7"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

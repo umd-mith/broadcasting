@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q54680493",
-    "result": {"data":{"entitiesJson":{"id":"4507e68f-d70b-586e-8b8d-a4d1fa538b94","wikidataLabel":"Nashville Public Radio","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American nonprofit organization","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q54680493","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":["United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"4507e68f-d70b-586e-8b8d-a4d1fa538b94"}},
+    "result": {"data":{"entitiesJson":{"id":"4507e68f-d70b-586e-8b8d-a4d1fa538b94","wikidataLabel":"Nashville Public Radio","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"American nonprofit organization","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q54680493","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":["United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"4507e68f-d70b-586e-8b8d-a4d1fa538b94"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

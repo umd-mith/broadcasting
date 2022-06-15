@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621687",
-    "result": {"data":{"entitiesJson":{"id":"bce096e1-647a-50a1-862e-58d43debf7e9","wikidataLabel":"Robert Schenkkan","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at the University of Texas","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621687","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"bce096e1-647a-50a1-862e-58d43debf7e9"}},
+    "result": {"data":{"entitiesJson":{"id":"bce096e1-647a-50a1-862e-58d43debf7e9","wikidataLabel":"Robert Schenkkan","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Texas","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621687","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"bce096e1-647a-50a1-862e-58d43debf7e9"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

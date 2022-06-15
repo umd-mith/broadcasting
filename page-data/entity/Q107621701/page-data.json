@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621701",
-    "result": {"data":{"entitiesJson":{"id":"ae20f6e8-d892-59b9-b5e1-8eb638e5bced","wikidataLabel":"Joe F. Wright","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at the University of Illinois","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621701","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ae20f6e8-d892-59b9-b5e1-8eb638e5bced"}},
+    "result": {"data":{"entitiesJson":{"id":"ae20f6e8-d892-59b9-b5e1-8eb638e5bced","wikidataLabel":"Joe F. Wright","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Illinois","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621701","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ae20f6e8-d892-59b9-b5e1-8eb638e5bced"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

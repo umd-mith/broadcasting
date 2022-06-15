@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621604",
-    "result": {"data":{"entitiesJson":{"id":"bacb5dcf-c557-56c5-a6fe-05524a1e278c","wikidataLabel":"Hugh A. Rundell","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621604","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"bacb5dcf-c557-56c5-a6fe-05524a1e278c"}},
+    "result": {"data":{"entitiesJson":{"id":"bacb5dcf-c557-56c5-a6fe-05524a1e278c","wikidataLabel":"Hugh A. Rundell","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621604","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"]}},"pageContext":{"id":"bacb5dcf-c557-56c5-a6fe-05524a1e278c"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

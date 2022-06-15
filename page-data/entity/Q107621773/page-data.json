@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621773",
-    "result": {"data":{"entitiesJson":{"id":"9d3feb1c-155a-5cf6-97de-8488a7414550","wikidataLabel":"Lee Graham","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621773","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"9d3feb1c-155a-5cf6-97de-8488a7414550"}},
+    "result": {"data":{"entitiesJson":{"id":"9d3feb1c-155a-5cf6-97de-8488a7414550","wikidataLabel":"Lee Graham","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621773","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"9d3feb1c-155a-5cf6-97de-8488a7414550"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

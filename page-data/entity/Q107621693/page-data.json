@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621693",
-    "result": {"data":{"entitiesJson":{"id":"72549142-183c-5b8c-96c7-52e247f7e644","wikidataLabel":"R. Leroy Bannerman","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio writer and producer at the University of Alabama","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621693","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"72549142-183c-5b8c-96c7-52e247f7e644"}},
+    "result": {"data":{"entitiesJson":{"id":"72549142-183c-5b8c-96c7-52e247f7e644","wikidataLabel":"R. Leroy Bannerman","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio writer and producer at the University of Alabama","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621693","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"72549142-183c-5b8c-96c7-52e247f7e644"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

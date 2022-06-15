@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621766",
-    "result": {"data":{"entitiesJson":{"id":"254d9141-a9a6-5910-9d74-ba0633a77bfe","wikidataLabel":"Keith K. Ketcham","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"broadcasting engineer at Iowa State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621766","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"254d9141-a9a6-5910-9d74-ba0633a77bfe"}},
+    "result": {"data":{"entitiesJson":{"id":"254d9141-a9a6-5910-9d74-ba0633a77bfe","wikidataLabel":"Keith K. Ketcham","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"broadcasting engineer at Iowa State University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621766","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"254d9141-a9a6-5910-9d74-ba0633a77bfe"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

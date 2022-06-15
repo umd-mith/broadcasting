@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621699",
-    "result": {"data":{"entitiesJson":{"id":"6bef9d46-4a80-578f-a9a4-90916afbcf35","wikidataLabel":"W. I. Griffith","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621699","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6bef9d46-4a80-578f-a9a4-90916afbcf35"}},
+    "result": {"data":{"entitiesJson":{"id":"6bef9d46-4a80-578f-a9a4-90916afbcf35","wikidataLabel":"W. I. Griffith","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621699","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"6bef9d46-4a80-578f-a9a4-90916afbcf35"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

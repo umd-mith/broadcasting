@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621751",
-    "result": {"data":{"entitiesJson":{"id":"d7c6403e-287d-5b44-9c51-cafe75a5d8b5","wikidataLabel":"Gale R. Adkins","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio researcher","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621751","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"d7c6403e-287d-5b44-9c51-cafe75a5d8b5"}},
+    "result": {"data":{"entitiesJson":{"id":"d7c6403e-287d-5b44-9c51-cafe75a5d8b5","wikidataLabel":"Gale R. Adkins","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio researcher","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621751","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"d7c6403e-287d-5b44-9c51-cafe75a5d8b5"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

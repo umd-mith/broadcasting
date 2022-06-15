@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621634",
-    "result": {"data":{"entitiesJson":{"id":"f54ed933-47e1-5da4-8f5f-55ece1e9fa3f","wikidataLabel":"Stuart Cooney","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio executive at Stanford University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621634","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f54ed933-47e1-5da4-8f5f-55ece1e9fa3f"}},
+    "result": {"data":{"entitiesJson":{"id":"f54ed933-47e1-5da4-8f5f-55ece1e9fa3f","wikidataLabel":"Stuart Cooney","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Stanford University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621634","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f54ed933-47e1-5da4-8f5f-55ece1e9fa3f"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

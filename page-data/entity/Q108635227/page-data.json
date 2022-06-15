@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q108635227",
-    "result": {"data":{"entitiesJson":{"id":"ea703986-1c8f-50c5-aeb7-4d1dcc78d941","wikidataLabel":"Warren Bower","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio host at WNYC","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q108635227","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6w7129j"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ea703986-1c8f-50c5-aeb7-4d1dcc78d941"}},
+    "result": {"data":{"entitiesJson":{"id":"ea703986-1c8f-50c5-aeb7-4d1dcc78d941","wikidataLabel":"Warren Bower","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio host at WNYC","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q108635227","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6w7129j"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ea703986-1c8f-50c5-aeb7-4d1dcc78d941"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

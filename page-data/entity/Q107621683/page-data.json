@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621683",
-    "result": {"data":{"entitiesJson":{"id":"f1ee0c99-28bb-5bc3-8981-6bea52e3dd85","wikidataLabel":"Thomas Parrish","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"radio producer at the University of Chicago","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621683","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f1ee0c99-28bb-5bc3-8981-6bea52e3dd85"}},
+    "result": {"data":{"entitiesJson":{"id":"f1ee0c99-28bb-5bc3-8981-6bea52e3dd85","wikidataLabel":"Thomas Parrish","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer at the University of Chicago","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621683","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f1ee0c99-28bb-5bc3-8981-6bea52e3dd85"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

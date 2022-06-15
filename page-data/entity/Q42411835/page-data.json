@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q42411835",
-    "result": {"data":{"entitiesJson":{"id":"40b1056d-a420-5b5a-bf2f-fe74bba18ae5","wikidataLabel":"KSLH","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"wikidataDescription":"American radio station","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q42411835","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":["St. Louis","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"40b1056d-a420-5b5a-bf2f-fe74bba18ae5"}},
+    "result": {"data":{"entitiesJson":{"id":"40b1056d-a420-5b5a-bf2f-fe74bba18ae5","wikidataLabel":"KSLH","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"American radio station","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q42411835","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":["St. Louis","United States of America"],"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"40b1056d-a420-5b5a-bf2f-fe74bba18ae5"}},
     "staticQueryHashes": ["1736560250","3956795357"]}
