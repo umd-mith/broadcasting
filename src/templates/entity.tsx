@@ -13,16 +13,14 @@ export interface EntityData {
   deathDate: string
   birthPlace: string
   deathPlace: string
-  description: string
+  wikidataDescription: string
   employer: string[]
   fieldOfWork: string[]
   inceptionDate: string
   cpfPageID: string
   naraURL: string[]
   occupation: string[]
-  ownedBy: string
   viafURL: string[]
-  website: string
   wikipediaURL: string[]
   worldCatURL: string[]
   snacURL: string[]
@@ -58,11 +56,11 @@ const Entity = ({ data }: Props) => {
     }
   }
 
-  if (entity.description) {
+  if (entity.wikidataDescription) {
     const readMore = entity.wikipediaURL ?  <em>Read more at <a href={entity.wikipediaURL[0]}>Wikipedia</a>...</em> : ''
     abstract = (
       <p>
-        {entity.description}
+        {entity.wikidataDescription}
         {readMore}
       </p>
     )
@@ -118,8 +116,8 @@ const Entity = ({ data }: Props) => {
                 />
                 <Field label="Employer(s)" value={entity.employer} />
                 {/* <Field label="Broadcast to" value={cpf.cpfPage.broadastTo} /> */}
-                <Field label="Owned by" value={entity.ownedBy} />
-                <Field label="Website" value={entity.website} />
+                {/* <Field label="Owned by" value={entity.ownedBy} /> */}
+                {/* <Field label="Website" value={entity.website} /> */}
                 <Field label="Associated Place(s)" value={entity.associatedPlaces} />
                 {/* <SubjectField subjects={cpf.cpfPage.subjects} /> */}
               </p>
@@ -299,16 +297,14 @@ export const query = graphql`
       deathDate
       birthPlace
       deathPlace
-      description
+      wikidataDescription
       employer
       fieldOfWork
       inceptionDate
       cpfPageID
       naraURL
       occupation
-      ownedBy
       viafURL
-      website
       wikipediaURL
       worldCatURL
       snacURL
