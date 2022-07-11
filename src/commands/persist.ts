@@ -43,6 +43,30 @@ class Persistor {
     return this.getTable(this.base as Airtable.Base, "BAVD CPF Authorities")
   }
 
+  get naebPrograms(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "NAEB Programs")
+  }
+
+  get naebItems(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "NAEB Items")
+  }
+
+  get naebFolders(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "NAEB Folders")
+  }
+
+  get kuomPrograms(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "KUOM Programs")
+  }
+
+  get nfcbPrograms(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "NFCB Programs")
+  }
+
+  get whaPrograms(): Promise<{[key: string]: any}> {
+    return this.getTable(this.base as Airtable.Base, "WHA Programs")
+  }
+
   private _clone(obj: {[key: string]: any}) {
     let copy: {[key: string]: any}
     let i
@@ -111,8 +135,17 @@ class Persistor {
       const cfps = await this.cfps
       const snacs = await this.snacs
       const bavd = await this.bavd
+      const references = {
+        naebPrograms: await this.naebPrograms,
+        naebItems: await this.naebItems,
+        naebFolders: await this.naebFolders,
+        kuomPrograms: await this.kuomPrograms,      
+        nfcbPrograms: await this.nfcbPrograms,
+        whaPrograms: await this.whaPrograms
+      }
 
       const collections = ["NAEB", "NFCB", "WHA", "KUOM"]
+      const URLTypes = ["", "Program", "Item", "Folder"]
 
       const data = Object.keys(cfps).map((key: string) => {
         const record: Airtable.Record<FieldSet> = cfps[key]
@@ -120,26 +153,48 @@ class Persistor {
         // Perform expansions and other operations
         for (const field in fields) {
           const id = record.get(field)?.toString()
-          switch (field) {
-            case "snacLink":
-              if (id) {
-                fields["snac"] = snacs[id].fields
-              }
-              break
-            case "bavdCPF":
-              if (id) {
+          if (id) {
+            switch (field) {
+              case "snacLink":
+                fields["snac"] = snacs[id].FieldSet
+                break
+              case "bavdCPF":
                 const inCollections: string[] = []
+                const URLs: {[key: string]: any} = {}
                 for (const c of collections) {
                   const coll = bavd[id].get(`${c} CPF Authorities`)
                   if (coll) {
                     inCollections.push(c)
                   }
+                  for (const ut of URLTypes) {
+                    const fieldName = `${c} ${ut} Display URLs`.replace(/\s+/g, ' ')
+                    const displayURLs = bavd[id].get(fieldName)
+                    if (displayURLs) {
+                      const lookup = `${c.toLowerCase()}${ut === '' ? 'Programs' : ut}` as keyof typeof references
+                      for (const du of displayURLs.split(', ')) {
+                        const ref = references[lookup]
+                        for (const entryId in ref) {
+                          const entry = ref[entryId]
+                          const url = entry.get('URL')
+                          const entryFields = entry.fields
+                          if (url === du) {
+                            if (URLs[`${c}${ut}`]) {
+                              URLs[`${c}${ut}`].push(entryFields)
+                            } else {
+                              URLs[`${c}${ut}`] = [entryFields]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
                 fields["collections"] = inCollections
-              }
-              break
-            default:
-              // noop 
+                fields["references"] = URLs
+                break
+              default:
+                // noop 
+            }
           }
         }
         return fields
