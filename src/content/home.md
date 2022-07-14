@@ -5,7 +5,7 @@ _Broadcasting Audiovisual Data_ (BA/VD) is an initiative funded by the National 
 
 # How to Use this Website
 
-This site is considered a sub-domain of the Unlocking the Airwaves website. As such, it contains select information relevant only to this project.
+This site is considered a sub-domain of the _Unlocking the Airwaves_ website. As such, it contains select information relevant only to this project.
 
 _Broadcasting A/V Data_ (BA/VD) is a grant-funded project applying digital humanities methods to encourage the use of audiovisual collections inside and outside the academy. Our work extends the virtual reunification activity of _Unlocking the Airwaves_ by creating linked data ties to additional materials which contain valuable collections about the history of educational radio.
 
@@ -14,9 +14,9 @@ One central activity of _BA/VD_ is the creation of authority records for the nam
 - Entities that overlap more than one of the four collections, or
 - Entities which are represented frequently enough in any one collection that they are considered important to the history of educational radio, regardless of overlap between the four collections.
 
-<details>
+<details> (Read more)
 
-The Entities index page is similar to the People and Organizations index pages on the Airwaves site. As such, they are only browsable, and not searchable. This approach is by design, because _BA/VD_’s research question address the question of exploring collections through a network-centric lens, as opposed to a content-centric lens.
+The Entities index page is similar to the People and Organizations index pages on the _Airwaves_ site. As such, they are only browsable, and not searchable. This approach is by design, because _BA/VD_’s research question address the question of exploring collections through a network-centric lens, as opposed to a content-centric lens.
 
 Due to this emphasis on networks, we have also created a visualization that helps show where and how often overlaps occur between the entities represented in these four collections. Instead of viewing the collections themselves as snapshots of a particular historical moment or trend, we can view them as products of networked knowledge flows governed by institutional structures and individual whimsy.
 
