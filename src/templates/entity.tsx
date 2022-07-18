@@ -62,8 +62,6 @@ const formatReferences = (references: Reference[]) => {
     }
   }
 
-  console.log(references, bySeries, grouped)
-
   return Object.keys(grouped).sort().map(coll => (
     <div key={coll}>
       <h4>{coll}</h4>
