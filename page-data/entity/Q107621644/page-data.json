@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621644",
-    "result": {"data":{"entitiesJson":{"id":"94ef6664-de91-5f9c-a587-79217b645dd3","wikidataLabel":"William Bender, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621644","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"94ef6664-de91-5f9c-a587-79217b645dd3"}},
+    "result": {"data":{"entitiesJson":{"id":"16794d79-877e-5f62-87af-a87034b0c5d2","wikidataLabel":"William Bender, Jr.","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621644","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"16794d79-877e-5f62-87af-a87034b0c5d2"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

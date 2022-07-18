@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621620",
-    "result": {"data":{"entitiesJson":{"id":"7ed2a6f5-db20-55d1-adef-88f15f1d6d7c","wikidataLabel":"Elmer G. Sulzer","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Indiana University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621620","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"7ed2a6f5-db20-55d1-adef-88f15f1d6d7c"}},
+    "result": {"data":{"entitiesJson":{"id":"0c8fcf99-ec76-5509-bdc6-3ea2ae0483de","wikidataLabel":"Elmer G. Sulzer","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Indiana University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621620","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"0c8fcf99-ec76-5509-bdc6-3ea2ae0483de"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

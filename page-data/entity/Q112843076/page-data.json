@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843076",
+    "result": {"data":{"entitiesJson":{"id":"09be0bb8-66c9-5158-a1f4-457a51cd30d8","wikidataLabel":"Charles Braswell","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843076","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6h866rv"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"09be0bb8-66c9-5158-a1f4-457a51cd30d8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

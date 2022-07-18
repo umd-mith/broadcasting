@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843093",
+    "result": {"data":{"entitiesJson":{"id":"b9912354-529a-5706-9598-887993c3007f","wikidataLabel":"Richard C. Setterberg","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843093","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6527zc7"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"b9912354-529a-5706-9598-887993c3007f"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

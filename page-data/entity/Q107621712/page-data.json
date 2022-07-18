@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621712",
-    "result": {"data":{"entitiesJson":{"id":"ad874dd9-cc11-5772-a315-596d9746f715","wikidataLabel":"Vernon Bronson","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621712","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"ad874dd9-cc11-5772-a315-596d9746f715"}},
+    "result": {"data":{"entitiesJson":{"id":"5a6369af-cee9-52dd-bae9-1cc751eafe1d","wikidataLabel":"Vernon Bronson","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621712","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"5a6369af-cee9-52dd-bae9-1cc751eafe1d"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

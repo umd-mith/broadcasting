@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621613",
-    "result": {"data":{"entitiesJson":{"id":"e78d4b0a-0223-5293-9383-68ff3d73310c","wikidataLabel":"Irving Rodgers Merrill","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621613","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"e78d4b0a-0223-5293-9383-68ff3d73310c"}},
+    "result": {"data":{"entitiesJson":{"id":"2e1df928-03c3-5586-b512-383be5a65c06","wikidataLabel":"Irving Rodgers Merrill","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621613","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"2e1df928-03c3-5586-b512-383be5a65c06"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

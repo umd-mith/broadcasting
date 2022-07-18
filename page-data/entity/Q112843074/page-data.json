@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843074",
+    "result": {"data":{"entitiesJson":{"id":"4902d01f-b818-5c4b-aa7a-98994b2b9e89","wikidataLabel":"Ross Wilhelm","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor of business economics and radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843074","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6xm29zf"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"4902d01f-b818-5c4b-aa7a-98994b2b9e89"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843096",
+    "result": {"data":{"entitiesJson":{"id":"04c2eb1f-02c4-519d-9100-347399abf5ef","wikidataLabel":"Albert E. Heustis","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"Michigan health official","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843096","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6qw8d9b"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"04c2eb1f-02c4-519d-9100-347399abf5ef"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

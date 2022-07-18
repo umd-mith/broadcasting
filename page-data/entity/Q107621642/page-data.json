@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621642",
-    "result": {"data":{"entitiesJson":{"id":"28498ada-0d5f-5ee6-80e1-d2546531a2f2","wikidataLabel":"Earl R. Wynn","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621642","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"28498ada-0d5f-5ee6-80e1-d2546531a2f2"}},
+    "result": {"data":{"entitiesJson":{"id":"b24b22f1-2b82-565f-a954-2563dc770a26","wikidataLabel":"Earl R. Wynn","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621642","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"b24b22f1-2b82-565f-a954-2563dc770a26"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

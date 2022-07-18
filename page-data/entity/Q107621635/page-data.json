@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621635",
-    "result": {"data":{"entitiesJson":{"id":"0a6cbeed-cc0c-592e-93ed-496bbe1d6574","wikidataLabel":"Harry B. Welliver","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621635","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"0a6cbeed-cc0c-592e-93ed-496bbe1d6574"}},
+    "result": {"data":{"entitiesJson":{"id":"3d0a5191-8612-58e6-be9e-5ecf748be061","wikidataLabel":"Harry B. Welliver","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621635","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"3d0a5191-8612-58e6-be9e-5ecf748be061"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

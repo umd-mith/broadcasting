@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843080",
+    "result": {"data":{"entitiesJson":{"id":"74a268fb-0380-53f1-b15e-6e7c3a9b2374","wikidataLabel":"Monrad G. Paulsen","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843080","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w629431r"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"74a268fb-0380-53f1-b15e-6e7c3a9b2374"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

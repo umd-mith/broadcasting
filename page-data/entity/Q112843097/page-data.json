@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843097",
+    "result": {"data":{"entitiesJson":{"id":"60aaea8f-9831-5f61-99bf-51f0ad0c6699","wikidataLabel":"Lillian Ambrosino","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843097","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w68h6g10"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"60aaea8f-9831-5f61-99bf-51f0ad0c6699"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

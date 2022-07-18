@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q95157700",
-    "result": {"data":{"entitiesJson":{"id":"c8a813eb-94a7-5e1b-ad78-83936dc73f38","wikidataLabel":"John Freund","altLabels":null,"birthDate":"1930","deathDate":null,"birthPlace":"České Budějovice","deathPlace":null,"description":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q95157700","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/105827141"],"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"c8a813eb-94a7-5e1b-ad78-83936dc73f38"}},
+    "result": {"data":{"entitiesJson":{"id":"c8a813eb-94a7-5e1b-ad78-83936dc73f38","wikidataLabel":"John Freund","altLabels":null,"birthDate":"1930","deathDate":null,"birthPlace":"České Budějovice","deathPlace":null,"description":null,"wikidataDescription":null,"employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q95157700","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/105827141"],"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"c8a813eb-94a7-5e1b-ad78-83936dc73f38"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

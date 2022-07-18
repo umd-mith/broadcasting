@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843099",
+    "result": {"data":{"entitiesJson":{"id":"d952298c-7d1b-516f-8a7e-0704fc60498e","wikidataLabel":"Milton Geiger","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio writer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843099","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w62z92h2"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"d952298c-7d1b-516f-8a7e-0704fc60498e"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

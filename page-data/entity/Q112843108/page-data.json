@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843108",
+    "result": {"data":{"entitiesJson":{"id":"d5e0c5a0-8c5e-5c79-a43b-d345b7d9294b","wikidataLabel":"Robert Beloof","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"poet and professor of speech","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843108","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6mm9tg7"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"d5e0c5a0-8c5e-5c79-a43b-d345b7d9294b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

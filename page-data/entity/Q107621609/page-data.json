@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621609",
-    "result": {"data":{"entitiesJson":{"id":"f50bf94e-3621-505b-b63f-93b7b89c7d3f","wikidataLabel":"Flint Board of Education","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"board of education in Flint, Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621609","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"f50bf94e-3621-505b-b63f-93b7b89c7d3f"}},
+    "result": {"data":{"entitiesJson":{"id":"d9829868-f78a-542a-8817-415a060c6876","wikidataLabel":"Flint Board of Education","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"board of education in Flint, Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621609","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"d9829868-f78a-542a-8817-415a060c6876"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

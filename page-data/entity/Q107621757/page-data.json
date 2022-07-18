@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621757",
-    "result": {"data":{"entitiesJson":{"id":"0e77c827-8204-5298-b3dd-48338384cf79","wikidataLabel":"Kenneth Kager","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621757","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"0e77c827-8204-5298-b3dd-48338384cf79"}},
+    "result": {"data":{"entitiesJson":{"id":"c056ba85-66bb-5a6c-89df-f68e5575ed59","wikidataLabel":"Kenneth Kager","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621757","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"c056ba85-66bb-5a6c-89df-f68e5575ed59"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

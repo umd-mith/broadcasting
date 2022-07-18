@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843089",
+    "result": {"data":{"entitiesJson":{"id":"19f2cd9f-dbd7-5eef-a8cf-20be4f4c0e3b","wikidataLabel":"Hobart Mitchell","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843089","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w66m7067"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"19f2cd9f-dbd7-5eef-a8cf-20be4f4c0e3b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

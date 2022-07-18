@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843111",
+    "result": {"data":{"entitiesJson":{"id":"2a9cbdf9-76de-5d29-9f05-9da50895ddcd","wikidataLabel":"Bert Cowlin","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843111","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6x1960f"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"2a9cbdf9-76de-5d29-9f05-9da50895ddcd"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

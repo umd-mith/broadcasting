@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621686",
-    "result": {"data":{"entitiesJson":{"id":"1cd82f36-7f9f-5025-af6c-8c80d63ccf94","wikidataLabel":"Jack D. Summerfield","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer at WGBH","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621686","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1cd82f36-7f9f-5025-af6c-8c80d63ccf94"}},
+    "result": {"data":{"entitiesJson":{"id":"6ca4ae59-4d56-51ca-b6e2-e146b7cde04b","wikidataLabel":"Jack D. Summerfield","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer at WGBH","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621686","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"6ca4ae59-4d56-51ca-b6e2-e146b7cde04b"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

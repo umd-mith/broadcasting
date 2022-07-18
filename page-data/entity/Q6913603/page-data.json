@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q6913603",
+    "result": {"data":{"entitiesJson":{"id":"dd4286c8-76c6-540e-b894-f61ce9a2c4b4","wikidataLabel":"Morris Bear Squire","altLabels":null,"birthDate":"1923","deathDate":"2014","birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"American philanthropist (1923-2014)","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q6913603","naraURL":null,"occupation":["psychologist"],"viafURL":["https://viaf.org/viaf/39471556"],"wikipediaURL":"https://en.wikipedia.org/wiki/Morris_Bear_Squire","worldCatURL":["https://worldcat.org/identities/lccn-n82122620"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n82122620"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"dd4286c8-76c6-540e-b894-f61ce9a2c4b4"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

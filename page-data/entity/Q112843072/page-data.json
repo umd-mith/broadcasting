@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843072",
+    "result": {"data":{"entitiesJson":{"id":"0c98783e-0a53-5099-99ab-96020d70e5a2","wikidataLabel":"Miles Kastendieck","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843072","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w63p5p2q"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"0c98783e-0a53-5099-99ab-96020d70e5a2"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621716",
-    "result": {"data":{"entitiesJson":{"id":"b45b485b-1a99-5d17-81c8-d7f92b46fe34","wikidataLabel":"Raymond D. Cheydleur","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Marshall College","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621716","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"b45b485b-1a99-5d17-81c8-d7f92b46fe34"}},
+    "result": {"data":{"entitiesJson":{"id":"5cbd6346-5490-56de-ac71-546efb3d7689","wikidataLabel":"Raymond D. Cheydleur","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at Marshall College","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621716","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"5cbd6346-5490-56de-ac71-546efb3d7689"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

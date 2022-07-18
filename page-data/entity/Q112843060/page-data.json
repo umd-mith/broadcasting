@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843060",
+    "result": {"data":{"entitiesJson":{"id":"cad6ad9b-28b5-58ef-97c6-324122eddffe","wikidataLabel":"Minos D. Generales","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"director of the Institute on World Affairs at San Diego State","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843060","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/108021332"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-no2010035704"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2010035704"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"cad6ad9b-28b5-58ef-97c6-324122eddffe"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

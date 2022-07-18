@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843061",
+    "result": {"data":{"entitiesJson":{"id":"98738148-7e9a-529c-ad0c-44d8902f6752","wikidataLabel":"Sanford A. Fidell","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster at the University of Michigan","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843061","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/53019378"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n81135071"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n81135071"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"98738148-7e9a-529c-ad0c-44d8902f6752"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

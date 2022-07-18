@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621768",
-    "result": {"data":{"entitiesJson":{"id":"1ea7ff00-1a91-5980-af66-6ab493817f43","wikidataLabel":"Loren B. Stone","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"television executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621768","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"1ea7ff00-1a91-5980-af66-6ab493817f43"}},
+    "result": {"data":{"entitiesJson":{"id":"6966ae4a-ea3e-5fba-b9c0-dea2a769eb87","wikidataLabel":"Loren B. Stone","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"television executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621768","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"6966ae4a-ea3e-5fba-b9c0-dea2a769eb87"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

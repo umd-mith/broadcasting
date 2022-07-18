@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843109",
+    "result": {"data":{"entitiesJson":{"id":"adb0fc87-28a5-5609-a222-204cceec4c6b","wikidataLabel":"William J. Pierce","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor of law","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843109","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w67b8wvf"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"adb0fc87-28a5-5609-a222-204cceec4c6b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843084",
+    "result": {"data":{"entitiesJson":{"id":"976f4edd-4226-5985-a031-2557c589fa03","wikidataLabel":"Vladimir Selinsky","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"composer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843084","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w62652ww"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"976f4edd-4226-5985-a031-2557c589fa03"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

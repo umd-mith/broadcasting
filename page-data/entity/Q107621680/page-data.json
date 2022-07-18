@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621680",
-    "result": {"data":{"entitiesJson":{"id":"e2ff766e-a4c3-526f-9142-a1af3e4e10ab","wikidataLabel":"Larry Walcoff","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Iowa","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621680","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"e2ff766e-a4c3-526f-9142-a1af3e4e10ab"}},
+    "result": {"data":{"entitiesJson":{"id":"44defcd4-6b13-5412-8e20-4ac7144ba5c4","wikidataLabel":"Larry Walcoff","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive at the University of Iowa","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621680","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"44defcd4-6b13-5412-8e20-4ac7144ba5c4"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

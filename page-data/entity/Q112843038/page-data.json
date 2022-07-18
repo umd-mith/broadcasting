@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843038",
+    "result": {"data":{"entitiesJson":{"id":"e7c993a4-8535-5acd-a992-5cea8678d34d","wikidataLabel":"Clair R. Tettemer","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"broadcasting executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843038","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/43459882"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n90637579"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n90637579"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"e7c993a4-8535-5acd-a992-5cea8678d34d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843045",
+    "result": {"data":{"entitiesJson":{"id":"9092eee9-9ad2-5223-9f8d-8ca2f5477a29","wikidataLabel":"Jonathan W. Curvin","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster at the University of Wisconsin","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843045","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/96154739963652992832"],"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB","WHA"],"references":[{"collection":"WHA","series":"None","title":"Wisconsin Humor and Humorists","URL":"https://digital.library.wisc.edu/1711.dl/2YGV6ACKOHZZO8E"},{"collection":"WHA","series":"Homemaker's Program (Radio program)","title":"Thehumerous ballad","URL":"https://digital.library.wisc.edu/1711.dl/KIKLDULSHZZZO8J"}]}},"pageContext":{"id":"9092eee9-9ad2-5223-9f8d-8ca2f5477a29"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

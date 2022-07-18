@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843091",
+    "result": {"data":{"entitiesJson":{"id":"7229bcb9-0b55-5d14-9ae7-b4b4b15d19ff","wikidataLabel":"Myron Bennett","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843091","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w65s082h"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"7229bcb9-0b55-5d14-9ae7-b4b4b15d19ff"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

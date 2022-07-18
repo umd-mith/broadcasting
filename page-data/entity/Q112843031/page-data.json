@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843031",
+    "result": {"data":{"entitiesJson":{"id":"a717c130-fd50-57a9-bc48-23e171c289ad","wikidataLabel":"Elizabeth Spiro","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio writer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843031","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/60348845"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n79011038"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n79011038"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"a717c130-fd50-57a9-bc48-23e171c289ad"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

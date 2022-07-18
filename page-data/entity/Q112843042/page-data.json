@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843042",
+    "result": {"data":{"entitiesJson":{"id":"1ab3d717-da3e-5c77-8bcf-f12f0ac8fd40","wikidataLabel":"Wallace Fanning","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster at Georgetown University","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843042","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/55990063"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n2003082382"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n2003082382"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"1ab3d717-da3e-5c77-8bcf-f12f0ac8fd40"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

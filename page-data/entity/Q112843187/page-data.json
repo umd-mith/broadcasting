@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843187",
+    "result": {"data":{"entitiesJson":{"id":"ca338f6e-4011-5f0a-8cb3-2c65012516b5","wikidataLabel":"Richard Lewis","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"poet and radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843187","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w606140x"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"ca338f6e-4011-5f0a-8cb3-2c65012516b5"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

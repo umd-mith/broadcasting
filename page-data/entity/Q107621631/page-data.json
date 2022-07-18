@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621631",
-    "result": {"data":{"entitiesJson":{"id":"802771b7-c825-5a13-aa71-a5edfee43c74","wikidataLabel":"Harry E. Moore","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor at the University of Texas at Austin","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621631","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"802771b7-c825-5a13-aa71-a5edfee43c74"}},
+    "result": {"data":{"entitiesJson":{"id":"aeeea125-4e40-51cb-b8ec-e5d9cb3969f0","wikidataLabel":"Harry E. Moore","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor at the University of Texas at Austin","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621631","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"aeeea125-4e40-51cb-b8ec-e5d9cb3969f0"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

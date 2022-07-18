@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843092",
+    "result": {"data":{"entitiesJson":{"id":"dccc5104-42c2-5b17-8519-8ed1561119e0","wikidataLabel":"Betty E. M. Ch'maj","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843092","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w62p9c60"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"dccc5104-42c2-5b17-8519-8ed1561119e0"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

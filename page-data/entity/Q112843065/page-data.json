@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843065",
+    "result": {"data":{"entitiesJson":{"id":"360bd37b-e1f2-5902-9690-1e353f084664","wikidataLabel":"Glen Phillips","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843065","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6c973hz"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"360bd37b-e1f2-5902-9690-1e353f084664"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

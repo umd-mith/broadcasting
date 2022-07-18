@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843095",
+    "result": {"data":{"entitiesJson":{"id":"c5bdec09-f588-5c46-b705-a6bc3645beb4","wikidataLabel":"Volta Torrey","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843095","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6xm012q"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"c5bdec09-f588-5c46-b705-a6bc3645beb4"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

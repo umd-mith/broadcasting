@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621695",
-    "result": {"data":{"entitiesJson":{"id":"d2fef2d9-a1ca-5ac0-b1e8-8d13519dced9","wikidataLabel":"John Harter","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer at San Bernardino Valley College","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621695","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"d2fef2d9-a1ca-5ac0-b1e8-8d13519dced9"}},
+    "result": {"data":{"entitiesJson":{"id":"6b84ea06-071b-5953-a30d-c1281b09e8c0","wikidataLabel":"John Harter","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio producer at San Bernardino Valley College","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621695","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"6b84ea06-071b-5953-a30d-c1281b09e8c0"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

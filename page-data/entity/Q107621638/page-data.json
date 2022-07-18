@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621638",
-    "result": {"data":{"entitiesJson":{"id":"98738148-7e9a-529c-ad0c-44d8902f6752","wikidataLabel":"French Cultural Services","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"French consulate","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621638","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"98738148-7e9a-529c-ad0c-44d8902f6752"}},
+    "result": {"data":{"entitiesJson":{"id":"66d50ada-3475-559e-a0bf-e14d9a285540","wikidataLabel":"French Cultural Services","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"French consulate","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621638","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"66d50ada-3475-559e-a0bf-e14d9a285540"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

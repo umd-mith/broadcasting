@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843044",
+    "result": {"data":{"entitiesJson":{"id":"e6091172-64f3-5e00-aa40-7c891ddaffb3","wikidataLabel":"Alfred L. Seelye","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"economist and radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843044","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/73818080"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-nr2006026656"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/nr2006026656"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"e6091172-64f3-5e00-aa40-7c891ddaffb3"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-entity-tsx",
     "path": "/entity/Q107621605",
-    "result": {"data":{"entitiesJson":{"id":"c25314db-da8f-594c-934e-07a2afd27f86","wikidataLabel":"George Jennings","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621605","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"]}},"pageContext":{"id":"c25314db-da8f-594c-934e-07a2afd27f86"}},
+    "result": {"data":{"entitiesJson":{"id":"3dcf9f4b-6a30-5382-b931-c2dee8c042a9","wikidataLabel":"George Jennings","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio executive","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q107621605","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":null,"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"3dcf9f4b-6a30-5382-b931-c2dee8c042a9"}},
     "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843082",
+    "result": {"data":{"entitiesJson":{"id":"6cb9565b-88ed-51db-aa3b-b0a428671fbf","wikidataLabel":"J. F. S. Smeall","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"professor of English","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843082","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6ct01j3"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"6cb9565b-88ed-51db-aa3b-b0a428671fbf"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

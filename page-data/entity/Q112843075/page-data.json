@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843075",
+    "result": {"data":{"entitiesJson":{"id":"15fcd8f3-f0c9-5e4c-80fe-80a4340c8ce5","wikidataLabel":"Joseph R. Julin","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843075","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6nt4ssb"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"15fcd8f3-f0c9-5e4c-80fe-80a4340c8ce5"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

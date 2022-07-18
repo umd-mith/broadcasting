@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843049",
+    "result": {"data":{"entitiesJson":{"id":"b229adc7-3fab-5c83-8fc8-4f53bb3ab1a8","wikidataLabel":"Dennis Corrigan","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster at the University of Illinois","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843049","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/63131056"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n88671880"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n88671880"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"b229adc7-3fab-5c83-8fc8-4f53bb3ab1a8"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

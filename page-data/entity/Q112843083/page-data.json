@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843083",
+    "result": {"data":{"entitiesJson":{"id":"85c40667-db4e-5bdb-9f81-78fca27de61d","wikidataLabel":"Robert V. Meghreblian","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"rocket scientist","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843083","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w68m4w51"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"85c40667-db4e-5bdb-9f81-78fca27de61d"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

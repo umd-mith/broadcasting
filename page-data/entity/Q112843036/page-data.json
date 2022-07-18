@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843036",
+    "result": {"data":{"entitiesJson":{"id":"7565e9a4-18e2-5243-be00-c8e96eac3c3b","wikidataLabel":"Fred C. Harrington","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster at station WFBE","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843036","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/61249713"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-no2004014624"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/no2004014624"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"7565e9a4-18e2-5243-be00-c8e96eac3c3b"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

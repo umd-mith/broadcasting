@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843055",
+    "result": {"data":{"entitiesJson":{"id":"7f332f9e-d512-5ddf-a905-27597198e175","wikidataLabel":"Hoyle Carpenter","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"composer","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843055","naraURL":null,"occupation":null,"viafURL":["https://viaf.org/viaf/70601304"],"wikipediaURL":null,"worldCatURL":["https://worldcat.org/identities/lccn-n93035076"],"snacURL":null,"associatedPlaces":null,"locURL":["https://id.loc.gov/authorities/names/n93035076"],"collections":["NAEB"],"references":[]}},"pageContext":{"id":"7f332f9e-d512-5ddf-a905-27597198e175"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843079",
+    "result": {"data":{"entitiesJson":{"id":"82f7e340-b658-56c4-b9d5-878338203815","wikidataLabel":"Arnold Nelson","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843079","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6j69v3z"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"82f7e340-b658-56c4-b9d5-878338203815"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}

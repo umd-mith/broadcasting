@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-entity-tsx",
+    "path": "/entity/Q112843087",
+    "result": {"data":{"entitiesJson":{"id":"c611def0-fe23-521d-aa5a-90c22e82e6d4","wikidataLabel":"Charles Levy","altLabels":null,"birthDate":null,"deathDate":null,"birthPlace":null,"deathPlace":null,"description":null,"wikidataDescription":"radio broadcaster","employer":null,"fieldOfWork":null,"inceptionDate":null,"cpfPageID":"Q112843087","naraURL":null,"occupation":null,"viafURL":null,"wikipediaURL":null,"worldCatURL":null,"snacURL":["http://n2t.net/ark:/99166/w6400jtf"],"associatedPlaces":null,"locURL":null,"collections":["NAEB"],"references":[]}},"pageContext":{"id":"c611def0-fe23-521d-aa5a-90c22e82e6d4"}},
+    "staticQueryHashes": ["1736560250","3956795357"]}
