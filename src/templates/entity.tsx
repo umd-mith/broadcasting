@@ -55,20 +55,28 @@ const formatReferences = (references: Reference[]) => {
   const grouped: {[key: string]: {[key: string]: Partial<Reference>[]}} = {}
 
   for (const series of Object.keys(bySeries)) {
-    const coll = bySeries[series][0].collection || ""
-    grouped[coll] = grouped[coll] || {}
-    grouped[coll][series] = bySeries[series]
+    for (const url of bySeries[series]) {
+      const coll = url.collection || ""
+      grouped[coll] = grouped[coll] || {};
+      (grouped[coll][series] = grouped[coll][series] || []).push(url)
+    }
   }
 
-  return Object.keys(grouped).map(coll => (
+  console.log(references, bySeries, grouped)
+
+  return Object.keys(grouped).sort().map(coll => (
     <div key={coll}>
       <h4>{coll}</h4>
       {
-        Object.keys(grouped[coll]).map(series => (
+        Object.keys(grouped[coll]).sort().map(series => (
           <div key={series}>
             <h5>{series !== "None" ? series : ""}</h5>
             <ul>{
-              grouped[coll][series].map(url => (
+              grouped[coll][series].sort((a, b) => {
+                const at = a.title || ""
+                const bt = b.title || ""
+                return at.trim() > bt.trim() ? 1 : -1
+              }).map(url => (
                 <li key={url.URL || ""}>{
                   <a href={url.URL}>{url.title}</a>
                 }</li>

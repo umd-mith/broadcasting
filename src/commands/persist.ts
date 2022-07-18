@@ -148,6 +148,7 @@ class Persistor {
       const URLTypes = ["", "Program", "Item", "Folder"]
       interface EF {
         collection: string,
+        type: string,
         series: string,
         title: string
         URL: string
@@ -176,15 +177,16 @@ class Persistor {
                     const fieldName = `${c} ${ut} Display URLs`.replace(/\s+/g, ' ')
                     const displayURLs = bavd[id].get(fieldName)
                     if (displayURLs) {
-                      const lookup = `${c.toLowerCase()}${ut === '' ? 'Programs' : ut}` as keyof typeof references
+                      const lookup = `${c.toLowerCase()}${ut === '' ? 'Programs' : `${ut}s`}` as keyof typeof references
                       for (const du of displayURLs.split(', ')) {
                         const ref = references[lookup]
                         for (const entryId in ref) {
                           const entry = ref[entryId]
                           const url = entry.get('URL')
                           const entryFields: EF = {
-                            collection: `${c}${ut}`,
-                            series: entry.fields.series ? entry.fields.series[0] : "None",
+                            collection: c,
+                            type: ut,
+                            series: entry.fields.series ? Array.isArray(entry.fields.series) ? entry.fields.series[0] : entry.fields.series : "None",
                             title: entry.fields.title,
                             URL: entry.fields.URL || ""
                           }
