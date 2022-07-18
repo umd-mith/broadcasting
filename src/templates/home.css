@@ -261,9 +261,9 @@
     padding-top: 5rem;
   } */
 
-  .below-the-fold {
+  /* .below-the-fold {
     grid-column: 3 / -3;
-  }
+  } */
 }
 
 /* large screens — 976px and up */
@@ -311,14 +311,14 @@
     max-height: 14rem;
   } */
 
-  .below-the-fold section:nth-child(1) {
+  /* .below-the-fold section:nth-child(1) {
     border-right: 1px solid var(--color-gray-300);
     grid-column: span 8;
   }
 
   .below-the-fold section:nth-child(2) {
     grid-column: span 4;
-  }
+  } */
 
   .internal-jump-links {
     border-top: none !important;

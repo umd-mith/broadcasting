@@ -5,6 +5,13 @@ import "./entity.css"
 
 import Layout from "../components/layout"
 
+interface Reference {
+  collection: string
+  series: string
+  title: string
+  URL: string
+}
+
 export interface EntityData {
   id: string
   wikidataLabel: string
@@ -29,12 +36,50 @@ export interface EntityData {
   locURL: string[]
   collections: string[]
   image: IGatsbyImageData
+  references: Reference[]
 }
 
 interface Props {
   data: {
     entitiesJson: EntityData
   }
+}
+
+const formatReferences = (references: Reference[]) => {
+  // Group by series
+  const bySeries = references.reduce((acc: {[key: string]: Partial<Reference>[]}, x: Reference) => {
+    (acc[x.series] = acc[x.series] || []).push({'collection': x.collection, 'title': x.title, 'URL': x.URL})
+    return acc
+  }, {})
+
+  const grouped: {[key: string]: {[key: string]: Partial<Reference>[]}} = {}
+
+  for (const series of Object.keys(bySeries)) {
+    const coll = bySeries[series][0].collection || ""
+    grouped[coll] = grouped[coll] || {}
+    grouped[coll][series] = bySeries[series]
+  }
+
+  return Object.keys(grouped).map(coll => (
+    <div key={coll}>
+      <h4>{coll}</h4>
+      {
+        Object.keys(grouped[coll]).map(series => (
+          <div key={series}>
+            <h5>{series !== "None" ? series : ""}</h5>
+            <ul>{
+              grouped[coll][series].map(url => (
+                <li key={url.URL || ""}>{
+                  <a href={url.URL}>{url.title}</a>
+                }</li>
+              ))
+            }</ul>
+          </div>
+        ))
+      }
+    </div>
+
+  ))
 }
 
 const Entity = ({ data }: Props) => {
@@ -116,23 +161,19 @@ const Entity = ({ data }: Props) => {
                   value={entity.fieldOfWork}
                 />
                 <Field label="Employer(s)" value={entity.employer} />
-                {/* <Field label="Broadcast to" value={cpf.cpfPage.broadastTo} /> */}
-                {/* <Field label="Owned by" value={entity.ownedBy} /> */}
-                {/* <Field label="Website" value={entity.website} /> */}
                 <Field label="Associated Place(s)" value={entity.associatedPlaces} />
-                {/* <SubjectField subjects={cpf.cpfPage.subjects} /> */}
               </p>
-              <p>
+              <div>
                 <OptionalLink text="Social Networks and Archival Context (SNAC) Record" url={entity.snacURL} />
                 <OptionalLink text="Library of Congress Name Authority File (LCNAF)" url={entity.locURL} />
                 <OptionalLink text="Virtual International Authority File (VIAF)" url={entity.viafURL} />
                 <OptionalLink text="WorldCat Record" url={entity.worldCatURL} />
                 <OptionalLink text="National Archives and Records Administration (NARA)" url={entity.naraURL} />
-              </p>
-              {/* <div>
-                {relatedEpisodes}
-                {relatedDocuments}
-              </div> */}
+              </div>
+              <div className="references">
+                <h3>Appears in:</h3>
+                {formatReferences(entity.references)}
+              </div>
             </div>
           </div>
         </section>
@@ -175,96 +216,6 @@ const Field = ({ label, value }: FieldProps): JSX.Element | null => {
     </>
   )
 }
-
-// const SubjectField = ({subjects}) => {
-//   if (subjects) {
-//     return(
-//       <>
-//         <span className="label">Associated Subject(s)</span>: &nbsp;
-//         {subjects.map((s, i) => ( 
-//           <span key={`subject-${s.title}`}>
-//             {i > 0 && ", "}
-//             <Link to={`/search/?f=subject:${s.title}`}>{s.title}</Link>
-//           </span>
-//         ))}
-//       </> 
-//     )
-//   } else {
-//     return ''
-//   } 
-// }
-
-// const DocumentList = docs => {
-//   if (docs.length === 0) {
-//     return ""
-//   }
-//   return (
-//     <div>
-//       <h2>Related Documents</h2>
-//       <ul>
-//         {docs.map(d => (
-//           <li key={d.id}>
-//             <Link to={`/document/${d.iaId}/`}>{d.title}</Link>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   )
-// }
-
-// const EpisodeList = (cpfId, episodes) => {
-//   if (episodes.length === 0) {
-//     return ""
-//   }
-
-//   // group episode information by series as a map keyed by the series id
-//   // so that we can output a list of episodes grouped by the series they are a part of
-//   const seriesMap = new Map()
-//   for (const e of episodes) {
-//     if (!seriesMap.has(e.series.id)) {
-//       seriesMap.set(e.series.id, { title: e.series.title, episodes: [] })
-//     }
-//     seriesMap.get(e.series.id).episodes.push(e)
-//   }
-//   const seriesIds = Array.from(seriesMap.keys())
-
-//   return (
-//     <div>
-//       <h2>Related Episodes</h2>
-//       {seriesIds.map(seriesId => {
-//         const series = seriesMap.get(seriesId)
-//         return (
-//           <div key={seriesId}>
-//             <b>
-//               <Link to={`/programs/${seriesId}/`}>{series.title}</Link>
-//             </b>
-//             <ul>
-//               {series.episodes.map(e => {
-//                 let role = ""
-//                 for (const episode of episodes) {
-//                   const cpfRoles = joinLists(
-//                     episode.creator,
-//                     episode.contributor
-//                   )
-//                   const cpfRole = cpfRoles.find(e => e.id === cpfId)
-//                   if (cpfRole) {
-//                     role = `(${cpfRole.role})`
-//                   }
-//                 }
-//                 return (
-//                   <li key={e.id}>
-//                     <Link to={`/episode/${e.aapbId}/`}>{e.title}</Link> {role}
-//                   </li>
-//                 )
-//               })}
-//             </ul>
-//             <br />
-//           </div>
-//         )
-//       })}
-//     </div>
-//   )
-// }
 
 const OptionalLink = ({text, url}: {text: string, url: string[] | string}): JSX.Element | null => {
   if (Array.isArray(url) && url.length > 1) {
@@ -313,6 +264,12 @@ export const query = graphql`
       associatedPlaces
       locURL
       collections
+      references {
+        collection,
+        series,
+        title,
+        URL
+      }
     }
   }    
 `

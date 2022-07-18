@@ -146,6 +146,12 @@ class Persistor {
 
       const collections = ["NAEB", "NFCB", "WHA", "KUOM"]
       const URLTypes = ["", "Program", "Item", "Folder"]
+      interface EF {
+        collection: string,
+        series: string,
+        title: string
+        URL: string
+      }
 
       const data = Object.keys(cfps).map((key: string) => {
         const record: Airtable.Record<FieldSet> = cfps[key]
@@ -160,7 +166,7 @@ class Persistor {
                 break
               case "bavdCPF":
                 const inCollections: string[] = []
-                const URLs: {[key: string]: any} = {}
+                const URLs: EF[] = []
                 for (const c of collections) {
                   const coll = bavd[id].get(`${c} CPF Authorities`)
                   if (coll) {
@@ -176,19 +182,29 @@ class Persistor {
                         for (const entryId in ref) {
                           const entry = ref[entryId]
                           const url = entry.get('URL')
-                          const entryFields = entry.fields
+                          const entryFields: EF = {
+                            collection: `${c}${ut}`,
+                            series: entry.fields.series ? entry.fields.series[0] : "None",
+                            title: entry.fields.title,
+                            URL: entry.fields.URL || ""
+                          }
                           if (url === du) {
-                            if (URLs[`${c}${ut}`]) {
-                              URLs[`${c}${ut}`].push(entryFields)
-                            } else {
-                              URLs[`${c}${ut}`] = [entryFields]
-                            }
+                            URLs.push(entryFields)
                           }
                         }
                       }
                     }
                   }
                 }
+                // Group fields by series
+                // const groupedURLs: {[key: string]: {[key: string]: EF[]}[]} = {}
+                // Object.keys(URLs).map((u) => {
+                //   groupedURLs[u] =  URLs[u].reduce((acc: {[key: string]: Partial<EF>[]}, x: EF) => {
+                //     (acc[x.series] = acc[x.series] || []).push({'title': x.title, 'URL': x.URL})
+                //     return acc;
+                //   }, {})
+                // })
+                
                 fields["collections"] = inCollections
                 fields["references"] = URLs
                 break
