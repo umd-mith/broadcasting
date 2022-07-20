@@ -11,7 +11,7 @@ const ReadMore = ({children}) => {
     setOpen(!open)
   }
   return <div>
-    <a href="#" onClick={(e) => toggle(e)}>Read more...</a>
+    <a href="#" onClick={(e) => toggle(e)}>Read {open ? 'less' : 'more'}...</a>
     <div className={open ? '' : 'hidden'}>
       {children}
     </div>

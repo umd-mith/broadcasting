@@ -1,5 +1,9 @@
 @import "../components/variables.css";
 
+h1, h2 {
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }

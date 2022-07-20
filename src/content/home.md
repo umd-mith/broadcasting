@@ -14,7 +14,7 @@ One central activity of _BA/VD_ is the creation of authority records for the nam
 - Entities that overlap more than one of the four collections, or
 - Entities which are represented frequently enough in any one collection that they are considered important to the history of educational radio, regardless of overlap between the four collections.
 
-<details> (Read more)
+<details>
 
 The Entities index page is similar to the People and Organizations index pages on the _Airwaves_ site. As such, they are only browsable, and not searchable. This approach is by design, because _BA/VD_’s research question address the question of exploring collections through a network-centric lens, as opposed to a content-centric lens.
 
