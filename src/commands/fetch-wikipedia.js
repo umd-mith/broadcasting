@@ -28,7 +28,7 @@ async function main() {
   const wikipedia = await scrapeWikipedia(entities)
   let csv = "cpfPageID, url, imageUrl, abstract\n" 
   for (w of wikipedia) {
-    csv += `${w.cpfPageID}, ${w.url}, ${w.imageUrl}, ${w.abstract}\n`
+    csv += `${w.cpfPageID}, ${w.url}, ${w.imageUrl}, "${w.abstract}"\n`
   }
 
   const outdir = path.join(__dirname, "../../static/data/")
@@ -50,7 +50,7 @@ async function scrapeWikipedia(entities) {
     if (entity.wikipediaURL) {
 
       // if the person id is already in the wikipedia data we can skip it
-      if (data.find(p => p.personId == entity.cpfPageID)) {
+      if (data.find(p => p.cpfPageID == entity.cpfPageID)) {
         console.log(`already have wikipedia info for ${entity.cpfPageID}`)
         continue
       }
@@ -104,6 +104,7 @@ async function scrapeWikipedia(entities) {
         .replace(/\[\d+\]/g, ' ')  // remove footnotes
         .replace(/\n/g, ' ')       // remove newlines
         .replace(/ +/g, ' ')       // remove any resulting extra spaces
+        .replace(/"/g, '""')       // espace quotes
 
       if (abstract != '') w.abstract = abstract
 
