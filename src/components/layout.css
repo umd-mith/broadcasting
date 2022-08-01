@@ -81,7 +81,7 @@ a:hover {
   [class^="page-"] > * {
     grid-column: 3 / -3;
     padding: 0;
-    padding-top: var(--spacing-large-content);
+    /* padding-top: var(--spacing-large-content); */
   }
 }
 

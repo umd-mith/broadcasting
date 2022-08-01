@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
-import { time } from "console"
 
 interface RegistryEntity {
   name: string
@@ -76,17 +75,17 @@ export default function Registry({ name, items }: Props) {
   return (
     <div className="registry">
       <div className="registry-filter">
-        <span>Show enties from: </span>
+        <span><label>Show enties from: </label></span>
         {collections.map((c, i) => (<span>
           <input type="checkbox" 
             checked={activeCollections.indexOf(c) > -1}
             onChange={() => handleCollectionFilter(c)}
-            key={`c${i}`} /> {c}
+            key={`c${i}`} /> <label>{c}</label>
         </span>))}
         <span>
         <input type="checkbox" 
             checked={singleCollection}
-            onChange={() => handleSingleCollectionFilter()} /> Single Collection Only
+            onChange={() => handleSingleCollectionFilter()} /> <label>Single Collection Only</label>
         </span>
       </div>
       <input
