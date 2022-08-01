@@ -12,6 +12,7 @@ const path = require("path")
 const cheerio = require('cheerio')
 const urlfetch = require("node-fetch")
 const streamPipeline = util.promisify(require("stream").pipeline)
+const { parse } = require('json2csv')
 
 async function main() {
   if (! fs.existsSync('./static/data/entities.json')) {
@@ -26,10 +27,9 @@ async function main() {
   }
 
   const wikipedia = await scrapeWikipedia(entities)
-  let csv = "cpfPageID, url, imageUrl, abstract\n" 
-  for (w of wikipedia) {
-    csv += `${w.cpfPageID}, ${w.url}, ${w.imageUrl}, "${w.abstract}"\n`
-  }
+  const fields = ["cpfPageID", "url", "imageUrl", "abstract"]
+  const opts = { fields }
+  const csv = parse(wikipedia, opts)
 
   const outdir = path.join(__dirname, "../../static/data/")
   const fullPath = path.resolve(outdir, "wikipedia.csv")
@@ -104,7 +104,7 @@ async function scrapeWikipedia(entities) {
         .replace(/\[\d+\]/g, ' ')  // remove footnotes
         .replace(/\n/g, ' ')       // remove newlines
         .replace(/ +/g, ' ')       // remove any resulting extra spaces
-        .replace(/"/g, '""')       // espace quotes
+        // .replace(/"/g, '""')       // escape quotes
 
       if (abstract != '') w.abstract = abstract
 
