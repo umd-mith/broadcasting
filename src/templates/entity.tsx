@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { StaticImage, GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
 import "./entity.css"
 
 import Layout from "../components/layout"
@@ -35,7 +35,7 @@ export interface EntityData {
   associatedPlaces: string[]
   locURL: string[]
   collections: string[]
-  image: IGatsbyImageData
+  image: ImageDataLike
   references: Reference[]
 }
 
@@ -152,7 +152,6 @@ const Entity = ({ data }: Props) => {
           <div className="cpf">
             <div className="image">{image}</div>
             <div className="bio">
-              <h2>{entity.wikidataLabel}</h2>
               {abstract}
               <p>
                 <Field label="Born" value={birth} />
@@ -270,6 +269,11 @@ export const query = graphql`
       associatedPlaces
       locURL
       collections
+      image {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
       references {
         collection,
         series,

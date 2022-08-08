@@ -154,6 +154,12 @@ class Persistor {
         URL: string
       }
 
+      // Get images if present.
+      if (!fs.existsSync(path.join(__dirname, "../../static/data/wikipedia.csv"))) {
+        console.log("Wikipedia data is missing. Images may not be linked!")
+      }
+      const images = fs.readdirSync(path.join(__dirname, "../images/wikipedia"))
+
       const data = Object.keys(cfps).map((key: string) => {
         const record: Airtable.Record<FieldSet> = cfps[key]
         const fields = this._clone(record.fields)
@@ -212,6 +218,13 @@ class Persistor {
                 break
               default:
                 // noop 
+            }
+          }
+          // Add images if present
+          for (const i of images) {
+            const cfpid = record.get("cpfPageID")?.toString()
+            if (path.parse(i).name === cfpid) {
+              fields["image"] = `../../src/images/wikipedia/${i}`
             }
           }
         }

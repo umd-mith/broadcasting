@@ -85,7 +85,7 @@ async function scrapeWikipedia(entities) {
         // adjust the url to get a larger size image if possible
         const ext = path.extname(imageUrl)
         const filename = `${entity.cpfPageID}${ext}`
-        const imgPath = `./static/images/wikipedia/${filename}`
+        const imgPath = `./src/images/wikipedia/${filename}`
         if (! fs.existsSync(imgPath)) {
           console.log(`downloading ${imageUrl} to ${imgPath}`)
           const resp = await urlfetch(imageUrl)
