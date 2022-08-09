@@ -1,3 +1,5 @@
+@import "../components/variables.css";
+
 .cpf {
   display: flex;
 }
@@ -17,5 +19,51 @@
 }
 
 .cpf .references {
-  margin-top: 1em;
+  margin: 2em 0 5em 0;
+}
+
+.page-cpf {
+  min-height: 75vh;
+}
+
+.page-cpf h1, .page-cpf h2 {
+  text-align: left;
+}
+
+.page-cpf h1 {
+  margin-top: 1rem;
+}
+
+.page-cpf h1 > span {
+  color: var(--color-brand-900)
+}
+
+.cpf .reference {
+  margin: 1em 0;
+}
+
+.cpf .reference h4 {
+  display: flex;
+  cursor: pointer;
+}
+
+.cpf .reference .arrow {
+  width: 1.5rem;
+  margin-left: -.5em;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
+}
+
+.cpf .reference .arrow.expanded {
+  transform: rotate(90deg);
+}
+
+.cpf .accordion {
+  padding-left: 2em;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+.cpf .accordion.expanded {
+  max-height: var(--max-height);
 }

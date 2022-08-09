@@ -45,7 +45,81 @@ interface Props {
   }
 }
 
-const formatReferences = (references: Reference[]) => {
+const Arrow = (props: any) => <svg {...props} viewBox="0 0 24 24"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+// const Collapse = (props: any) => <svg {...props} viewBox="0 0 24 24"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
+
+const Accordion = ({title, children}: {title: JSX.Element, children: JSX.Element | JSX.Element[]}) => {
+  const [expanded, setExpanded] = React.useState(false)
+  const arrow = expanded ? <Arrow className="arrow expanded"/> : <Arrow className="arrow"/>
+
+  const accRef = React.useRef<HTMLDivElement>(null)
+
+  const handleExpand = () => {
+    const el = accRef.current
+    
+    if (el) {
+      const handler = function() {
+        el.style.removeProperty('--max-height')
+        el.removeEventListener("transitionend", handler)
+      }
+      if (!expanded) {
+        const height = el.scrollHeight
+        el.style.setProperty('--max-height', height + 'px')
+        el.addEventListener("transitionend", handler, false)
+      } else {
+        // TODO: figure out animation on collapse
+      }
+    }
+    setExpanded(!expanded)
+  }
+
+  return (<div className="reference">
+    <h4 onClick={handleExpand}>{arrow} <span>{title}</span></h4>
+    <div className={`accordion ${expanded ? 'expanded' : ''}`} ref={accRef}>
+      {children}
+    </div>
+  </div>)
+}
+
+const CollReference = ({coll, reference}: {coll: string, reference: {[key: string]: Partial<Reference>[]}}) => {
+  const total = Object.keys(reference).reduce((tot, s) => {tot += reference[s].length; return tot}, 0)
+  let keys = Object.keys(reference).sort()
+  if (keys.indexOf("None") > -1) {
+    keys = ["None", ...keys.filter(k => k !== "None")]
+  }
+  return <Accordion title={<span>{coll} <span style={{fontStyle: "italic"}}>[{total}]</span></span>}>
+    {
+      keys.map(series => {
+
+        const total = reference[series].length
+
+        const info = <ul>{
+          reference[series].sort((a, b) => {
+            const at = a.title || ""
+            const bt = b.title || ""
+            return at.trim() > bt.trim() ? 1 : -1
+          }).map(url => (
+            <li key={url.URL || ""}>{
+              <a href={url.URL}>{url.title}</a>
+            }</li>
+          ))
+        }</ul>
+        
+        return (
+          <div key={series}>
+            {series !== "None" 
+            ? <Accordion title={<span>{series !== "None" ? series : ""} <span style={{fontStyle: 'italic'}}>[{total}]</span></span>}>
+              {info}
+            </Accordion> 
+            : info}
+          </div>
+      )})
+    }
+  </Accordion>
+}
+
+const References = ({references}: {references: Reference[]}) => {
+
   // Group by series
   const bySeries = references.reduce((acc: {[key: string]: Partial<Reference>[]}, x: Reference) => {
     (acc[x.series] = acc[x.series] || []).push({'collection': x.collection, 'title': x.title, 'URL': x.URL})
@@ -62,30 +136,9 @@ const formatReferences = (references: Reference[]) => {
     }
   }
 
-  return Object.keys(grouped).sort().map(coll => (
-    <div key={coll}>
-      <h4>{coll}</h4>
-      {
-        Object.keys(grouped[coll]).sort().map(series => (
-          <div key={series}>
-            <h5>{series !== "None" ? series : ""}</h5>
-            <ul>{
-              grouped[coll][series].sort((a, b) => {
-                const at = a.title || ""
-                const bt = b.title || ""
-                return at.trim() > bt.trim() ? 1 : -1
-              }).map(url => (
-                <li key={url.URL || ""}>{
-                  <a href={url.URL}>{url.title}</a>
-                }</li>
-              ))
-            }</ul>
-          </div>
-        ))
-      }
-    </div>
-
-  ))
+  return <>{Object.keys(grouped).sort().map(coll => (
+    <CollReference coll={coll} reference={grouped[coll]} key={coll}/>
+  ))}</>
 }
 
 const Entity = ({ data }: Props) => {
@@ -147,11 +200,12 @@ const Entity = ({ data }: Props) => {
       <div className="page-cpf">
         <section>
           <h1>
-            {entity.wikidataLabel}
+            <span>Entity | </span>{entity.wikidataLabel}
           </h1>
           <div className="cpf">
             <div className="image">{image}</div>
             <div className="bio">
+              <h2>{entity.wikidataLabel}</h2>
               {abstract}
               <p>
                 <Field label="Born" value={birth} />
@@ -177,7 +231,7 @@ const Entity = ({ data }: Props) => {
               </div>
               <div className="references">
                 <h3>Appears in:</h3>
-                {formatReferences(entity.references)}
+                <References references={entity.references} />
               </div>
             </div>
           </div>
@@ -237,12 +291,6 @@ const OptionalLink = ({text, url}: {text: string, url: string[] | string}): JSX.
     return null
   } 
 }
-
-// function joinLists(a, b) {
-//   if (!a) a = []
-//   if (!b) b = []
-//   return a.concat(b)
-// }
 
 export const query = graphql`
   query($id: String!) {
