@@ -48,7 +48,6 @@ async function scrapeWikipedia(entities) {
 
   for (const [i, entity] of entities.entries()) {
     if (entity.wikipediaURL) {
-
       // if the person id is already in the wikipedia data we can skip it
       if (data.find(p => p.cpfPageID == entity.cpfPageID)) {
         console.log(`already have wikipedia info for ${entity.cpfPageID}`)
@@ -97,9 +96,16 @@ async function scrapeWikipedia(entities) {
 
       // get the abstract
 
-      const abstract = $('.mw-parser-output p')
-        .filter((i, el) => el.attribs.class === undefined)
-        .slice(0, 2)               // get the first two paragraphs
+      const abstract = $('.mw-parser-output p:not(table p)')
+        .filter((i, el) => {
+          return el.attribs.class === undefined
+          && $('#coordinates', el).length === 0
+          // add other filters as they are discovered.
+        })
+        .each((i, el) => {
+          $("style", el).remove()
+        })                    // exclude style elements
+        .slice(0, 2)               // get the first two paragraphs 
         .text()
         .replace(/\[\d+\]/g, ' ')  // remove footnotes
         .replace(/\n/g, ' ')       // remove newlines
