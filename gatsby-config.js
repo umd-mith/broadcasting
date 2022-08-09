@@ -4,6 +4,7 @@ const basePath = '/broadcasting'
 
 module.exports = {
   pathPrefix: basePath,
+  assetPrefix: "",
   siteMetadata: {
     title: "Broadcasting A/V Data",
     description:
