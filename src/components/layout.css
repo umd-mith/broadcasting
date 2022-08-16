@@ -15,6 +15,10 @@ body {
   display: none !important;
 }
 
+main {
+  margin-top: 1.5em;
+}
+
 main section {
   grid-column: 1 / -1;
   padding: var(--spacing-base-content) var(--spacing-base-content) 0

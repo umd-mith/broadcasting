@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
+import "./chip.css"
 
 interface RegistryEntity {
   name: string

@@ -1,4 +1,5 @@
 @import "../components/variables.css";
+@import "../components/chip.css";
 
 .cpf {
   display: flex;

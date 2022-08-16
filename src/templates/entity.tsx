@@ -5,6 +5,8 @@ import "./entity.css"
 
 import Layout from "../components/layout"
 
+import { radiomap } from "../utils/labels"
+
 interface Reference {
   collection: string
   series: string
@@ -46,7 +48,6 @@ interface Props {
 }
 
 const Arrow = (props: any) => <svg {...props} viewBox="0 0 24 24"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-// const Collapse = (props: any) => <svg {...props} viewBox="0 0 24 24"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
 
 const Accordion = ({title, children}: {title: JSX.Element, children: JSX.Element | JSX.Element[]}) => {
   const [expanded, setExpanded] = React.useState(false)
@@ -87,7 +88,10 @@ const CollReference = ({coll, reference}: {coll: string, reference: {[key: strin
   if (keys.indexOf("None") > -1) {
     keys = ["None", ...keys.filter(k => k !== "None")]
   }
-  return <Accordion title={<span>{coll} <span style={{fontStyle: "italic"}}>[{total}]</span></span>}>
+  
+  const label = radiomap[coll]
+  const labelfull = `${label.full} (${label.altshort || coll})`
+  return <Accordion title={<span>{labelfull} <span className="registry-coll-chip">{total}</span></span>}>
     {
       keys.map(series => {
 
@@ -108,7 +112,7 @@ const CollReference = ({coll, reference}: {coll: string, reference: {[key: strin
         return (
           <div key={series}>
             {series !== "None" 
-            ? <Accordion title={<span>{series !== "None" ? series : ""} <span style={{fontStyle: 'italic'}}>[{total}]</span></span>}>
+            ? <Accordion title={<span>{series !== "None" ? series : ""} <span className="registry-coll-chip">{total}</span></span>}>
               {info}
             </Accordion> 
             : info}
@@ -205,7 +209,6 @@ const Entity = ({ data }: Props) => {
           <div className="cpf">
             <div className="image">{image}</div>
             <div className="bio">
-              <h2>{entity.wikidataLabel}</h2>
               {abstract}
               <p>
                 <Field label="Born" value={birth} />
