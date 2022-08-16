@@ -77,7 +77,7 @@ export default function Registry({ name, items }: Props) {
     <div className="registry">
       <div className="registry-filter">
         <span><label>Show enties from: </label></span>
-        {collections.map((c, i) => (<span>
+        {collections.map((c, i) => (<span key={c}>
           <input type="checkbox" 
             checked={activeCollections.indexOf(c) > -1}
             onChange={() => handleCollectionFilter(c)}
@@ -100,7 +100,7 @@ export default function Registry({ name, items }: Props) {
 
       <div className="registry-nav">
         {letters.map(letter => (
-          <a href={`#letter-${letter}`}>{letter}</a>
+          <a href={`#letter-${letter}`} key={letter}>{letter}</a>
         ))}
       </div>
 
@@ -115,7 +115,7 @@ export default function Registry({ name, items }: Props) {
         const ibls = itemsByLetter.get(letter) as RegistryEntity[]
         const hasItems = ibls.length > 0
         return (
-          <section style={{ display: hasItems ? "block" : "none" }}>
+          <section style={{ display: hasItems ? "block" : "none" }} key={letter}>
             <div className="letter-section">
               <div className="letter" id={`letter-${letter}`}>
                 {letter}
@@ -129,9 +129,9 @@ export default function Registry({ name, items }: Props) {
 
             <ul>
               {ibls.map(item => (
-                <li>
+                <li key={item.url}>
                   <Link to={item.url}>{item.name}</Link>:
-                  {item.collections.map(c => <span className="registry-coll-chip">{c}</span>)}
+                  {item.collections.map(c => <span className="registry-coll-chip" key={c}>{c}</span>)}
                   {item.description}
                 </li>
               ))}
