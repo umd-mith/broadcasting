@@ -28,36 +28,31 @@ Lastly, below you will see a list of ten new digital exhibits created by the BA/
 
 Another goal of _BA/VD_ is to make these processes transparent to and replicable by other stewards of cultural heritage materials who want to use linked data processes to make their collections more discoverable across the semantic web. Below you’ll see links to various types of documentation and training materials we’ve created to help guide others towards this goal. 
 
-**[GitHub Repository](https://ssapienza.github.io/ssapienza/)**      | **[Video Tutorials](writing-presentations.md)**    |   **[Workflow Documentation](https://docs.google.com/document/d/18Ri6MhXKkzcbZWBaC2w0cpxGd_SRf_v10dAnBaorGHA/edit?usp=sharing)**
-
-## Documentation and Training
-
-**[Exhibit Thumbnails](https://ssapienza.github.io/ssapienza/)**
-![An image](../images/missing-person.png)
+**[GitHub Repository](https://github.com/umd-mith/broadcasting)**      | **[Video Tutorials](https://vimeo.com/showcase/9765583)**    |   **[Workflow Documentation](https://drive.google.com/drive/folders/1wR4qzQngN0f7q3os4YqIY_CFYFegoZQV?usp=sharing)**
 
 ## Contributors
 
 ### Project Team
-Stephanie Sapienza (Principal Investigator, MITH)
-Eric Hoyt (Principal Investigator, University of Wisconsin-Madison)
-Emily Frazier (Graduate Research Assistant, MITH)
-Raffaele Viglianti (Research Programmer, MITH)
-Trevor Muñoz (Executive Director, MITH)
-Daniel Pitti (SNAC Director, University of Virginia)
-Joseph Glass (SNAC Developer, University of Virginia)
-Cat Phan (University of Wisconsin-Madison)
-Erik Moore (University of Minnesota)
-Rebecca Toov (University of Minnesota)
-Laura Schnitker (University of Maryland Libraries)
+* Stephanie Sapienza (Principal Investigator, MITH)
+* Eric Hoyt (Principal Investigator, University of Wisconsin-Madison)
+* Emily Frazier (Graduate Research Assistant, MITH)
+* Raffaele Viglianti (Research Programmer, MITH)
+* Trevor Muñoz (Executive Director, MITH)
+* Daniel Pitti (SNAC Director, University of Virginia)
+* Joseph Glass (SNAC Developer, University of Virginia)
+* Cat Phan (University of Wisconsin-Madison)
+* Erik Moore (University of Minnesota)
+* Rebecca Toov (University of Minnesota)
+* Laura Schnitker (University of Maryland Libraries)
 
 ### Exhibit Curators
 
-Christina Gibson, Towson University
-Glenn Clatworthy, Independent Researcher
-Arcelia Gutierrez, University of Kentucky
-Jennifer Hyland Wang, University of Wisconsin-Madison
-Bill Kirkpatrick, Denison University
-Marit McArthur, California State University, Bakersfield
-Allison Perlman, University of California, Irvine
-Alexander Russo, The Catholic University of America
+* Christina Gibson, Towson University
+* Glenn Clatworthy, Independent Researcher
+* Arcelia Gutierrez, University of Kentucky
+* Jennifer Hyland Wang, University of Wisconsin-Madison
+* Bill Kirkpatrick, Denison University
+* Marit McArthur, California State University, Bakersfield
+* Allison Perlman, University of California, Irvine
+* Alexander Russo, The Catholic University of America
   
