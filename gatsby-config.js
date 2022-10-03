@@ -18,7 +18,7 @@ module.exports = {
         link: "/",
       },
       {
-        name: "Entities",
+        name: "People & Organizations",
         link: "/entities/",
       },
     ],

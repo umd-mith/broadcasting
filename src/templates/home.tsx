@@ -3,20 +3,8 @@ import rehypeReact from "rehype-react"
 import Layout from "../components/layout"
 import "./home.css"
 import unified from "unified"
+import ReadMore from "../components/readmore"
 
-const ReadMore = ({children}) => {
-  const [open, setOpen] = React.useState(false)
-  const toggle = (e) => {
-    e.preventDefault()
-    setOpen(!open)
-  }
-  return <div>
-    <a href="#" onClick={(e) => toggle(e)}>Read {open ? 'less' : 'more'}...</a>
-    <div className={open ? '' : 'hidden'}>
-      {children}
-    </div>
-  </div>
-}
 
 const Home = ({pageContext}) => {
   
