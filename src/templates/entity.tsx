@@ -86,7 +86,6 @@ const Accordion = ({title, children}: {title: JSX.Element, children: JSX.Element
 const CollReference = ({coll, reference}: {coll: string, reference: {[key: string]: Partial<Reference>[]}}) => {
   const total = Object.keys(reference).reduce((tot, s) => {tot += reference[s].length; return tot}, 0)
   let keys = Object.keys(reference).sort()
-  console.log('h', keys)
   if (keys.indexOf("None") > -1) {
     keys = ["None", ...keys.filter(k => k !== "None")]
   }
