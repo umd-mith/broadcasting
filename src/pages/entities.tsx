@@ -23,7 +23,7 @@ const Entities = ({ data }: Props) => {
   const items = data.allEntitiesJson.nodes.map((s: any) => {
     const desc = s.wikidataDescription || ''
     return {
-      name: s.wikidataLabel,
+      name: s.bavdName,
       url: `/entity/${s.cpfPageID}/`,
       description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc,
       collections: s.collections
@@ -84,6 +84,7 @@ export const query = graphql`
   query {
     allEntitiesJson(sort: {fields: wikidataLabel, order: ASC}) {
       nodes {
+        bavdName
         wikidataLabel
         cpfPageID
         wikidataDescription

@@ -215,6 +215,7 @@ class Persistor {
                 
                 fields["collections"] = inCollections
                 fields["references"] = URLs
+                fields["bavdName"] = bavd[id].get("BAVD name")
                 break
               default:
                 // noop 

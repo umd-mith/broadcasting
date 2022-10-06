@@ -17,6 +17,7 @@ interface Reference {
 export interface EntityData {
   id: string
   wikidataLabel: string
+  bavdName: string
   altLabels: string[]
   birthDate: string
   deathDate: string
