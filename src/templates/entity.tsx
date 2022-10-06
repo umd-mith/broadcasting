@@ -9,7 +9,7 @@ import { radiomap } from "../utils/labels"
 
 interface Reference {
   collection: string
-  series: string
+  series: string[]
   title: string
   URL: string
 }
@@ -85,6 +85,7 @@ const Accordion = ({title, children}: {title: JSX.Element, children: JSX.Element
 const CollReference = ({coll, reference}: {coll: string, reference: {[key: string]: Partial<Reference>[]}}) => {
   const total = Object.keys(reference).reduce((tot, s) => {tot += reference[s].length; return tot}, 0)
   let keys = Object.keys(reference).sort()
+  console.log('h', keys)
   if (keys.indexOf("None") > -1) {
     keys = ["None", ...keys.filter(k => k !== "None")]
   }
@@ -126,7 +127,9 @@ const References = ({references}: {references: Reference[]}) => {
 
   // Group by series
   const bySeries = references.reduce((acc: {[key: string]: Partial<Reference>[]}, x: Reference) => {
-    (acc[x.series] = acc[x.series] || []).push({'collection': x.collection, 'title': x.title, 'URL': x.URL})
+    for (const s of x.series) {
+      (acc[s] = acc[s] || []).push({'collection': x.collection, 'title': x.title, 'URL': x.URL})
+    }
     return acc
   }, {})
 

@@ -192,7 +192,7 @@ class Persistor {
                           const entryFields: EF = {
                             collection: c,
                             type: ut,
-                            series: entry.fields.series ? Array.isArray(entry.fields.series) ? entry.fields.series[0] : entry.fields.series : "None",
+                            series: entry.fields.series ? Array.isArray(entry.fields.series) ? entry.fields.series : [entry.fields.series] : ["None"],
                             title: entry.fields.title,
                             URL: entry.fields.URL || ""
                           }
