@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { StaticImage, GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image"
+import { FaExternalLinkAlt } from "react-icons/fa"
 import "./entity.css"
 
 import Layout from "../components/layout"
@@ -104,9 +105,12 @@ const CollReference = ({coll, reference}: {coll: string, reference: {[key: strin
             const bt = b.title || ""
             return at.trim() > bt.trim() ? 1 : -1
           }).map(url => (
-            <li key={url.URL || ""}>{
+            <li key={url.URL || ""}>{<>
               <a href={url.URL}>{url.title}</a>
-            }</li>
+              <a className="newtab" href={url.URL} target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkAlt title="Open in new tab" />
+              </a>
+            </>}</li>
           ))
         }</ul>
         

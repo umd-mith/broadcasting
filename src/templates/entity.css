@@ -45,6 +45,11 @@
   color: var(--color-brand-900)
 }
 
+.page-cpf .newtab {
+  margin-left: .8em;
+  cursor: pointer;
+}
+
 .cpf .reference {
   margin-top: 1.5em;
 }
