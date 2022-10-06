@@ -32,7 +32,8 @@ export default function Registry({ name, items }: Props) {
 
   for (const item of items) {
     // Apply search filter
-    if (!item.name.match(new RegExp(searchQuery, "i"))) {
+    const escaped = searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    if (!item.name.match(new RegExp(escaped, "i"))) {
       continue
     }
 
