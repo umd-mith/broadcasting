@@ -36,7 +36,7 @@ Another goal of _BA/VD_ is to make these processes transparent to and replicable
 * Stephanie Sapienza (Principal Investigator, MITH)
 * Eric Hoyt (Principal Investigator, University of Wisconsin-Madison)
 * Emily Frazier (Graduate Research Assistant, MITH)
-* Raffaele Viglianti (Research Programmer, MITH)
+* Raffaele Viglianti (Senior Research Software Developer, MITH)
 * Trevor Muñoz (Executive Director, MITH)
 * Daniel Pitti (SNAC Director, University of Virginia)
 * Joseph Glass (SNAC Developer, University of Virginia)

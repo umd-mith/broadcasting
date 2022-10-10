@@ -296,7 +296,10 @@ const OptionalLink = ({text, url}: {text: string, url: string[] | string}): JSX.
       </>
     )
   } else if (url) {
-    return <><a href={url as string}>{text}</a><br /></>
+    return <><a href={url as string}>{text}</a>
+    <a className="newtab" href={url as string} target="_blank" rel="noopener noreferrer">
+      <FaExternalLinkAlt title="Open in new tab" />
+    </a><br /></>
   } else {
     return null
   } 
