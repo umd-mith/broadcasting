@@ -24,7 +24,6 @@ export interface EntityData {
   deathDate: string
   birthPlace: string
   deathPlace: string
-  wikidataDescription: string
   description: string
   employer: string[]
   fieldOfWork: string[]
@@ -316,7 +315,6 @@ export const query = graphql`
       birthPlace
       deathPlace
       description
-      wikidataDescription
       employer
       fieldOfWork
       inceptionDate

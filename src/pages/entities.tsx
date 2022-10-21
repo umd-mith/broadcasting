@@ -21,7 +21,7 @@ const Entities = ({ data }: Props) => {
 
   const maxLen = 250
   const items = data.allEntitiesJson.nodes.map((s: any) => {
-    const desc = s.wikidataDescription || ''
+    const desc = s.expandedBlurb || ''
     return {
       name: s.bavdName,
       url: `/entity/${s.cpfPageID}/`,
@@ -87,7 +87,7 @@ export const query = graphql`
         bavdName
         wikidataLabel
         cpfPageID
-        wikidataDescription
+        expandedBlurb
         collections
       }
     }
