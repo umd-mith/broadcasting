@@ -41,6 +41,7 @@ Another goal of _BA/VD_ is to make these processes transparent to and replicable
 * Daniel Pitti (SNAC Director, University of Virginia)
 * Joseph Glass (SNAC Developer, University of Virginia)
 * Cat Phan (University of Wisconsin-Madison)
+* Steven Dast (University of Wisconsin-Madison)
 * Erik Moore (University of Minnesota)
 * Rebecca Toov (University of Minnesota)
 * Laura Schnitker (University of Maryland Libraries)
@@ -49,10 +50,10 @@ Another goal of _BA/VD_ is to make these processes transparent to and replicable
 
 * Christina Gibson, Towson University
 * Glenn Clatworthy, Independent Researcher
-* Arcelia Gutierrez, University of Kentucky
+* Arcelia Gutierrez, University of California, Irvine
 * Jennifer Hyland Wang, University of Wisconsin-Madison
 * Bill Kirkpatrick, Denison University
-* Marit McArthur, California State University, Bakersfield
+* Marit MacArthur, University of California, Davis
 * Allison Perlman, University of California, Irvine
 * Alexander Russo, The Catholic University of America
   
