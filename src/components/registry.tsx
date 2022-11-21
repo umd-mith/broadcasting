@@ -134,7 +134,7 @@ export default function Registry({ name, items }: Props) {
                 <li key={item.url}>
                   <Link to={item.url}>{item.name}</Link>:
                   {item.collections.map(c => <span className="registry-coll-chip" key={c}>{c}</span>)}
-                  {item.description}
+                  <div dangerouslySetInnerHTML={{__html: item.description}}/>
                 </li>
               ))}
             </ul>

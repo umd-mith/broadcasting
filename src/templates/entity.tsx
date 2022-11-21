@@ -113,10 +113,12 @@ const CollReference = ({coll, reference}: {coll: string, reference: {[key: strin
           ))
         }</ul>
         
+        const label = series !== "None" ? series : coll === "NAEB" ? "Documents" : ""
+
         return (
           <div key={series}>
-            {series !== "None" 
-            ? <Accordion title={<span>{series !== "None" ? series : ""} <span className="registry-coll-chip">{total}</span></span>}>
+            {series !== "None" || coll === "NAEB"
+            ? <Accordion title={<span>{label} <span className="registry-coll-chip">{total}</span></span>}>
               {info}
             </Accordion> 
             : info}
@@ -177,7 +179,7 @@ const Entity = ({ data }: Props) => {
       <>
         <div dangerouslySetInnerHTML={{__html: entity.description}}/>
         {readMore}
-      </>
+      </> 
     )
   }
 
