@@ -21,11 +21,12 @@ const Entities = ({ data }: Props) => {
 
   const maxLen = 250
   const items = data.allEntitiesJson.nodes.map((s: any) => {
-    const desc = s.expandedBlurb || ''
+    const description = s.description || s.expandedBlurb || ''
     return {
       name: s.bavdName,
       url: `/entity/${s.cpfPageID}/`,
-      description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc,
+      // description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc,
+      description,
       collections: s.collections
     }
   })
@@ -89,6 +90,7 @@ export const query = graphql`
         cpfPageID
         expandedBlurb
         collections
+        description
       }
     }
   }
