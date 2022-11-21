@@ -114,9 +114,7 @@
   margin-bottom: 1em;
 }
 
-.registry ul li div, .registry ul li div p {
-  height: 1.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.registry ul li .longdesc {
+  height: 0;
+  overflow: hidden
 }

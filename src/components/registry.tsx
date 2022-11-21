@@ -8,6 +8,7 @@ import "./chip.css"
 interface RegistryEntity {
   name: string
   url: string
+  blurb: string
   description: string
   collections: string[]
 }
@@ -134,7 +135,8 @@ export default function Registry({ name, items }: Props) {
                 <li key={item.url}>
                   <Link to={item.url}>{item.name}</Link>:
                   {item.collections.map(c => <span className="registry-coll-chip" key={c}>{c}</span>)}
-                  <div dangerouslySetInnerHTML={{__html: item.description}}/>
+                  {item.blurb}
+                  <div className="longdesc" dangerouslySetInnerHTML={{__html: item.description}}/>
                 </li>
               ))}
             </ul>

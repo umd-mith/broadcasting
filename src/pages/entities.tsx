@@ -21,11 +21,12 @@ const Entities = ({ data }: Props) => {
 
   const maxLen = 250
   const items = data.allEntitiesJson.nodes.map((s: any) => {
+    const blurb = s.expandedBlurb || ''
     const description = s.description || s.expandedBlurb || ''
     return {
       name: s.bavdName,
       url: `/entity/${s.cpfPageID}/`,
-      // description: desc.length > maxLen ? desc.substring(0, maxLen) + '...' : desc,
+      blurb,
       description,
       collections: s.collections
     }
