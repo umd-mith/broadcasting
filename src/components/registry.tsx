@@ -78,7 +78,7 @@ export default function Registry({ name, items }: Props) {
   return (
     <div className="registry">
       <div className="registry-filter">
-        <span><label>Show enties from: </label></span>
+        <span><label>Show entities from: </label></span>
         {collections.map((c, i) => (<span key={c}>
           <input type="checkbox" 
             checked={activeCollections.indexOf(c) > -1}

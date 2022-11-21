@@ -83,7 +83,7 @@ export default Entities
 
 export const query = graphql`
   query {
-    allEntitiesJson(sort: {fields: wikidataLabel, order: ASC}) {
+    allEntitiesJson(sort: {fields: bavdName, order: ASC}) {
       nodes {
         bavdName
         wikidataLabel
