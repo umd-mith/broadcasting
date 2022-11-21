@@ -172,12 +172,12 @@ const Entity = ({ data }: Props) => {
   }
 
   if (entity.description) {
-    const readMore = entity.wikipediaURL ?  <em>Read more at <a href={entity.wikipediaURL}>Wikipedia</a>...</em> : ''
+    const readMore = entity.wikipediaURL ?  <div><em>Read more at <a href={entity.wikipediaURL}>Wikipedia</a>...</em></div> : ''
     abstract = (
-      <p>
-        {entity.description}
+      <>
+        <div dangerouslySetInnerHTML={{__html: entity.description}}/>
         {readMore}
-      </p>
+      </>
     )
   }
 
