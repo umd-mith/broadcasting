@@ -3,7 +3,7 @@ import Loadable from "@loadable/component"
 import Layout from "../components/layout"
 
 
-const LoadableViz = Loadable(() => import("../components/viz"))
+const LoadableViz = Loadable(() => import("../components/viz3"))
 
 const Viz = () => {
   return (
