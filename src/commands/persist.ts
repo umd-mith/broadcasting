@@ -216,6 +216,10 @@ class Persistor {
                 fields["collections"] = inCollections
                 fields["references"] = URLs
                 fields["bavdName"] = bavd[id].get("BAVD name")
+                fields["kuomCount"] = bavd[id].get("KUOM Total Count")
+                fields["nfcbCount"] = bavd[id].get("NFCB Total Count")
+                fields["whaCount"] = bavd[id].get("WHA Total Count")
+                fields["naebCount"] = bavd[id].get("NAEB Total Count")
                 break
               default:
                 // noop 

@@ -28,6 +28,10 @@ interface Entity {
   references: {
     collection: string
   }[]
+  kuomCount: number
+  nfcbCount: number
+  naebCount: number
+  whaCount: number
 }
 
 interface DataNode {
@@ -63,9 +67,13 @@ const Viz = () => {
           references {
             collection
           }
+          kuomCount
+          nfcbCount
+          naebCount
+          whaCount
         }
       }
-    }
+    }    
   `)
 
 const [show, setShow] = React.useState<string>("")
@@ -80,20 +88,32 @@ const [show, setShow] = React.useState<string>("")
 
   // Set up links
   const links: Link[] = entityData.allEntitiesJson.nodes.reduce((acc: Link[], n: Entity) => {
-    const colls : {[key: string] : number} = {}
-    for (const r of n.references) {
-      colls[r.collection] ? colls[r.collection]++ : colls[r.collection] = 1
-    }
-    for (const coll of Object.keys(colls)) {
+    // const colls : {[key: string] : number} = {}
+    // for (const r of n.references) {
+    //   colls[r.collection] ? colls[r.collection]++ : colls[r.collection] = 1
+    // }
+    const colls = n.references.map(r => r.collection)
+    for (const coll of colls) {
+      let strength = n.naebCount
+      switch (coll){
+        case "KUOM" : strength = n.kuomCount
+        break
+        case "NFCB" : strength = n.nfcbCount
+        break
+        case "WHA" : strength = n.whaCount
+      }
       const link = {
         source: n.bavdName,
         target: coll,
-        strength: colls[coll]
+        strength
+        // something needs to happen to match "kuomCount" etc. fields with the appropriate coll, and then something else needs to tell it to use the appropriate count field for the coll as the "strength" value
       }
       acc.push(link)
     }
     return acc
   }, [])
+
+  console.log(nodes, links)
 
   const nodeTitle = (d: DataNode) => d.id
   const T = nodeTitle == null ? null : d3.map(nodes, nodeTitle)
