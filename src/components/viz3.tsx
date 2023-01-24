@@ -209,8 +209,12 @@ const [show, setShow] = React.useState<string>("")
     const el = d3Ref.current
     if (el && show) {
       d3.select(el).selectAll("circle")
-        .attr("fill", (d) => {
-          return d.collections.indexOf(show) !== -1 ? color(show) : "#2d2d2d"
+        .attr("fill", d => {
+          // Uncomment the following code to highlight a specific node for debugging
+          // if (d.id === "WHA (Radio station : Madison, Wis.)") {
+          //   return "#03fcec"
+          // }
+          return (d as DataNode).collections.indexOf(show) !== -1 ? color(show) : "#2d2d2d"
         })
     }
   }, [show])
