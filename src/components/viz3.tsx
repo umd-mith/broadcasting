@@ -4,9 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import * as d3 from "d3"
 import { D3DragEvent, Simulation, SimulationLinkDatum, SimulationNodeDatum } from "d3"
 
-/* *********************************
-* FIND AND FIX TYPING!! LOOK FOR : any *
-************************************/
 function color(d: string) {
   switch (d) {
     case "NAEB":
@@ -88,25 +85,16 @@ const [show, setShow] = React.useState<string>("")
 
   // Set up links
   const links: Link[] = entityData.allEntitiesJson.nodes.reduce((acc: Link[], n: Entity) => {
-    // const colls : {[key: string] : number} = {}
-    // for (const r of n.references) {
-    //   colls[r.collection] ? colls[r.collection]++ : colls[r.collection] = 1
-    // }
-    const colls = n.references.map(r => r.collection)
+    const colls = new Set<string>()
+    for (const r of n.references) {
+      colls.add(r.collection)
+    }
     for (const coll of colls) {
-      let strength = n.naebCount
-      switch (coll){
-        case "KUOM" : strength = n.kuomCount
-        break
-        case "NFCB" : strength = n.nfcbCount
-        break
-        case "WHA" : strength = n.whaCount
-      }
+      const collCount = Object.keys(n).filter(k => k === coll.toLowerCase() + 'Count')[0] as keyof Entity
       const link = {
         source: n.bavdName,
         target: coll,
-        strength
-        // something needs to happen to match "kuomCount" etc. fields with the appropriate coll, and then something else needs to tell it to use the appropriate count field for the coll as the "strength" value
+        strength: n[collCount] as number || 0
       }
       acc.push(link)
     }
