@@ -22,9 +22,6 @@ function color(d: string) {
 interface Entity {
   collections: string[]
   bavdName: string
-  references: {
-    collection: string
-  }[]
   kuomCount: number
   nfcbCount: number
   naebCount: number
@@ -61,9 +58,6 @@ const Viz = () => {
         nodes {
           collections
           bavdName
-          references {
-            collection
-          }
           kuomCount
           nfcbCount
           naebCount
@@ -85,23 +79,19 @@ const [show, setShow] = React.useState<string>("")
 
   // Set up links
   const links: Link[] = entityData.allEntitiesJson.nodes.reduce((acc: Link[], n: Entity) => {
-    const colls = new Set<string>()
-    for (const r of n.references) {
-      colls.add(r.collection)
-    }
-    for (const coll of colls) {
-      const collCount = Object.keys(n).filter(k => k === coll.toLowerCase() + 'Count')[0] as keyof Entity
+    // Create a different link for every collCount > 0
+    Object.keys(n).filter(k => k.endsWith("Count") && n[k as keyof Entity] > 0).map(k => {
       const link = {
         source: n.bavdName,
-        target: coll,
-        strength: n[collCount] as number || 0
+        target: k.replace("Count", "").toUpperCase(),
+        strength: n[k as keyof Entity] as number
       }
       acc.push(link)
-    }
+    })
     return acc
   }, [])
 
-  console.log(nodes, links)
+  // console.log(nodes, links)
 
   const nodeTitle = (d: DataNode) => d.id
   const T = nodeTitle == null ? null : d3.map(nodes, nodeTitle)
