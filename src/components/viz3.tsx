@@ -102,8 +102,8 @@ const [show, setShow] = React.useState<string>("")
       .force("x", d3.forceX())
       .force("y", d3.forceY())
 
-  const width = 2000
-  const height = 2000
+  const width = 1500
+  const height = 1500
 
   const svg = d3.create("svg")
 
