@@ -247,7 +247,7 @@ const Viz = () => {
             Visualization
           </h1>
           <article>
-            <p>Introduction and info.</p>
+            <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
             <div onMouseOver={() => setShow("NAEB")}>
               <span style={{width: "10px", height: "10px", backgroundColor: "#006847", display: "inline-block"}}></span> NAEB
             </div>
