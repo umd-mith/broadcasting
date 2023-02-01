@@ -1,0 +1,8 @@
+.Tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #d0d0d0;
+  color: #2d2d2d;
+  padding: 1em;
+  font-size: 14px;
+}

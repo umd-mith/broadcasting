@@ -21,6 +21,10 @@ module.exports = {
         name: "People & Organizations",
         link: "/entities/",
       },
+      {
+        name: "Visualization",
+        link: "/visualization"
+      }
     ],
   },
   plugins: [

@@ -1,12 +1,11 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import * as d3 from "d3"
-import { D3DragEvent, Simulation, SimulationLinkDatum, SimulationNodeDatum } from "d3"
+import { D3ZoomEvent, SimulationNodeDatum, ZoomTransform } from "d3"
 
-/* *********************************
-* FIND AND FIX TYPING!! LOOK FOR : any *
-************************************/
+import './viz.css'
+
 function color(d: string) {
   switch (d) {
     case "NAEB":
@@ -22,6 +21,45 @@ function color(d: string) {
   }
 }
 
+interface Entity {
+  collections: string[]
+  bavdName: string
+  kuomCount: number
+  nfcbCount: number
+  naebCount: number
+  whaCount: number
+  cpfPageID: string
+}
+
+interface DataNode {
+  id: string,
+  group: string,
+  collections: string[]
+  r: number,
+  pageId?: string
+}
+
+interface Link {
+  source: string
+  target: string
+  strength: number
+}
+
+type datum = SimulationNodeDatum & DataNode
+
+interface ExpandedLink {
+  index: number
+  source: datum
+  strength: number
+  target: datum
+}
+
+interface Tooltip {
+  x: number
+  y: number
+  text: string
+}
+
 // Component
 
 const Viz = () => {
@@ -31,233 +69,178 @@ const Viz = () => {
         nodes {
           collections
           bavdName
+          kuomCount
+          nfcbCount
+          naebCount
+          whaCount
+          cpfPageID
         }
       }
-    }
+    }    
   `)
 
-  const nodes = entityData.allEntitiesJson.nodes
-  const links = []
-
-  const [multiPlace, setMultiPlace] = React.useState<boolean>(false)
   const [show, setShow] = React.useState<string>("")
+  const [tooltip, setTooltip] = React.useState<Tooltip | null>(null)
 
-  const d3Ref = React.useRef<HTMLDivElement>(null)
-  const width = 1000
-  const height = 1000
-  const scaleFactor = 1
+  // Set up nodes
+  const collections = new Set<string>()
+  const nodes: datum[] = entityData.allEntitiesJson.nodes.map((n: Entity) => {
+    n.collections.map(c => collections.add(c))
+    return {id: n.bavdName, group: "CPF", collections: n.collections, r: 10, pageId: n.cpfPageID}
+  }) // Only considering the first coll for now.
+  collections.forEach(c => nodes.push({id: c, group: "collection", collections: [c], r: 10}))
 
-  const flattened: string[] = []
-  const groupIds = flattened.concat.apply([], nodes.map((n: any) => n.collections)) // flatten groups
-    .filter((v, i, s) => s.indexOf(v) === i) // remove duplicates
-    .map(groupId => {
-      return {
-        groupId,
-        count: nodes.filter((n: any) => n.collections.indexOf(groupId) > -1).length
+  // Set up links
+  const links: Link[] = entityData.allEntitiesJson.nodes.reduce((acc: Link[], n: Entity) => {
+    // Create a different link for every collCount > 0
+    Object.keys(n).filter(k => k.endsWith("Count") && n[k as keyof Entity] > 0).map(k => {
+      const link = {
+        source: n.bavdName,
+        target: k.replace("Count", "").toUpperCase(),
+        strength: n[k as keyof Entity] as number
       }
+      acc.push(link)
     })
-    .filter(g => g.count > 2)
-    .map(g => g.groupId)
+    return acc
+  }, [])
 
-    const polygonGenerator = (groupId: string) => {
-      const node_coords: [number, number][] = node
-        .filter(function(d: any) { return d.collections.indexOf(groupId) > -1 })
-        .data()
-        .map(function(d: any) { return [d.x +25, d.y  +25] })
-        
-      return d3.polygonHull(node_coords)
-    }
-  
-    const valueline = d3.line()
-      .x((d) => d[0] )
-      .y((d) => d[1] )
-      .curve(d3.curveCatmullRomClosed)
-
-    function updateGroups(groupIds: string[]) {
-      groupIds.forEach(function(groupId: string) {
-        let centroid = [0, 0]
-        const path = paths.filter((d) => d == groupId)
-          .attr('transform', 'scale(1) translate(0,0)')
-          .attr('d', (d) => {
-            const polygon = polygonGenerator(d) as [number, number][]
-            centroid = d3.polygonCentroid(polygon)
-  
-            // to scale the shape properly around its points:
-            // move the 'g' element to the centroid point, translate
-            // all the path around the center of the 'g' and then
-            // we can scale the 'g' element properly
-            return valueline(
-              polygon.map(function(point) {
-                return [  point[0] - centroid[0], point[1] - centroid[1] ]
-              })
-            )
-          })
-  
-        const pathNode = path.node() as SVGPathElement
-  
-        d3.select(pathNode.parentNode as HTMLElement).attr('transform', 'translate('  + centroid[0] + ',' + (centroid[1]) + ') scale(' + scaleFactor + ')')
-      })
-    }
-
-    const drag = (simulation: Simulation<SimulationNodeDatum, SimulationLinkDatum<SimulationNodeDatum>>) => {
-  
-      function dragstarted(event: D3DragEvent<SVGImageElement, SimulationNodeDatum, {fx: number, fy: number, x: number, y: number}>) {
-        // setTooltip(null)
-        if (!event.active) simulation.alphaTarget(0.3).restart()
-        event.subject.fx = event.subject.x
-        event.subject.fy = event.subject.y
-      }
-      
-      function dragged(event: D3DragEvent<SVGImageElement, SimulationNodeDatum, {fx: number, fy: number, x: number, y: number}>) {
-        event.subject.fx = event.x;
-        event.subject.fy = event.y;
-      }
-      
-      function dragended(event: D3DragEvent<SVGImageElement, SimulationNodeDatum, {fx: number | null, fy: number | null}>) {
-        if (!event.active) simulation.alphaTarget(0);
-        event.subject.fx = null;
-        event.subject.fy = null;
-      }
-      
-      // any: for some reason can't use SVGImageElement even though request type is BaseType | SVGImageElement
-      return d3.drag<any, unknown, SVGGElement>() 
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended);
-    }
-
-     /*
-    "NAEB"
-    1
-    : 
-    "KUOM"
-    2
-    : 
-    "WHA"
-    3
-    : 
-    "NFCB"
-    */
-
-  const groupPositionsX = (d: SimulationNodeDatum, groupIds: string[]) => {
-    const entity = nodes[d.index as number]
-    if (entity.collections.length === groupIds.length) {
-      return width/2
-    } else if (entity.collections.length === 1) {
-      if (entity.collections[0] === groupIds[0] || entity.collections[0] === groupIds[3]) {
-        return -width
-      }
-    } else if (entity.collections.length === 2) {
-      return width / 4
-    } else if (entity.collections.length === 3) {
-      return width / 3
-    }
-    return width
-  }
-
-  const groupPositionsY = (d: SimulationNodeDatum, groupIds: string[]) => {
-    const entity = nodes[d.index as number]
-    if (entity.collections.length === groupIds.length) {
-      return height/2
-    } else if (entity.collections.indexOf("NAEB") > -1) {
-      return -height
-    } else if (entity.collections.indexOf("KUOM") > -1) {
-      return -height
-    } else if (entity.collections.indexOf("WHA") > -1) {
-      return height/2
-    } else if (entity.collections.indexOf("NFCB") > -1) {
-      return height/2
-    }
-    return height
-  }
+  const width = 1800
+  const height = 1800
 
   const simulation = d3.forceSimulation(nodes)
-    // .force("link", d3.forceLink(links).id(d => {
-    //   // This type casting is awkward and likely should be handled by extending SimulationNodeDatum
-    //   const l = d; return l.id
-    // }).distance((d) => {
-    //   const groupsFactor = nodes.filter((n) => n.id === links[d.index].target)[0].groups.length + 1
-    //   return 100 / groupsFactor
-    // }))
-    .force("charge", d3.forceManyBody())
-    .force("collisionForce", d3.forceCollide(25))
-    .force("yPosition", d3.forceY((d) => groupPositionsY(d, groupIds)))
-    .force("xPosition", d3.forceX((d) => groupPositionsX(d, groupIds)))
-    .force("center", d3.forceCenter(width*3, height))
-    .stop()
+      .alphaDecay(0.02)
+      .force("link", d3.forceLink(links).id(d => (d as datum).id).distance(function(d) {return ((1 / d.strength) * 250)}).strength(1))
+      .force("collide", d3.forceCollide().radius(d => {
+        const datum = d as datum
+        return datum.group === "collection" ? datum.r * 3 : datum.r + 1
+      }).iterations(1))
+      .force("charge", d3.forceManyBody().strength(-150))
+      .force("x", d3.forceX(0.002))
+      .force("y", d3.forceY(0.002))
 
   const svg = d3.create("svg")
-    .attr("viewBox", `0 0 ${width*6} ${height*6}`)
 
-  const groups = svg.append('g').attr('style', 'fill-opacity: .1; stroke-opacity: 1;')
+  // const link = svg.append("g")
+  //   .attr("stroke", "#8992A0")
+  //   .attr("stroke-opacity", 0.5)
+  //   .selectAll("line")
+  //   .data(links)
+  //   .join("line")
+  //     .attr("stroke-width", 1)
 
-  console.log(show)
   const node = svg.append("g")
-    .selectAll("circle")
+    .attr("fill", "currentColor")
+    .attr("stroke-linecap", "round")
+    .attr("stroke-linejoin", "round")
+    .selectAll("g")
     .data(nodes)
-    .join("circle")
-      .attr("fill", (d) => d.collections.indexOf(show) !== -1 ? color(show) : "#2d2d2d")
-      .attr("stroke", "#2d2d2d")
-      .attr("stroke-opacity", 1)
-      .attr("stroke-width", 1.5)
-      .attr("r", 20)
-      .attr("class", d => d.collections.join(' '))
-      // .call(drag(simulation))
+    .join("g")
 
-  node.append("title").text(({index: i}) => `${nodes[i].bavdName} in ${nodes[i].collections.join(', ')}`)
+  const circle = node.filter(d => d.group !== "collection").append("circle").lower()
+    .attr("stroke", "#000")
+    .attr("stroke-width", 0.5)
+    .attr("fill", "#f2f2f2")
+    .attr("r", d => d.r)
+    .attr("class", d => d.collections.join(" "))
+    .style("cursor", "pointer")
 
-  // const node = svg.append("g")
-  //   .selectAll("image")
-  //   .data(nodes)
-  //   .join("image")
-  //     .attr("height", (d) => 50)
-  //     .attr("style", (d) => {
-  //       let s = "cursor: pointer;"
-  //       return s
-  //     })
-  //     .attr("alt", (d) => d.bavdName)
-  //     .attr("xlink:href", (d) => {
-  //       return "https://scholarlyediting.org/issues/39/mabel-dodge-luhans-whirling-around-mexico-a-selection/static/772dea01572cfb5fd7bfe97f51ca3f5e/1f8a1/placeholder.png"
-  //     })
-  //     .call(drag(simulation))
 
-  const paths = groups.selectAll('.path_placeholder')
-    .data(groupIds)
-    .enter()
-    .append('g')
-    .attr('class', 'path_placeholder')
-    .append('path')
-    .attr('stroke', (d) => color(d) )
-    .attr('fill', (d) => color(d) )
-    .attr('opacity', 0)
+  const fulcrum = node.filter(d => d.group === "collection").append("text")
+    .attr("text-anchor", "middle")
+    .style("font-size", "20pt")
+    .style("font-weight", "900")
+    .style("paint-order", "stroke")
+    .style("color", d => color(d.id))
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 2)
+    .text(d => d.id)
 
-  paths
-    .transition()
-    .duration(2000)
-    .attr('opacity', 1)
+  // simulation.tick(200) // This doesn't to work well with the mouseover selection
 
-  // Tick it a determined number of times without drawing
-  simulation.tick(200)
-
-  // simulation.on("tick", () => {
-  // })
-  
-  node
-      .attr("cx", (d: any) => d.x)
-      .attr("cy", (d: any) => d.y)
-
-  updateGroups(groupIds)
+  const d3Ref = useRef<HTMLDivElement>(null)
+  const d3ZoomRef = useRef<SVGGElement>(null)
+  const tooltipRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const el = d3Ref.current
-    if (el) {
-      while(el.firstChild){
-        el.removeChild(el.firstChild)
+    const z = d3ZoomRef.current
+    const tt = tooltipRef.current
+    if (el && z && tt) {
+      while(z.firstChild){
+        z.removeChild(z.firstChild)
       }
-      d3Ref.current.append(svg.node() as Node)
+      simulation.on("tick", () => {
+        // link
+        // .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
+        // .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
+        // .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
+        // .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
+    
+        circle
+          .attr("cx", d => d.x || "")
+          .attr("cy", d => d.y || "")
+    
+        fulcrum
+            .attr("x", d => d.x || "")
+            .attr("y", d => d.y || "")
+      })
+      const rawSvg = svg.node()
+      if (rawSvg) {
+        for (const child of Array.from(rawSvg.children)) {
+          z.append(child)
+        }
+      }
+
+      // Zoom (ignoring d3 typescript)
+      // @ts-ignore
+      d3.select(el).call(d3.zoom()
+          .extent([[0, 0], [width, height]])
+          .scaleExtent([1, 3])
+          .on("zoom", zoomed))
+
+      function zoomed({transform}: {transform: ZoomTransform}) {
+        d3.select(z).attr("transform", transform.toString())
+      }
+
+      const tip = d3.select(tt)
+
+      circle
+        .on('mouseover', (e, d) => {
+          tip.style("opacity", 1)
+            .html(`<strong>${d.id}</strong><br/>${d.collections.join(", ")}`)
+            .style("left", (e.pageX-25) + "px")
+            .style("top", (e.pageY-75) + "px")
+        })
+        .on('mouseout', () => {
+          tip.style("opacity", 0)
+        })
+        .on('click', (e, d) => {
+          console.log('h', d.pageId)
+          const datum = d as datum
+          if (d.pageId) {
+            location.href = `../entity/${d.pageId}`
+          }
+        })
+
     }
   
+  }, [])
+
+  useEffect(() => {
+    const el = d3Ref.current
+    if (el && show) {
+      d3.select(el).selectAll("circle")
+        .attr("fill", d => {
+          // Uncomment the following code to highlight a specific node for debugging
+          // if (d.id === "WHA (Radio station : Madison, Wis.)") {
+          //   return "#03fcec"
+          // }
+          return (d as DataNode).collections.indexOf(show) !== -1 ? color(show) : "#f2f2f2"
+        })
+    }
   }, [show])
+
+  const tooltipEl = tooltip ? <div style={{position:"fixed", top: tooltip.y, left: tooltip.x}}>{tooltip.text}</div> : null
 
   return (
     <div id="entities" className="page-programs programs entities">
@@ -282,7 +265,13 @@ const Viz = () => {
           </article>
         </section>
         <section>
-          <div ref={d3Ref}/>
+          {tooltipEl}
+          <div ref={d3Ref}>
+            <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{cursor: "grab"}}> 
+              <g ref={d3ZoomRef}/>
+            </svg>
+            <div ref={tooltipRef} className="Tooltip" />
+          </div>
         </section>
       </div>
   )
