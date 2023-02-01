@@ -243,7 +243,7 @@ const Viz = () => {
   const tooltipEl = tooltip ? <div style={{position:"fixed", top: tooltip.y, left: tooltip.x}}>{tooltip.text}</div> : null
 
   return (
-    <div id="entities" className="page-programs programs entities">
+    <div id="visualization" className="page-programs programs">
         <section>
           <h1>
             Visualization
