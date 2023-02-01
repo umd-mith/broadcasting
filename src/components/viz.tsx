@@ -215,8 +215,6 @@ const Viz = () => {
           tip.style("opacity", 0)
         })
         .on('click', (e, d) => {
-          console.log('h', d.pageId)
-          const datum = d as datum
           if (d.pageId) {
             location.href = `../entity/${d.pageId}`
           }
