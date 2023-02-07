@@ -1,8 +1,14 @@
 .Tooltip {
   position: absolute;
-  pointer-events: none;
-  background: #d0d0d0;
+  background: #ebeaea;
+  border: 1px solid #444444;
   color: #2d2d2d;
   padding: 1em;
   font-size: 14px;
+  opacity: 0;
+}
+
+.Viz {
+  border: 1px solid #d0d0d0;
+  margin-bottom: 3em;
 }

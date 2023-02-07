@@ -54,12 +54,6 @@ interface ExpandedLink {
   target: datum
 }
 
-interface Tooltip {
-  x: number
-  y: number
-  text: string
-}
-
 // Component
 
 const Viz = () => {
@@ -80,7 +74,7 @@ const Viz = () => {
   `)
 
   const [show, setShow] = React.useState<string>("")
-  const [tooltip, setTooltip] = React.useState<Tooltip | null>(null)
+  const [selected, setSelected] = React.useState<boolean>(false)
 
   // Set up nodes
   const collections = new Set<string>()
@@ -166,6 +160,25 @@ const Viz = () => {
     const z = d3ZoomRef.current
     const tt = tooltipRef.current
     if (el && z && tt) {
+
+      const d3el = d3.select(el)
+
+      const tip = d3.select(tt)
+  
+      const showTip = (e: MouseEvent, d: datum) => {
+        tip.style("opacity", 1)
+          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/>${d.collections.join(", ")}`)
+          .style("left", (e.pageX-25) + "px")
+          .style("top", (e.pageY-75) + "px")
+      }
+
+      const hideTip = () => {
+        tip.style("opacity", 0)
+        circle
+          .attr("stroke", "#000")
+          .attr("stroke-width", 0.5)
+      }
+
       while(z.firstChild){
         z.removeChild(z.firstChild)
       }
@@ -193,7 +206,7 @@ const Viz = () => {
 
       // Zoom (ignoring d3 typescript)
       // @ts-ignore
-      d3.select(el).call(d3.zoom()
+      d3el.call(d3.zoom()
           .extent([[0, 0], [width, height]])
           .scaleExtent([1, 3])
           .on("zoom", zoomed))
@@ -202,27 +215,41 @@ const Viz = () => {
         d3.select(z).attr("transform", transform.toString())
       }
 
-      const tip = d3.select(tt)
-
       circle
         .on('mouseover', (e, d) => {
-          tip.style("opacity", 1)
-            .html(`<strong>${d.id}</strong><br/>${d.collections.join(", ")}`)
-            .style("left", (e.pageX-25) + "px")
-            .style("top", (e.pageY-75) + "px")
-        })
-        .on('mouseout', () => {
-          tip.style("opacity", 0)
-        })
-        .on('click', (e, d) => {
-          if (d.pageId) {
-            location.href = `../entity/${d.pageId}`
+          if (!d3el.attr("data-selected")) {
+            showTip(e, d)
           }
         })
+        .on('mouseout', () => {
+          if (!d3el.attr("data-selected")) {
+            hideTip()
+          }
+        })
+        .on('click', function (e: MouseEvent, d) {
+          e.stopPropagation()
+          circle
+            .attr("stroke", "#000")
+            .attr("stroke-width", 0.5)
+          d3.select(this)
+            .attr("stroke", "#dc3522")
+            .attr("stroke-width", 3)
+          d3el.attr("data-selected", "true")
+          showTip(e, d)
+        })
+  
+        d3el.selectChild()
+          .on('click', () => {
+            if (d3el.attr("data-selected")) {
+              d3el.attr("data-selected", "false")
+              hideTip()
+            }            
+          })
 
     }
   
   }, [])
+
 
   useEffect(() => {
     const el = d3Ref.current
@@ -237,8 +264,6 @@ const Viz = () => {
         })
     }
   }, [show])
-
-  const tooltipEl = tooltip ? <div style={{position:"fixed", top: tooltip.y, left: tooltip.x}}>{tooltip.text}</div> : null
 
   return (
     <div id="visualization" className="page-programs programs">
@@ -262,8 +287,7 @@ const Viz = () => {
             </div>
           </article>
         </section>
-        <section>
-          {tooltipEl}
+        <section className="Viz">
           <div ref={d3Ref}>
             <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{cursor: "grab"}}> 
               <g ref={d3ZoomRef}/>
