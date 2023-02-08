@@ -60,3 +60,13 @@
 .FormCheckLabel {
   padding-left: 1em;
 }
+
+.noinfo {
+  fill: #f2f2f2;
+  fill-opacity: 1;
+}
+
+.highlight {
+  stroke: #840a00;
+  stroke-width: 5;
+}

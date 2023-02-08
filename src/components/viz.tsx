@@ -231,8 +231,10 @@ const Viz = () => {
       }
 
       circle
-        .on("mouseenter", (e, d) => {
+        .on("mouseenter", function (e, d) {
           if (d3el.attr("data-selected") !== "true") {
+            showTip(e, d)
+          } else if (d3.select(this).classed("highlight")) {
             showTip(e, d)
           }
         })
@@ -252,35 +254,40 @@ const Viz = () => {
           d3el.attr("data-selected", "true")
           showTip(e, d)
 
-          const relatedFull = nodes.reduce((acc, n) => {
-            if (d.programs && n.programs) {
-              n.programs.map(p => {
-                if (d.programs.includes(p)) {
-                  acc.push({
-                    cur: d.programs[d.programs.indexOf(p)],
-                    program: p,
-                    relation: n.id
-                  })
-                }
-              })
-              // return n.programs.filter(p => d.programs.indexOf(p) > -1).length > 0
-            }
-            return acc
-          }, [])
+          // const relatedFull = nodes.reduce((acc, n) => {
+          //   if (d.programs && n.programs) {
+          //     n.programs.map(p => {
+          //       if (d.programs.includes(p)) {
+          //         acc.push({
+          //           cur: d.programs[d.programs.indexOf(p)],
+          //           program: p,
+          //           relation: n.id
+          //         })
+          //       }
+          //     })
+          //     // return n.programs.filter(p => d.programs.indexOf(p) > -1).length > 0
+          //   }
+          //   return acc
+          // }, [])
 
-          circle.filter(c => {
-            return (c.programs || []).filter(p => (d.programs || []).includes(p)).length > 0
+          circle.each(function (c) {
+            if ((c.programs || []).filter(p => (d.programs || []).includes(p)).length === 0) {
+              d3.select(this).attr("class", "noinfo")
+            } else {
+              d3.select(this).attr("class", "highlight")
+            }
           })
-            .attr("stroke", "#dc3522")
-            .attr("stroke-width", 3)
+            
         })
   
         d3el.selectChild()
-          .on("click", () => {
+          .on("click", (e: MouseEvent) => {
             if (d3el.attr("data-selected")) {
               d3el.attr("data-selected", "false")
               hideTip()
-            }            
+            }
+            circle.classed("noinfo", false)
+            circle.classed("highlight", false)
           })
 
     }
@@ -304,17 +311,18 @@ const Viz = () => {
             return cols.indexOf(show[0]) > -1 ? color(show[0]) : "#f2f2f2"
           }
           // Find link with highest strength
-          const strongest = links.reduce((acc: Link | null, l: Link) => {
-            if (l.source.id === (d as DataNode).id && show.indexOf(l.target.id) !== -1) {
+          const strongest = links.reduce((acc: ExpandedLink | null, l: Link | ExpandedLink) => {
+            const link = l as ExpandedLink
+            if (link.source.id === (d as DataNode).id && show.indexOf(link.target.id) !== -1) {
               if (acc) {
-                if (acc.strength < l.strength) acc = l
+                if (acc.strength < link.strength) acc = link
               } else {
-                acc = l
+                acc = link
               }
             }
             return acc
           }, null)
-          return cols.filter(x => show.indexOf(x) > -1).length > 0 ? color(strongest?.target.id) : "#f2f2f2"
+          return cols.filter(x => show.indexOf(x) > -1).length > 0 ? color(strongest?.target.id || "") : "#f2f2f2"
         })
         .attr("fill-opacity", d => {
           const cols = (d as DataNode).collections
