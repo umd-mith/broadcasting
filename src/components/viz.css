@@ -57,6 +57,10 @@
   border-color: var(--nfcb);
 }
 
+.FormCheckInput.cbother:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2359680c' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
 .FormCheckLabel {
   padding-left: .5em;
   padding-right: 1em;
@@ -64,6 +68,8 @@
 
 .Legend {
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .noinfo {
@@ -74,4 +80,8 @@
 .highlight {
   stroke: #000000;
   stroke-width: 5;
+}
+
+.nolines {
+  display: none;
 }

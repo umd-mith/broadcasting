@@ -89,6 +89,7 @@ const Viz = () => {
   `)
 
   const [show, setShow] = React.useState<string[]>(COLLS)
+  const [showLines, setShowLines] = React.useState<boolean>(true)
 
   // Set up nodes
   const collections = new Set<string>()
@@ -135,7 +136,8 @@ const Viz = () => {
 
   const svg = d3.create("svg")
 
-  const link = svg.append("g")
+  const line = svg.append("g")
+    .attr("class", "collinks")
     .attr("stroke", "#8992A0")
     .attr("stroke-opacity", 0.5)
     .selectAll("line")
@@ -143,7 +145,7 @@ const Viz = () => {
     .join("line")
       .attr("stroke-width", 1)
 
-  const node = svg.append("g")
+  const node = svg.append("g")    
     .attr("fill", "currentColor")
     .attr("stroke-linecap", "round")
     .attr("stroke-linejoin", "round")
@@ -205,11 +207,11 @@ const Viz = () => {
         z.removeChild(z.firstChild)
       }
       simulation.on("tick", () => {
-        link
-        .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
-        .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
-        .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
-        .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
+        line
+          .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
+          .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
+          .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
+          .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
     
         circle
           .attr("cx", d => d.x || "")
@@ -356,6 +358,14 @@ const Viz = () => {
     }
   }, [show])
 
+  useEffect(() => {
+    const el = d3Ref.current 
+    if (el) {
+      d3.select(el.getElementsByClassName("collinks")[0])
+        .classed("nolines", !showLines)
+    }
+  }, [showLines])
+
   const handleShownCollection = (coll: string) => {
     if (show.indexOf(coll) !== -1) {
       setShow(show.filter(c => c !== coll))
@@ -373,15 +383,25 @@ const Viz = () => {
           <article>
             <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
             <div className="Legend">
-              {COLLS.map(C => (
-                <span key={C}>
-                  <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
-                  <label className="FormCheckLabel" htmlFor={C}>
-                    {C}
+              <div>
+                {COLLS.map(C => (
+                  <span key={C}>
+                    <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
+                    <label className="FormCheckLabel" htmlFor={C}>
+                      {C}
+                    </label>
+                  </span>
+                ))
+                }
+              </div>
+              <div>
+                <span>
+                  <input className="FormCheckInput cbother" type="checkbox" checked={showLines} id="optlines" onChange={() => setShowLines(!showLines)}/>
+                  <label className="FormCheckLabel" htmlFor="optlines">
+                    Toggle lines
                   </label>
                 </span>
-              ))
-              }
+              </div>
             </div>
           </article>
         </section>
