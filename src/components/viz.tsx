@@ -129,13 +129,13 @@ const Viz = () => {
 
   const svg = d3.create("svg")
 
-  // const link = svg.append("g")
-  //   .attr("stroke", "#8992A0")
-  //   .attr("stroke-opacity", 0.5)
-  //   .selectAll("line")
-  //   .data(links)
-  //   .join("line")
-  //     .attr("stroke-width", 1)
+  const link = svg.append("g")
+    .attr("stroke", "#8992A0")
+    .attr("stroke-opacity", 0.5)
+    .selectAll("line")
+    .data(links)
+    .join("line")
+      .attr("stroke-width", 1)
 
   const node = svg.append("g")
     .attr("fill", "currentColor")
@@ -183,7 +183,7 @@ const Viz = () => {
       const showTip = (e: MouseEvent, d: datum, extra: string = "") => {
 
         tip.style("opacity", 1)
-          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/>${d.collections.join(", ")}${extra}`)
+          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/><em>${d.collections.join(", ")}</em>${extra}`)
           .style("left", (e.pageX-25) + "px")
           .style("top", (e.pageY-100) + "px")
       }
@@ -199,11 +199,11 @@ const Viz = () => {
         z.removeChild(z.firstChild)
       }
       simulation.on("tick", () => {
-        // link
-        // .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
-        // .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
-        // .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
-        // .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
+        link
+        .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
+        .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
+        .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
+        .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
     
         circle
           .attr("cx", d => d.x || "")
@@ -261,17 +261,8 @@ const Viz = () => {
           } else if (d3.select(this).classed("highlight")) {
             const relationNode = nodes.filter(n => n.pulse)[0]
             if (relationNode) {
-              const related = nodes.reduce((acc: string[], n) => {
-                if (relationNode.programs && n.programs) {
-                  n.programs.map(p => {
-                    if (relationNode.programs?.includes(p)) {
-                      acc.push(p)
-                    }
-                  })
-                }
-                return acc
-              }, [])
-              // showTip(e, d, `<div>Related programs:<ul>${related.map(r => `<li>${r}</li>`).join("")}</ul></div>`)
+              const related = d.programs?.filter(x => (relationNode?.programs || []).indexOf(x) > -1) || []
+              // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li>${r}</li>`).join("")}</ul></div>`)
               showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
             }
           }
@@ -375,15 +366,17 @@ const Viz = () => {
           </h1>
           <article>
             <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
-            {COLLS.map(C => (
-              <div key={C}>
-                <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
-                <label className="FormCheckLabel" htmlFor={C}>
-                  {C}
-                </label>
-              </div>
-            ))
-            }
+            <div className="Legend">
+              {COLLS.map(C => (
+                <span key={C}>
+                  <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
+                  <label className="FormCheckLabel" htmlFor={C}>
+                    {C}
+                  </label>
+                </span>
+              ))
+              }
+            </div>
           </article>
         </section>
         <section className="Viz">

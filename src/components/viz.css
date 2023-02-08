@@ -58,7 +58,12 @@
 }
 
 .FormCheckLabel {
-  padding-left: 1em;
+  padding-left: .5em;
+  padding-right: 1em;
+}
+
+.Legend {
+  margin-bottom: 1em;
 }
 
 .noinfo {
