@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import * as d3 from "d3"
 import { D3ZoomEvent, SimulationNodeDatum, ZoomTransform } from "d3"
 
-import './viz.css'
+import "./viz.css"
 
 function color(d: string) {
   switch (d) {
@@ -31,6 +31,9 @@ interface Entity {
   naebCount: number
   whaCount: number
   cpfPageID: string
+  references: {
+    title: string
+  }[]
 }
 
 interface DataNode {
@@ -38,7 +41,8 @@ interface DataNode {
   group: string,
   collections: string[]
   r: number,
-  pageId?: string
+  pageId?: string,
+  programs? : string[]
 }
 
 interface Link {
@@ -70,19 +74,28 @@ const Viz = () => {
           naebCount
           whaCount
           cpfPageID
+          references {
+            title
+          }
         }
       }
     }    
   `)
 
-  const [show, setShow] = React.useState<string[]>([])
+  const [show, setShow] = React.useState<string[]>(COLLS)
 
   // Set up nodes
   const collections = new Set<string>()
   const nodes: datum[] = entityData.allEntitiesJson.nodes.map((n: Entity) => {
     n.collections.map(c => collections.add(c))
-    return {id: n.bavdName, group: "CPF", collections: n.collections, r: 10, pageId: n.cpfPageID}
-  }) // Only considering the first coll for now.
+    return {
+      id: n.bavdName,
+      group: "CPF",
+      collections: n.collections,
+      r: 10,
+      pageId: n.cpfPageID,
+      programs: n.references.map(r => r.title)}
+  })
   collections.forEach(c => nodes.push({id: c, group: "collection", collections: [c], r: 10}))
 
   // Set up links
@@ -218,30 +231,52 @@ const Viz = () => {
       }
 
       circle
-        .on('mouseenter', (e, d) => {
+        .on("mouseenter", (e, d) => {
           if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
           }
         })
-        .on('mouseout', () => {
+        .on("mouseout", () => {
           if (d3el.attr("data-selected") !== "true") {
             hideTip()
           }
         })
-        .on('click', function (e: MouseEvent, d) {
+        .on("click", function (e: MouseEvent, d) {
           e.stopPropagation()
           circle
             .attr("stroke", "#000")
             .attr("stroke-width", 0.5)
-          d3.select(this)
-            .attr("stroke", "#dc3522")
-            .attr("stroke-width", 3)
+          // d3.select(this)
+          //   .attr("stroke", "#dc3522")
+          //   .attr("stroke-width", 3)
           d3el.attr("data-selected", "true")
           showTip(e, d)
+
+          const relatedFull = nodes.reduce((acc, n) => {
+            if (d.programs && n.programs) {
+              n.programs.map(p => {
+                if (d.programs.includes(p)) {
+                  acc.push({
+                    cur: d.programs[d.programs.indexOf(p)],
+                    program: p,
+                    relation: n.id
+                  })
+                }
+              })
+              // return n.programs.filter(p => d.programs.indexOf(p) > -1).length > 0
+            }
+            return acc
+          }, [])
+
+          circle.filter(c => {
+            return (c.programs || []).filter(p => (d.programs || []).includes(p)).length > 0
+          })
+            .attr("stroke", "#dc3522")
+            .attr("stroke-width", 3)
         })
   
         d3el.selectChild()
-          .on('click', () => {
+          .on("click", () => {
             if (d3el.attr("data-selected")) {
               d3el.attr("data-selected", "false")
               hideTip()
@@ -309,26 +344,13 @@ const Viz = () => {
             <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
             {COLLS.map(C => (
               <div key={C}>
-                <input className={`FormCheckInput ${C}`} type="checkbox" value={C} id={C} onClick={() => handleShownCollection(C)}/>
+                <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
                 <label className="FormCheckLabel" htmlFor={C}>
                   {C}
                 </label>
               </div>
             ))
             }
-            
-            {/* <div onMouseOver={() => setShow("NAEB")}>
-              <span style={{width: "10px", height: "10px", backgroundColor: "#006847", display: "inline-block"}}></span> NAEB
-            </div>
-            <div onMouseOver={() => setShow("KUOM")}>
-              <span style={{width: "10px", height: "10px", backgroundColor: "#FFD700", display: "inline-block"}}></span> KUOM
-            </div>
-            <div onMouseOver={() => setShow("WHA")}>
-              <span style={{width: "10px", height: "10px", backgroundColor: "#003884", display: "inline-block"}}></span> WHA
-            </div>
-            <div onMouseOver={() => setShow("NFCB")}>
-              <span style={{width: "10px", height: "10px", backgroundColor: "#840a00", display: "inline-block"}}></span> NFCB
-            </div> */}
           </article>
         </section>
         <section className="Viz">
