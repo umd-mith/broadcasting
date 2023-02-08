@@ -32,6 +32,7 @@ interface Entity {
   whaCount: number
   cpfPageID: string
   references: {
+    URL: string
     title: string
   }[]
 }
@@ -42,7 +43,10 @@ interface DataNode {
   collections: string[]
   r: number,
   pageId?: string,
-  programs? : string[]
+  programs?: {
+    URL: string
+    title: string
+  }[]
   pulse?: boolean
 }
 
@@ -76,6 +80,7 @@ const Viz = () => {
           whaCount
           cpfPageID
           references {
+            URL
             title
           }
         }
@@ -95,7 +100,8 @@ const Viz = () => {
       collections: n.collections,
       r: 10,
       pageId: n.cpfPageID,
-      programs: n.references.map(r => r.title)}
+      programs: n.references
+    }
   })
   collections.forEach(c => nodes.push({id: c, group: "collection", collections: [c], r: 10}))
 
@@ -261,8 +267,8 @@ const Viz = () => {
           } else if (d3.select(this).classed("highlight")) {
             const relationNode = nodes.filter(n => n.pulse)[0]
             if (relationNode) {
-              const related = d.programs?.filter(x => (relationNode?.programs || []).indexOf(x) > -1) || []
-              // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li>${r}</li>`).join("")}</ul></div>`)
+              const related = d.programs?.filter(x => (relationNode?.programs || []).map(p => p.URL).indexOf(x.URL) > -1) || []
+              // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li><a href="${r.URL}">${r.title}</a></li>`).join("")}</ul></div>`)
               showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
             }
           }
@@ -283,7 +289,7 @@ const Viz = () => {
 
           circle.each(function (c) {
             const circleEl = d3.select(this)
-            if ((c.programs || []).filter(p => (d.programs || []).includes(p)).length === 0) {
+            if ((c.programs || []).filter(p => (d.programs || []).map(u => u.URL).includes(p.URL)).length === 0) {
               circleEl.attr("class", "noinfo")
             } else {
               circleEl.attr("class", "highlight")
