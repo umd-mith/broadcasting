@@ -21,6 +21,8 @@ function color(d: string) {
   }
 }
 
+const COLLS = ["NAEB", "KUOM", "WHA", "NFCB"]
+
 interface Entity {
   collections: string[]
   bavdName: string
@@ -73,8 +75,7 @@ const Viz = () => {
     }    
   `)
 
-  const [show, setShow] = React.useState<string>("")
-  const [selected, setSelected] = React.useState<boolean>(false)
+  const [show, setShow] = React.useState<string[]>([])
 
   // Set up nodes
   const collections = new Set<string>()
@@ -166,10 +167,11 @@ const Viz = () => {
       const tip = d3.select(tt)
   
       const showTip = (e: MouseEvent, d: datum) => {
+
         tip.style("opacity", 1)
           .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/>${d.collections.join(", ")}`)
           .style("left", (e.pageX-25) + "px")
-          .style("top", (e.pageY-75) + "px")
+          .style("top", (e.pageY-100) + "px")
       }
 
       const hideTip = () => {
@@ -216,13 +218,13 @@ const Viz = () => {
       }
 
       circle
-        .on('mouseover', (e, d) => {
-          if (!d3el.attr("data-selected")) {
+        .on('mouseenter', (e, d) => {
+          if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
           }
         })
         .on('mouseout', () => {
-          if (!d3el.attr("data-selected")) {
+          if (d3el.attr("data-selected") !== "true") {
             hideTip()
           }
         })
@@ -253,17 +255,49 @@ const Viz = () => {
 
   useEffect(() => {
     const el = d3Ref.current
-    if (el && show) {
+    if (el) {
       d3.select(el).selectAll("circle")
         .attr("fill", d => {
           // Uncomment the following code to highlight a specific node for debugging
           // if (d.id === "WHA (Radio station : Madison, Wis.)") {
           //   return "#03fcec"
           // }
-          return (d as DataNode).collections.indexOf(show) !== -1 ? color(show) : "#f2f2f2"
+          
+
+          const cols = (d as DataNode).collections
+          if (show.length === 1) {
+            return cols.indexOf(show[0]) > -1 ? color(show[0]) : "#f2f2f2"
+          }
+          // Find link with highest strength
+          const strongest = links.reduce((acc: Link | null, l: Link) => {
+            if (l.source.id === (d as DataNode).id && show.indexOf(l.target.id) !== -1) {
+              if (acc) {
+                if (acc.strength < l.strength) acc = l
+              } else {
+                acc = l
+              }
+            }
+            return acc
+          }, null)
+          return cols.filter(x => show.indexOf(x) > -1).length > 0 ? color(strongest?.target.id) : "#f2f2f2"
+        })
+        .attr("fill-opacity", d => {
+          const cols = (d as DataNode).collections
+          if (cols.length === 1) {
+            return "100%"
+          }
+          return cols.filter(x => show.indexOf(x) > -1).length > 0 ? "60%" : "100%"
         })
     }
   }, [show])
+
+  const handleShownCollection = (coll: string) => {
+    if (show.indexOf(coll) !== -1) {
+      setShow(show.filter(c => c !== coll))
+    } else {
+      setShow([...show, coll])
+    }
+  }
 
   return (
     <div id="visualization" className="page-programs programs">
@@ -273,7 +307,17 @@ const Viz = () => {
           </h1>
           <article>
             <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
-            <div onMouseOver={() => setShow("NAEB")}>
+            {COLLS.map(C => (
+              <div key={C}>
+                <input className={`FormCheckInput ${C}`} type="checkbox" value={C} id={C} onClick={() => handleShownCollection(C)}/>
+                <label className="FormCheckLabel" htmlFor={C}>
+                  {C}
+                </label>
+              </div>
+            ))
+            }
+            
+            {/* <div onMouseOver={() => setShow("NAEB")}>
               <span style={{width: "10px", height: "10px", backgroundColor: "#006847", display: "inline-block"}}></span> NAEB
             </div>
             <div onMouseOver={() => setShow("KUOM")}>
@@ -284,7 +328,7 @@ const Viz = () => {
             </div>
             <div onMouseOver={() => setShow("NFCB")}>
               <span style={{width: "10px", height: "10px", backgroundColor: "#840a00", display: "inline-block"}}></span> NFCB
-            </div>
+            </div> */}
           </article>
         </section>
         <section className="Viz">
