@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import * as d3 from "d3"
-import { D3ZoomEvent, SimulationNodeDatum, ZoomTransform } from "d3"
+import { SimulationNodeDatum, ZoomTransform } from "d3"
 
 import "./viz.css"
 
@@ -43,6 +43,7 @@ interface DataNode {
   r: number,
   pageId?: string,
   programs? : string[]
+  pulse?: boolean
 }
 
 interface Link {
@@ -179,10 +180,10 @@ const Viz = () => {
 
       const tip = d3.select(tt)
   
-      const showTip = (e: MouseEvent, d: datum) => {
+      const showTip = (e: MouseEvent, d: datum, extra: string = "") => {
 
         tip.style("opacity", 1)
-          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/>${d.collections.join(", ")}`)
+          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/>${d.collections.join(", ")}${extra}`)
           .style("left", (e.pageX-25) + "px")
           .style("top", (e.pageY-100) + "px")
       }
@@ -230,12 +231,49 @@ const Viz = () => {
         d3.select(z).attr("transform", transform.toString())
       }
 
+      function pulsate(selection: any) {
+        const sel = selection as d3.Selection<SVGCircleElement, datum, SVGGElement, null>
+        recursive_transitions()
+    
+        function recursive_transitions() {
+          if (sel.data()[0].pulse) {
+            sel.transition()
+                .duration(400)
+                .attr("r", 10)
+                .transition()
+                .duration(800)
+                .attr("r", 15)
+                .on("end", recursive_transitions)
+          } else {
+            // transition back to normal
+            sel.transition()
+                .duration(200)
+                .attr("r", 10)
+          }
+        }
+      }
+    
+
       circle
         .on("mouseenter", function (e, d) {
           if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
           } else if (d3.select(this).classed("highlight")) {
-            showTip(e, d)
+            const relationNode = nodes.filter(n => n.pulse)[0]
+            if (relationNode) {
+              const related = nodes.reduce((acc: string[], n) => {
+                if (relationNode.programs && n.programs) {
+                  n.programs.map(p => {
+                    if (relationNode.programs?.includes(p)) {
+                      acc.push(p)
+                    }
+                  })
+                }
+                return acc
+              }, [])
+              // showTip(e, d, `<div>Related programs:<ul>${related.map(r => `<li>${r}</li>`).join("")}</ul></div>`)
+              showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
+            }
           }
         })
         .on("mouseout", () => {
@@ -245,49 +283,36 @@ const Viz = () => {
         })
         .on("click", function (e: MouseEvent, d) {
           e.stopPropagation()
-          circle
-            .attr("stroke", "#000")
-            .attr("stroke-width", 0.5)
-          // d3.select(this)
-          //   .attr("stroke", "#dc3522")
-          //   .attr("stroke-width", 3)
           d3el.attr("data-selected", "true")
           showTip(e, d)
-
-          // const relatedFull = nodes.reduce((acc, n) => {
-          //   if (d.programs && n.programs) {
-          //     n.programs.map(p => {
-          //       if (d.programs.includes(p)) {
-          //         acc.push({
-          //           cur: d.programs[d.programs.indexOf(p)],
-          //           program: p,
-          //           relation: n.id
-          //         })
-          //       }
-          //     })
-          //     // return n.programs.filter(p => d.programs.indexOf(p) > -1).length > 0
-          //   }
-          //   return acc
-          // }, [])
+          
+          const el = d3.select(this)
+          d.pulse = true
+          pulsate(el)
 
           circle.each(function (c) {
+            const circleEl = d3.select(this)
             if ((c.programs || []).filter(p => (d.programs || []).includes(p)).length === 0) {
-              d3.select(this).attr("class", "noinfo")
+              circleEl.attr("class", "noinfo")
             } else {
-              d3.select(this).attr("class", "highlight")
+              circleEl.attr("class", "highlight")
+            }
+            if (c.id !== d.id) {
+              c.pulse = false
             }
           })
             
         })
   
         d3el.selectChild()
-          .on("click", (e: MouseEvent) => {
+          .on("click", () => {
             if (d3el.attr("data-selected")) {
               d3el.attr("data-selected", "false")
               hideTip()
             }
             circle.classed("noinfo", false)
             circle.classed("highlight", false)
+            circle.each(d => d.pulse = false)
           })
 
     }
