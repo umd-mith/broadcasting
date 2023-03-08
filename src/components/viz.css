@@ -18,6 +18,8 @@
 .Viz {
   border: 1px solid #d0d0d0;
   margin-bottom: 3em;
+  position: relative;
+  overflow: hidden;
 }
 
 .FormCheckInput {
@@ -88,4 +90,94 @@
 
 .ticking {
   pointer-events: none;
+}
+
+.Drawer {
+  transition-duration: .15s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  background-color: transparent;
+  overflow-y: auto;  
+  min-width: 20rem;
+  height: 100%;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.DrawerClosed {
+  transform: translate(18rem,0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.DrawerHeader {
+  display: flex;
+  flex-direction: row;
+  place-items: flex-start;
+  height: 3rem;
+}
+
+.DrawerTitle {
+  height: 3rem;
+  max-height: 3rem;
+  width: 18rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  color: var(--color-gray-900);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.DrawerClose {
+  height: 3rem;
+  width: 2rem;
+  background-color: white; 
+  border-color: transparent;
+  cursor: pointer;
+  padding-top: 1rem;
+  border-bottom-left-radius: .5rem;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.DrawerClose svg {
+  fill: var(--color-gray-600);
+}
+
+.DrawerClose:hover svg {
+  fill: var(--color-accent-500);
+}
+
+.DrawerContent {
+  padding: 1.25rem;
+  border-left: 1px solid #d0d0d0;
+  min-height: calc(100% - 4rem);
+  width: 18rem;
+  float:right;
+  background-color: #ffffff;
+}
+
+.DrawerContent ul {
+  list-style: inside;
+}
+
+.DrawerContent ul ul {
+  list-style: none;
+}
+
+.DrawerContent ul ul li {
+  padding: .5rem 0 0 1.25rem
+}
+
+.Related {
+  margin-top: 1.25rem;
+}
+
+.Progs {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  padding-left: 1.25rem;
+  display: block;
 }

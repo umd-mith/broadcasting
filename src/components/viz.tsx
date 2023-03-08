@@ -89,7 +89,10 @@ const Viz = () => {
   `)
 
   const [show, setShow] = React.useState<string[]>(COLLS)
+  const [drawerShown, setDrawerShown] = React.useState<boolean>(false)
   const [showLines, setShowLines] = React.useState<boolean>(true)
+
+  const infoText = "No entity selected. Click on a circle to get information."
 
   // Set up nodes
   const collections = new Set<string>()
@@ -177,30 +180,41 @@ const Viz = () => {
   const d3Ref = useRef<HTMLDivElement>(null)
   const d3ZoomRef = useRef<SVGGElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
+  const infoRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const el = d3Ref.current
     const z = d3ZoomRef.current
     const tt = tooltipRef.current
-    if (el && z && tt) {
+    const infoEl = infoRef.current
+    if (el && z && tt && infoEl) {
 
       const d3el = d3.select(el)
-
       const tip = d3.select(tt)
+      const info = d3.select(infoEl)
   
       const showTip = (e: MouseEvent, d: datum, extra: string = "") => {
-
-        tip.style("opacity", 1)
+        tip.style("opacity", "1")
+          .style("visibility", "visible")
           .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/><em>${d.collections.join(", ")}</em>${extra}`)
-          .style("left", (e.pageX-25) + "px")
-          .style("top", (e.pageY-100) + "px")
+          .style("left", (e.offsetX  + 10) + "px")
+          .style("top", (e.offsetY + 10) + "px")
       }
 
       const hideTip = () => {
-        tip.style("opacity", 0)
+        tip.style("opacity", "0").style("visibility", "hidden")
         circle
           .attr("stroke", "#000")
           .attr("stroke-width", 0.5)
+      }
+
+      const showInfo = (e: MouseEvent, d: datum, extra: string = "") => {
+        info
+          .html(`<strong><a href="../entity/${d.pageId}">${d.id}</a></strong><br/><em>${d.collections.join(", ")}</em>${extra}`)
+      }
+
+      const hideInfo = () => {
+        info.text(infoText)
       }
 
       while(z.firstChild){
@@ -286,14 +300,15 @@ const Viz = () => {
         .on("mouseenter", function (e, d) {
           if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
-          } else if (d3.select(this).classed("highlight")) {
-            const relationNode = nodes.filter(n => n.pulse)[0]
-            if (relationNode) {
-              const related = d.programs?.filter(x => (relationNode?.programs || []).map(p => p.URL).indexOf(x.URL) > -1) || []
-              // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li><a href="${r.URL}">${r.title}</a></li>`).join("")}</ul></div>`)
-              showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
-            }
           }
+          // else if (d3.select(this).classed("highlight")) {
+          //   const relationNode = nodes.filter(n => n.pulse)[0]
+          //   if (relationNode) {
+          //     const related = d.programs?.filter(x => (relationNode?.programs || []).map(p => p.URL).indexOf(x.URL) > -1) || []
+          //     // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li><a href="${r.URL}">${r.title}</a></li>`).join("")}</ul></div>`)
+          //     showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
+          //   }
+          // }
         })
         .on("mouseout", () => {
           if (d3el.attr("data-selected") !== "true") {
@@ -305,8 +320,8 @@ const Viz = () => {
           d3el.attr("data-selected", "true")
           relationLinks.length = 0
           relationLines?.remove()
-          showTip(e, d)
-          
+          hideTip()
+                   
           d.pulse = true
           pulsate(d3.select(this))
           d3.select(this).raise()
@@ -328,6 +343,19 @@ const Viz = () => {
             }
           })
 
+          const relProgsInfo = relationLinks.map(r => {
+            const progs = d.programs?.filter(x => (r.target.programs || [])
+              .map(p => p.URL).indexOf(x.URL) > -1)
+              .map(p => `<li><a href="${p.URL}">${p.title}</a></li>`)
+              .join("")
+            return `<li><a href="../entity/${r.target.pageId}">${r.target.id}</a> <span class="Progs">Related programs:</span> <ul> ${progs} </ul></li>`
+          }).join("")
+
+          const extra = `<div class="Related"><strong>Related Entites:</strong><ul>
+            ${relProgsInfo}</ul></div>`
+          showInfo(e, d, extra)
+          setDrawerShown(true)
+
           relationLines = d3el.select("svg").select("g").append("g")
             .attr("class", "rellinks")
             .attr("stroke", "#000000")
@@ -348,6 +376,8 @@ const Viz = () => {
             if (d3el.attr("data-selected")) {
               d3el.attr("data-selected", "false")
               hideTip()
+              hideInfo()
+              setDrawerShown(false)
             }
             relationLinks.length = 0
             relationLines?.remove()            
@@ -455,6 +485,23 @@ const Viz = () => {
               <g ref={d3ZoomRef}/>
             </svg>
             <div ref={tooltipRef} className="Tooltip" />
+            <div className={`Drawer ${drawerShown ? "" : "DrawerClosed"}`} tabIndex={-1} aria-labelledby="drawer-right-label">
+              <div className="DrawerHeader">
+                <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" className="DrawerClose"
+                  onClick={() => setDrawerShown(!drawerShown)}>
+                    <svg viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" style={{
+                      width: "1.25rem", height: "1.25rem"
+                    }}>
+                      <path fillRule="evenodd" clipRule="evenodd" d="M23.662,15.286l-6.9-6.999c-0.39-0.394-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428L21.544,16   l-6.196,6.285c-0.391,0.394-0.391,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l6.899-6.999   C24.038,16.335,24.039,15.666,23.662,15.286z"/>
+                      <path d="M16.662,15.286L9.763,8.287c-0.391-0.394-1.024-0.394-1.414,0c-0.391,0.394-0.391,1.034,0,1.428L14.544,16   l-6.196,6.285c-0.391,0.394-0.391,1.034,0,1.428c0.391,0.394,1.024,0.394,1.414,0l6.899-6.999   C17.038,16.335,17.039,15.666,16.662,15.286z"/>
+                    </svg>
+                </button>
+                <h5 id="drawer-right-label" className="DrawerTitle">Entity information</h5>
+              </div>             
+              <div className="DrawerContent" ref={infoRef} >
+                {infoText}
+              </div>
+            </div>
           </div>
         </section>
       </div>
