@@ -1,8 +1,8 @@
 :root {
-  --naeb: #006847;
-  --kuom:#FFD700;
-  --wha: #003884;
-  --nfcb: #840a00;
+  --naeb: #0059D1;
+  --kuom:#d17800;
+  --wha: #00D110;
+  --nfcb: #D100C1;
 }
 
 .Tooltip {
@@ -84,4 +84,8 @@
 
 .nolines {
   display: none;
+}
+
+.ticking {
+  pointer-events: none;
 }

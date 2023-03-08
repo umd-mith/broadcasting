@@ -2,20 +2,20 @@ import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import * as d3 from "d3"
-import { SimulationNodeDatum, ZoomTransform } from "d3"
+import { BaseType, Selection, SimulationNodeDatum, ZoomTransform } from "d3"
 
 import "./viz.css"
 
 function color(d: string) {
   switch (d) {
     case "NAEB":
-      return "#006847" // green
+      return "#0059D1"
     case "KUOM":
-      return "#FFD700" // gold
+      return "#d17800"
     case "WHA":
-      return "#003884" // blue
+      return "#00D110"
     case "NFCB":
-      return "#840a00" // red
+      return "#D100C1"
     default:
       return "#2d2d2d"
   }
@@ -206,7 +206,20 @@ const Viz = () => {
       while(z.firstChild){
         z.removeChild(z.firstChild)
       }
+
+      const relationLinks: ExpandedLink[] = []
+      let relationLines: Selection<BaseType | SVGLineElement, ExpandedLink, SVGElement, unknown> | undefined
+
       simulation.on("tick", () => {
+
+        if (relationLines) {
+          relationLines
+            .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
+            .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
+            .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
+            .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
+        }
+
         line
           .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
           .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
@@ -221,6 +234,13 @@ const Viz = () => {
             .attr("x", d => d.x || "")
             .attr("y", d => d.y || "")
       })
+
+
+      // In case we want to make circles unclickable until the simulation is completed
+      // simulation.on("end", () => {
+      //   circle.classed("ticking", false)
+      // })
+
       const rawSvg = svg.node()
       if (rawSvg) {
         for (const child of Array.from(rawSvg.children)) {
@@ -261,8 +281,8 @@ const Viz = () => {
         }
       }
     
-
       circle
+        // .attr("class", "ticking") // In case we want to make circles unclickable until the simulation is completed
         .on("mouseenter", function (e, d) {
           if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
@@ -283,11 +303,13 @@ const Viz = () => {
         .on("click", function (e: MouseEvent, d) {
           e.stopPropagation()
           d3el.attr("data-selected", "true")
+          relationLinks.length = 0
+          relationLines?.remove()
           showTip(e, d)
           
-          const el = d3.select(this)
           d.pulse = true
-          pulsate(el)
+          pulsate(d3.select(this))
+          d3.select(this).raise()
 
           circle.each(function (c) {
             const circleEl = d3.select(this)
@@ -295,11 +317,29 @@ const Viz = () => {
               circleEl.attr("class", "noinfo")
             } else {
               circleEl.attr("class", "highlight")
+              if (c.id !== d.id) {
+                relationLinks.push({
+                  source: d, target: c, strength: 1, index: relationLinks.length + 1
+                })
+              }
             }
             if (c.id !== d.id) {
               c.pulse = false
             }
           })
+
+          relationLines = d3el.select("svg").select("g").append("g")
+            .attr("class", "rellinks")
+            .attr("stroke", "#000000")
+            .attr("stroke-opacity", 1)
+            .selectAll("line")
+            .data(relationLinks)
+            .join("line")
+              .attr("stroke-width", 1.5)
+              .attr("x1", (d: unknown) => (d as ExpandedLink).source.x?.toString() || "")
+              .attr("y1", (d: unknown) => (d as ExpandedLink).source.y?.toString() || "")
+              .attr("x2", (d: unknown) => (d as ExpandedLink).target.x?.toString() || "")
+              .attr("y2", (d: unknown) => (d as ExpandedLink).target.y?.toString() || "")
             
         })
   
@@ -309,6 +349,8 @@ const Viz = () => {
               d3el.attr("data-selected", "false")
               hideTip()
             }
+            relationLinks.length = 0
+            relationLines?.remove()            
             circle.classed("noinfo", false)
             circle.classed("highlight", false)
             circle.each(d => d.pulse = false)
@@ -363,6 +405,8 @@ const Viz = () => {
     if (el) {
       d3.select(el.getElementsByClassName("collinks")[0])
         .classed("nolines", !showLines)
+      d3.select(el.getElementsByClassName("rellinks")[0])
+        .classed("nolines", !showLines)
     }
   }, [showLines])
 
@@ -381,7 +425,7 @@ const Viz = () => {
             Visualization
           </h1>
           <article>
-            <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Use the checkboxes in the legend to select one or more collections and highlight the entities who contributed to programs in that collection. Check the "Toggle lines" option to show or hide the lines connecting entities to collections. Entities are positioned according to the number of programs to which they contributed in each collection, and are shaded more lightly if they fall into multiple collections. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to highlight that entity and its connections to other entities in the collections. When hovering over an entity, click on its name in the pop-up tooltip to go to its landing page with biographical information and links to other content. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
+            <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
             <div className="Legend">
               <div>
                 {COLLS.map(C => (
