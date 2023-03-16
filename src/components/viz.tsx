@@ -270,6 +270,8 @@ const Viz = () => {
           .on("zoom", zoomed))
 
       function zoomed({transform}: {transform: ZoomTransform}) {
+        // Don't apply if the drawer is open.
+        if (d3.select(infoEl).classed("DrawerVisible")) return;
         d3.select(z).attr("transform", transform.toString())
       }
 
@@ -321,7 +323,7 @@ const Viz = () => {
           relationLinks.length = 0
           relationLines?.remove()
           hideTip()
-                   
+
           d.pulse = true
           pulsate(d3.select(this))
           d3.select(this).raise()
@@ -448,6 +450,20 @@ const Viz = () => {
     }
   }
 
+  const handleDrawer = () => {
+    setDrawerShown(!drawerShown)
+    const infoEl = infoRef.current
+    const el = d3Ref.current
+    if (el && infoEl) {
+      const s = d3.select(el).select("svg")
+      if (drawerShown) {
+        s.classed("NoGrab", false)
+      } else {
+        s.classed("NoGrab", true)
+      }
+    }
+  }
+
   return (
     <div id="visualization" className="page-programs programs">
         <section>
@@ -488,7 +504,7 @@ const Viz = () => {
             <div className={`Drawer ${drawerShown ? "" : "DrawerClosed"}`} tabIndex={-1} aria-labelledby="drawer-right-label">
               <div className="DrawerHeader">
                 <button type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" className="DrawerClose"
-                  onClick={() => setDrawerShown(!drawerShown)}>
+                  onClick={handleDrawer}>
                     <svg viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" style={{
                       width: "1.25rem", height: "1.25rem"
                     }}>
@@ -498,7 +514,7 @@ const Viz = () => {
                 </button>
                 <h5 id="drawer-right-label" className="DrawerTitle">Entity information</h5>
               </div>             
-              <div className="DrawerContent" ref={infoRef} >
+              <div className={`DrawerContent ${drawerShown ? "DrawerVisible" : ""}`} ref={infoRef}>
                 {infoText}
               </div>
             </div>

@@ -181,3 +181,7 @@
   padding-left: 1.25rem;
   display: block;
 }
+
+.NoGrab {
+  cursor: default !important;
+}
