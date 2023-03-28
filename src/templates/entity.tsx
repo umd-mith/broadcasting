@@ -144,7 +144,10 @@ const References = ({references}: {references: Reference[]}) => {
     for (const url of bySeries[series]) {
       const coll = url.collection || ""
       grouped[coll] = grouped[coll] || {};
-      (grouped[coll][series] = grouped[coll][series] || []).push(url)
+      const updatedSeries = (grouped[coll][series] || [])
+      updatedSeries.push(url)
+      const deduped = [...new Map(updatedSeries.map(s => [s.URL, s])).values()]
+      grouped[coll][series] = Array.from(deduped)
     }
   }
 
