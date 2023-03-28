@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import Search, {isSearchMatch} from "./search"
 
 import * as d3 from "d3"
 import { BaseType, Selection, SimulationNodeDatum, ZoomTransform } from "d3"
@@ -91,6 +92,7 @@ const Viz = () => {
   const [show, setShow] = React.useState<string[]>(COLLS)
   const [drawerShown, setDrawerShown] = React.useState<boolean>(false)
   const [showLines, setShowLines] = React.useState<boolean>(true)
+  const [searchQuery, setSearchQuery] = React.useState("")
 
   const infoText = "No entity selected. Click on a circle to get information."
 
@@ -386,8 +388,7 @@ const Viz = () => {
             circle.classed("noinfo", false)
             circle.classed("highlight", false)
             circle.each(d => d.pulse = false)
-          })
-
+          })        
     }
   
   }, [])
@@ -398,11 +399,9 @@ const Viz = () => {
     if (el) {
       d3.select(el).selectAll("circle")
         .attr("fill", d => {
-          // Uncomment the following code to highlight a specific node for debugging
-          // if (d.id === "WHA (Radio station : Madison, Wis.)") {
-          //   return "#03fcec"
-          // }
-          
+          if (searchQuery.trim() !== "" && !isSearchMatch(searchQuery.trim(), (d as datum).id)) {
+            return "#f2f2f2"
+          }         
 
           const cols = (d as DataNode).collections
           if (show.length === 1) {
@@ -430,7 +429,8 @@ const Viz = () => {
           return cols.filter(x => show.indexOf(x) > -1).length > 0 ? "60%" : "100%"
         })
     }
-  }, [show])
+
+  }, [show, searchQuery])
 
   useEffect(() => {
     const el = d3Ref.current 
@@ -470,30 +470,29 @@ const Viz = () => {
           <h1>
             Visualization
           </h1>
-          <article>
-            <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
-            <div className="Legend">
-              <div>
-                {COLLS.map(C => (
-                  <span key={C}>
-                    <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
-                    <label className="FormCheckLabel" htmlFor={C}>
-                      {C}
-                    </label>
-                  </span>
-                ))
-                }
-              </div>
-              <div>
-                <span>
-                  <input className="FormCheckInput cbother" type="checkbox" checked={showLines} id="optlines" onChange={() => setShowLines(!showLines)}/>
-                  <label className="FormCheckLabel" htmlFor="optlines">
-                    Toggle lines
+          <p>Use this visualization to explore the entities (people and organizations) connected to the NAEB, NFCB, WHA, and KUOM radio collections. Each entity is represented by one circle. Hover over a collection name in the legend to highlight the entities who contributed to programs in that collection. Entities are positioned according to the number of programs to which they contributed in each collection. Hover over a circle on the visualization to bring up the entity's name and connected collections, and click on the circle to open the associated landing page with biographical information and links to other content for that entity. Pan and zoom around the visualization using your mouse and scroll wheel.</p>
+          <div className="Legend">
+            <div>
+              {COLLS.map(C => (
+                <span key={C}>
+                  <input className={`FormCheckInput ${C}`} type="checkbox" value={C} checked={show.includes(C)} id={C} onChange={() => handleShownCollection(C)}/>
+                  <label className="FormCheckLabel" htmlFor={C}>
+                    {C}
                   </label>
                 </span>
-              </div>
+              ))
+              }
             </div>
-          </article>
+            <div>
+              <span>
+                <input className="FormCheckInput cbother" type="checkbox" checked={showLines} id="optlines" onChange={() => setShowLines(!showLines)}/>
+                <label className="FormCheckLabel" htmlFor="optlines">
+                  Toggle lines
+                </label>
+              </span>
+            </div>
+          </div>
+          <Search query={searchQuery} set={setSearchQuery} placeholder={`Search by entity name`} />
         </section>
         <section className="Viz">
           <div ref={d3Ref}>

@@ -4,6 +4,7 @@ import { FaAngleUp } from "react-icons/fa"
 
 import "./registry.css"
 import "./chip.css"
+import Search, {isSearchMatch} from "./search"
 
 interface RegistryEntity {
   name: string
@@ -33,9 +34,7 @@ export default function Registry({ name, items }: Props) {
 
   for (const item of items) {
     // Apply search filter
-    const escaped = searchQuery.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    const searchable = item.name + " " + item.description
-    if (!searchable.match(new RegExp(escaped, "i"))) {
+    if (!isSearchMatch(searchQuery, item.name + " " + item.description)) {
       continue
     }
 
@@ -92,14 +91,7 @@ export default function Registry({ name, items }: Props) {
             onChange={() => handleSingleCollectionFilter()} /> <label>Single Collection Only</label>
         </span>
       </div>
-      <input
-        className="registry-search"
-        type="text"
-        value={searchQuery}
-        onChange={e => setSearchQuery(e.target.value)}
-        placeholder={`Search by ${name}`}
-        aria-label="Search"
-      />
+      <Search query={searchQuery} set={setSearchQuery} placeholder={`Search by ${name}`} />
 
       <div className="registry-nav">
         {letters.map(letter => (
