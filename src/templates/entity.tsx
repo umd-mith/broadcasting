@@ -33,8 +33,9 @@ export interface EntityData {
   occupation: string[]
   viafURL: string[]
   wikipediaURL: string
-  worldCatURL: string[]
+  archivedWorldCatURL: string[]
   snacURL: string[]
+  wikidataURL: string[]
   associatedPlaces: string[]
   locURL: string[]
   collections: string[]
@@ -238,9 +239,10 @@ const Entity = ({ data }: Props) => {
               </p>
               <div>
                 <OptionalLink text="Social Networks and Archival Context (SNAC) Record" url={entity.snacURL} />
+                <OptionalLink text="Wikidata Record" url={entity.wikidataURL} />
                 <OptionalLink text="Library of Congress Name Authority File (LCNAF)" url={entity.locURL} />
                 <OptionalLink text="Virtual International Authority File (VIAF)" url={entity.viafURL} />
-                <OptionalLink text="WorldCat Record" url={entity.worldCatURL} />
+                <OptionalLink text="WorldCat Identities Record (archived version)" url={entity.archivedWorldCatURL} />
                 <OptionalLink text="National Archives and Records Administration (NARA)" url={entity.naraURL} />
               </div>
               <div className="references">
@@ -328,8 +330,9 @@ export const query = graphql`
       occupation
       viafURL
       wikipediaURL
-      worldCatURL
+      archivedWorldCatURL
       snacURL
+      wikidataURL
       associatedPlaces
       locURL
       collections
