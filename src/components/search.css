@@ -1,8 +1,27 @@
 .search {
+  position: relative;
+}
+
+.search-bar {
   background-color: #ffffff;
   border: 1px solid #59680c;
   width: 100%;
   padding: 8px;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.search-clear {
+  cursor: pointer;
+  display: flex;
+  right: 0.5rem;
+  top: 1rem;
+  bottom: 0;
+  position: absolute;
+}
+
+.search-clear-icon {
+  fill: #59680c;
+  width: 1.25rem;
+  height: 1.25rem;
 }
