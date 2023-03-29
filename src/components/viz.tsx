@@ -177,8 +177,6 @@ const Viz = () => {
     .attr("stroke-width", 2)
     .text(d => d.id)
 
-  // simulation.tick(200) // This doesn't to work well with the mouseover selection
-
   const d3Ref = useRef<HTMLDivElement>(null)
   const d3ZoomRef = useRef<SVGGElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
@@ -251,12 +249,6 @@ const Viz = () => {
             .attr("y", d => d.y || "")
       })
 
-
-      // In case we want to make circles unclickable until the simulation is completed
-      // simulation.on("end", () => {
-      //   circle.classed("ticking", false)
-      // })
-
       const rawSvg = svg.node()
       if (rawSvg) {
         for (const child of Array.from(rawSvg.children)) {
@@ -300,19 +292,10 @@ const Viz = () => {
       }
     
       circle
-        // .attr("class", "ticking") // In case we want to make circles unclickable until the simulation is completed
         .on("mouseenter", function (e, d) {
           if (d3el.attr("data-selected") !== "true") {
             showTip(e, d)
           }
-          // else if (d3.select(this).classed("highlight")) {
-          //   const relationNode = nodes.filter(n => n.pulse)[0]
-          //   if (relationNode) {
-          //     const related = d.programs?.filter(x => (relationNode?.programs || []).map(p => p.URL).indexOf(x.URL) > -1) || []
-          //     // showTip(e, d, `<div><strong>Related programs:</strong><ul>${related.map(r => `<li><a href="${r.URL}">${r.title}</a></li>`).join("")}</ul></div>`)
-          //     showTip(e, d, `<br/>${related.length} programs in common with ${relationNode.id}`)
-          //   }
-          // }
         })
         .on("mouseout", () => {
           if (d3el.attr("data-selected") !== "true") {
@@ -348,9 +331,10 @@ const Viz = () => {
           })
 
           const relProgsInfo = relationLinks.map(r => {
-            const progs = d.programs?.filter(x => (r.target.programs || [])
+            const relProgs = d.programs?.filter(x => (r.target.programs || [])
               .map(p => p.URL).indexOf(x.URL) > -1)
-              .map(p => `<li><a href="${p.URL}">${p.title}</a></li>`)
+            const deduped = [...new Map(relProgs.map(s => [s.URL, s])).values()]
+            const progs = Array.from(deduped).map(p => `<li><a href="${p.URL}">${p.title}</a></li>`)
               .join("")
             return `<li><a href="../entity/${r.target.pageId}">${r.target.id}</a> <span class="Progs">Related programs:</span> <ul> ${progs} </ul></li>`
           }).join("")
