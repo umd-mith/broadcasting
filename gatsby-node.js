@@ -10,6 +10,15 @@ exports.createPages = async ({
 async function makePages(createPage, graphql) {
   results = await graphql(`
     {
+      allExhibsJson {
+        nodes {
+          slug
+          title
+          author
+          image
+          imageDesc
+        }
+      }
       allMarkdownRemark {
         nodes {
           htmlAst
@@ -33,7 +42,8 @@ async function makePages(createPage, graphql) {
       path,
       component,
       context: {
-        htmlAst: md.htmlAst
+        htmlAst: md.htmlAst,
+        exhibs: results.data.allExhibsJson.nodes
       },
     })
   })

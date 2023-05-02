@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import "./home.css"
 import unified from "unified"
 import ReadMore from "../components/readmore"
-import { StaticImage } from "gatsby-plugin-image"
-import { navigate } from "gatsby"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 
 
-const Home = ({pageContext}) => {
+export default function Home({data, pageContext}) {
   
   const processor = unified().use(rehypeReact, {
     createElement: React.createElement,
@@ -20,6 +20,8 @@ const Home = ({pageContext}) => {
   const renderAst = (ast: any): JSX.Element => {
     return (processor.stringify(ast) as unknown) as JSX.Element
   }
+
+  const exhibsBaseURL = "https://www.unlockingtheairwaves.org/exhibits/"
 
   return (
     <Layout title="home">
@@ -51,24 +53,26 @@ const Home = ({pageContext}) => {
           <section>
             <h2>Exhibits</h2>
             <div className="exhibits-container">
-              {[1,2,3,4,5,6,7].map(c => (
+              {pageContext.exhibs.map(exhib => {
+                const imgData = data.allFile.nodes.filter(n => n.name + n.ext === exhib.image)[0]
+                const img = imgData 
+                  ? <GatsbyImage image={imgData.childImageSharp.gatsbyImageData} alt={exhib.imageDesc} />
+                  : <img src={exhib.image} alt={exhib.imageDesc} />
+                return (
                 <div className="exhibit-summary-card">
                   <div className="exhibit-card-meta">
-                    <a href="#/">
-                      <h2>To Be Added</h2>
+                    <a href={`${exhibsBaseURL}${exhib.slug}`}>
+                      <h2>{exhib.title}</h2>
                     </a>
-                    <p>First Last</p>
+                    <p>{exhib.author}</p>
                   </div>
                   <div className="exhibit-image">
                     <a href="#">
-                      <StaticImage
-                        src="../images/missing-person.png"
-                        alt="Unknown Image"
-                      />
+                      {img}
                     </a>
                   </div>
                 </div>
-              ))}
+              )})}
               <div className="exhibit-summary-card">
                 <div className="exhibit-card-meta">
                   <a href="#/">
@@ -127,4 +131,16 @@ const Home = ({pageContext}) => {
   )
 }
 
-export default Home
+export const pageQuery = graphql`
+  query exhibQ {
+    allFile(filter: {dir: {regex: "/images$/"}}) {
+      nodes {
+        name
+        ext
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+`

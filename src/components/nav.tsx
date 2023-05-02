@@ -30,12 +30,12 @@ const Nav = () => {
     
     return(
         <div className="main-nav-container">
-            {/* <button 
+            <button 
                 className="header-menu-button" 
                 type="button" 
                 onClick={toggleMenu}>
                     Menu
-            </button> */}
+            </button>
             <nav className="main-nav">
                 <ul id="main-nav-menu" className={hidden ? 'menu': 'menu menu-open'}>
                     <li><a href="https://unlockingtheairwaves.org/">&lt; Back to Airwaves</a></li>
