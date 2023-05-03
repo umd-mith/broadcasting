@@ -44,8 +44,8 @@ h1, h2 {
   text-decoration: none;
 }
 
-.exhibit-summary-card img {
-  object-fit: contain;
+.exhibit-summary-card img, .documentation img {
+  object-fit: contain !important;
 }
 
 .below-the-fold {
@@ -88,9 +88,6 @@ h1, h2 {
 }
 
 .documentation {
-  margin-top: 3em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   text-align: center;
   color: var(--color-brand-primary);  
 }
@@ -121,6 +118,14 @@ h1, h2 {
 
 .documentation a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 30em) {
+  .documentation {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* medium to large screens — starts at 720px */
