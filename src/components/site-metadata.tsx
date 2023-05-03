@@ -36,6 +36,7 @@ const SiteMetadata = ({ pathname, title, locale }: Props) => {
       <html lang={locale} />
       <link rel="canonical" href={`${siteUrl}${pathname}`} />
       <link rel="icon" href={withPrefix('/images/favicon.png')} />
+      <meta name="color-scheme" content="light only" />
       <meta name="docsearch:version" content="2.0" />
       <meta
         name="viewport"
