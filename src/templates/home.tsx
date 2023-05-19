@@ -100,7 +100,8 @@ export default function Home({data, pageContext}) {
                   <li>Eric Hoyt (Principal Investigator, University of Wisconsin-Madison)</li>
                   <li>Emily Frazier (Graduate Research Assistant, MITH)</li>
                   <li>Raffaele Viglianti (Senior Research Software Developer, MITH)</li>
-                  <li>Trevor Muñoz (Executive Director, MITH)</li>
+                  <li>Ben Pettis (University of Wisconsin-Madison)</li>
+                  <li>Trevor Muñoz (Director, MITH)</li>
                   <li>Daniel Pitti (SNAC Director, University of Virginia)</li>
                   <li>Joseph Glass (SNAC Developer, University of Virginia)</li>
                   <li>Cat Phan (University of Wisconsin-Madison)</li>
@@ -115,9 +116,8 @@ export default function Home({data, pageContext}) {
                 <ul>
                   <li>Christina Gibson, Towson University</li>
                   <li>Glenn Clatworthy, Independent Researcher</li>
-                  <li>Arcelia Gutierrez, University of California, Irvine</li>
                   <li>Jennifer Hyland Wang, University of Wisconsin-Madison</li>
-                  <li>Bill Kirkpatrick, Denison University</li>
+                  <li>Bill Kirkpatrick, University of Winnipeg</li>
                   <li>Marit MacArthur, University of California, Davis</li>
                   <li>Allison Perlman, University of California, Irvine</li>
                   <li>Alexander Russo, The Catholic University of America</li>
