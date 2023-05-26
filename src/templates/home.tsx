@@ -46,7 +46,7 @@ export default function Home({data, pageContext}) {
               </div>
               <div>
                 <StaticImage src="../images/docs.png" alt="Screenshot of a documentation document" />
-                <h3><a href="https://drive.google.com/drive/folders/1wR4qzQngN0f7q3os4YqIY_CFYFegoZQV">Workflow Documentation</a></h3>
+                <h3><a href="https://github.com/umd-mith/broadcasting/tree/main/workflows-docs">Workflow Documentation</a></h3>
               </div>
             </div>
           </section>
