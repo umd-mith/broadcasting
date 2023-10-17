@@ -37,15 +37,15 @@ export default function Home({data, pageContext}) {
             {renderAst(pageContext.htmlAst)}
             <div className="documentation">
               <div>
-                <StaticImage src="../images/github-mark.png" alt="GitHub logo"/>
+              <a href="https://github.com/umd-mith/broadcasting"><StaticImage src="../images/github-mark.png" alt="GitHub logo"/></a>
                 <h3><a href="https://github.com/umd-mith/broadcasting">GitHub Repository</a></h3>
               </div>
               <div>
-                <StaticImage src="../images/tutorials.png" alt="Still from a video tutorial" />
+              <a href="https://vimeo.com/showcase/9765583"><StaticImage src="../images/tutorials.png" alt="Still from a video tutorial" /></a>
                 <h3><a href="https://vimeo.com/showcase/9765583">Video Tutorials</a></h3>
               </div>
               <div>
-                <StaticImage src="../images/docs.png" alt="Screenshot of a documentation document" />
+              <a href="https://github.com/umd-mith/broadcasting/tree/main/workflows-docs"><StaticImage src="../images/docs.png" alt="Screenshot of a documentation document" /></a>
                 <h3><a href="https://github.com/umd-mith/broadcasting/tree/main/workflows-docs">Workflow Documentation</a></h3>
               </div>
             </div>
@@ -75,12 +75,12 @@ export default function Home({data, pageContext}) {
               )})}
               <div className="exhibit-summary-card">
                 <div className="exhibit-card-meta">
-                  <a href="#/">
+                  <a href="https://www.unlockingtheairwaves.org/exhibits/">
                     <h2>See All Exhibits at Unlocking the Airwaves</h2>
                   </a>
                 </div>
                 <div className="exhibit-image">
-                  <a href="#">
+                  <a href="https://www.unlockingtheairwaves.org/exhibits/">
                     <StaticImage
                       src="../images/unlocking.png"
                       alt="Unlocking the Airwaves logo"

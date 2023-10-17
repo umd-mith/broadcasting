@@ -38,6 +38,7 @@ h1, h2 {
 .exhibit-summary-card h2 {
   color: var(--color-brand-primary);
   text-align: left;
+  margin: 0 0 1rem 0;
 }
 
 .exhibit-summary-card a {
