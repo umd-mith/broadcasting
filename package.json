@@ -16,8 +16,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "persist": "ts-node src/commands/persist.ts",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
+    "persist": "ts-node src/commands/persist.ts"
   },
   "dependencies": {
     "@fontsource/open-sans": "^4.5.5",
@@ -49,7 +48,6 @@
     "@types/react-helmet": "^6.1.5",
     "airtable": "^0.11.2",
     "cheerio": "^1.0.0-rc.12",
-    "gh-pages": "^3.2.3",
     "json2csv": "^5.0.7",
     "node-fetch": "^2.6.7",
     "ts-node": "^10.6.0",

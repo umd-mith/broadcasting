@@ -1,16 +1,13 @@
 /** @type {import('gatsby').GatsbyConfig} */
 const path = require("path")
-const basePath = '/broadcasting'
 
 module.exports = {
-  pathPrefix: basePath,
-  assetPrefix: "",
   siteMetadata: {
     title: "Broadcasting A/V Data",
     description:
       "Description.",
     author: `Maryland Institute for Technology in the Humanities`,
-    siteUrl: `https://broadcasting.unlockingtheairwaves.org`,
+    siteUrl: `https://bavd.unlockingtheairwaves.org`,
     twitter: `https://twitter.com/umd_mith`,
     siteNav: [
       {
